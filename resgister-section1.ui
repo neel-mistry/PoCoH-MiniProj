@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Register1</class>
+ <widget class="QMainWindow" name="Register1">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -103,7 +103,7 @@ padding-left:5px;</string>
      <string>Enter your name</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="bnext">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -112,17 +112,27 @@ padding-left:5px;</string>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Poppins</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton{
+     <string notr="true">QPushButton#bnext{
+	font: 18px &quot;Poppins&quot;;
  color: #090909;
- font-size: 18px;
+
  border-radius: 0.5em;
  background: #e8e8e8;
  border: 1px solid #e8e8e8;
 }
 
-QPushButton#pushButton:hover {
- border: 2px solid white;
+QPushButton#bnext:hover {
+font: 18px &quot;Poppins&quot;; 
+border: 1px solid white;
 }
 </string>
     </property>
@@ -174,19 +184,21 @@ QPushButton#pushButton:hover {
     <property name="styleSheet">
      <string notr="true">font: 12pt &quot;Poppins&quot;;</string>
     </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
       <x>500</x>
       <y>30</y>
-      <width>161</width>
+      <width>351</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Poppins</family>
       <pointsize>24</pointsize>
       <bold>true</bold>
       <kerning>true</kerning>
@@ -312,13 +324,12 @@ padding-left:5px;</string>
      <rect>
       <x>500</x>
       <y>80</y>
-      <width>391</width>
+      <width>401</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Poppins SemiBold</family>
       <pointsize>18</pointsize>
       <bold>true</bold>
       <kerning>true</kerning>
@@ -335,7 +346,7 @@ padding-left:5px;</string>
    <zorder>label_10</zorder>
    <zorder>label_3</zorder>
    <zorder>lineEdit_6</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>bnext</zorder>
    <zorder>label_11</zorder>
    <zorder>dateEdit</zorder>
    <zorder>label_9</zorder>

@@ -11,11 +11,11 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(915, 641)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+class Ui_Register1(object):
+    def setupUi(self, Register1):
+        Register1.setObjectName("Register1")
+        Register1.resize(915, 641)
+        self.centralwidget = QtWidgets.QWidget(Register1)
         self.centralwidget.setObjectName("centralwidget")
         self.label_10 = QtWidgets.QLabel(self.centralwidget)
         self.label_10.setGeometry(QtCore.QRect(500, 400, 131, 31))
@@ -52,21 +52,29 @@ class Ui_MainWindow(object):
 "padding-bottom:7px;\n"
 "padding-left:5px;")
         self.lineEdit_6.setObjectName("lineEdit_6")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(500, 520, 151, 41))
-        self.pushButton.setStyleSheet("QPushButton#pushButton{\n"
+        self.bnext = QtWidgets.QPushButton(self.centralwidget)
+        self.bnext.setGeometry(QtCore.QRect(500, 520, 151, 41))
+        font = QtGui.QFont()
+        font.setFamily("Poppins")
+        font.setPointSize(-1)
+        font.setBold(False)
+        font.setItalic(False)
+        self.bnext.setFont(font)
+        self.bnext.setStyleSheet("QPushButton#bnext{\n"
+"    font: 18px \"Poppins\";\n"
 " color: #090909;\n"
-" font-size: 18px;\n"
+"\n"
 " border-radius: 0.5em;\n"
 " background: #e8e8e8;\n"
 " border: 1px solid #e8e8e8;\n"
 "}\n"
 "\n"
-"QPushButton#pushButton:hover {\n"
-" border: 2px solid white;\n"
+"QPushButton#bnext:hover {\n"
+"font: 18px \"Poppins\"; \n"
+"border: 1px solid white;\n"
 "}\n"
 "")
-        self.pushButton.setObjectName("pushButton")
+        self.bnext.setObjectName("bnext")
         self.label_11 = QtWidgets.QLabel(self.centralwidget)
         self.label_11.setGeometry(QtCore.QRect(500, 220, 91, 31))
         font = QtGui.QFont()
@@ -86,11 +94,11 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         self.dateEdit.setFont(font)
         self.dateEdit.setStyleSheet("font: 12pt \"Poppins\";")
+        self.dateEdit.setCalendarPopup(True)
         self.dateEdit.setObjectName("dateEdit")
         self.label_9 = QtWidgets.QLabel(self.centralwidget)
-        self.label_9.setGeometry(QtCore.QRect(500, 30, 161, 31))
+        self.label_9.setGeometry(QtCore.QRect(500, 30, 351, 31))
         font = QtGui.QFont()
-        font.setFamily("Poppins")
         font.setPointSize(24)
         font.setBold(True)
         font.setKerning(True)
@@ -150,9 +158,8 @@ class Ui_MainWindow(object):
 "padding-left:5px;")
         self.lineEdit.setObjectName("lineEdit")
         self.label_13 = QtWidgets.QLabel(self.centralwidget)
-        self.label_13.setGeometry(QtCore.QRect(500, 80, 391, 31))
+        self.label_13.setGeometry(QtCore.QRect(500, 80, 401, 31))
         font = QtGui.QFont()
-        font.setFamily("Poppins SemiBold")
         font.setPointSize(18)
         font.setBold(True)
         font.setKerning(True)
@@ -163,7 +170,7 @@ class Ui_MainWindow(object):
         self.label_10.raise_()
         self.label_3.raise_()
         self.lineEdit_6.raise_()
-        self.pushButton.raise_()
+        self.bnext.raise_()
         self.label_11.raise_()
         self.dateEdit.raise_()
         self.label_9.raise_()
@@ -172,38 +179,38 @@ class Ui_MainWindow(object):
         self.lineEdit_5.raise_()
         self.lineEdit.raise_()
         self.label_13.raise_()
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        Register1.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Register1)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 915, 22))
         self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        Register1.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Register1)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        Register1.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(Register1)
+        QtCore.QMetaObject.connectSlotsByName(Register1)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, Register1):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_10.setText(_translate("MainWindow", "Date of Birth"))
-        self.lineEdit_6.setPlaceholderText(_translate("MainWindow", "Enter your name"))
-        self.pushButton.setText(_translate("MainWindow", "Next"))
-        self.label_11.setText(_translate("MainWindow", "Email"))
-        self.label_9.setText(_translate("MainWindow", "REGISTER"))
-        self.label_6.setText(_translate("MainWindow", "Name"))
-        self.label_12.setText(_translate("MainWindow", "Phone Number"))
-        self.lineEdit_5.setPlaceholderText(_translate("MainWindow", "Enter your name"))
-        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Enter your name"))
-        self.label_13.setText(_translate("MainWindow", "Section 1: Personal Information"))
+        Register1.setWindowTitle(_translate("Register1", "MainWindow"))
+        self.label_10.setText(_translate("Register1", "Date of Birth"))
+        self.lineEdit_6.setPlaceholderText(_translate("Register1", "Enter your name"))
+        self.bnext.setText(_translate("Register1", "Next"))
+        self.label_11.setText(_translate("Register1", "Email"))
+        self.label_9.setText(_translate("Register1", "REGISTER"))
+        self.label_6.setText(_translate("Register1", "Name"))
+        self.label_12.setText(_translate("Register1", "Phone Number"))
+        self.lineEdit_5.setPlaceholderText(_translate("Register1", "Enter your name"))
+        self.lineEdit.setPlaceholderText(_translate("Register1", "Enter your name"))
+        self.label_13.setText(_translate("Register1", "Section 1: Personal Information"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    Register1 = QtWidgets.QMainWindow()
+    ui = Ui_Register1()
+    ui.setupUi(Register1)
+    Register1.show()
     sys.exit(app.exec_())

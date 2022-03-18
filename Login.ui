@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>Login</class>
+ <widget class="QDialog" name="Login">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -44,11 +44,14 @@
    <property name="font">
     <font>
      <family>Poppins</family>
-     <pointsize>13</pointsize>
+     <pointsize>12</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgba(0, 0, 0, 0);
+font: 12pt &quot;Poppins&quot;;
 border-bottom:2px solid #2a2a2a;
 border-radius: 30px;
 color:#2a2a2a;
@@ -73,7 +76,6 @@ padding-left:5px;</string>
    </property>
    <property name="font">
     <font>
-     <family>Poppins</family>
      <pointsize>28</pointsize>
      <bold>true</bold>
     </font>
@@ -85,7 +87,7 @@ padding-left:5px;</string>
     <string>Login</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="bregister">
    <property name="geometry">
     <rect>
      <x>510</x>
@@ -103,7 +105,7 @@ padding-left:5px;</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton#pushButton{
+    <string notr="true">QPushButton#bregister{
 	font: 14pt &quot;Poppins&quot;;
  color: #ffffff;
  font-size: 18px;
@@ -111,7 +113,7 @@ padding-left:5px;</string>
  border: 1px solid #e8e8e8;
 }
 
-QPushButton#pushButton:hover {
+QPushButton#bregister:hover {
  border: 2px solid white;
 color:#090909;
  background: #e8e8e8;
@@ -134,11 +136,14 @@ color:#090909;
    <property name="font">
     <font>
      <family>Poppins</family>
-     <pointsize>13</pointsize>
+     <pointsize>12</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgba(0, 0, 0, 0);
+font: 12pt &quot;Poppins&quot;;
 border-bottom:2px solid #2a2a2a;
 border-radius: 30px;
 color:#2a2a2a;
@@ -149,7 +154,7 @@ padding-left: 5px;</string>
     <string>Enter Username</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="blogin">
    <property name="geometry">
     <rect>
      <x>730</x>
@@ -160,12 +165,11 @@ padding-left: 5px;</string>
    </property>
    <property name="font">
     <font>
-     <family>Poppins</family>
      <pointsize>-1</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton#pushButton_2{
+    <string notr="true">QPushButton#blogin{
  color: #090909;
  font-size: 18px;
  border-radius: 0.5em;
@@ -173,7 +177,7 @@ padding-left: 5px;</string>
  border: 1px solid #e8e8e8;
 }
 
-QPushButton#pushButton_2:hover {
+QPushButton#blogin:hover {
  border: 2px solid white;
 }</string>
    </property>

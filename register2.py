@@ -11,11 +11,11 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(915, 641)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+class Ui_Register2(object):
+    def setupUi(self, Register2):
+        Register2.setObjectName("Register2")
+        Register2.resize(915, 641)
+        self.centralwidget = QtWidgets.QWidget(Register2)
         self.centralwidget.setObjectName("centralwidget")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(20, 260, 221, 91))
@@ -31,9 +31,8 @@ class Ui_MainWindow(object):
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_9 = QtWidgets.QLabel(self.centralwidget)
-        self.label_9.setGeometry(QtCore.QRect(500, 50, 161, 31))
+        self.label_9.setGeometry(QtCore.QRect(500, 50, 371, 31))
         font = QtGui.QFont()
-        font.setFamily("Poppins")
         font.setPointSize(24)
         font.setBold(True)
         font.setKerning(True)
@@ -43,44 +42,42 @@ class Ui_MainWindow(object):
         self.label_13 = QtWidgets.QLabel(self.centralwidget)
         self.label_13.setGeometry(QtCore.QRect(500, 100, 391, 31))
         font = QtGui.QFont()
-        font.setFamily("Poppins SemiBold")
         font.setPointSize(18)
         font.setBold(True)
         font.setKerning(True)
         self.label_13.setFont(font)
         self.label_13.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_13.setObjectName("label_13")
-        self.lineEdit_2 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_2.setGeometry(QtCore.QRect(500, 190, 301, 41))
+        self.tusername = QtWidgets.QLineEdit(self.centralwidget)
+        self.tusername.setGeometry(QtCore.QRect(500, 210, 301, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
-        self.lineEdit_2.setFont(font)
-        self.lineEdit_2.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
+        self.tusername.setFont(font)
+        self.tusername.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
 "font: 12pt \"Poppins\";\n"
 "border-bottom:2px solid #2a2a2a;\n"
 "border-radius: 30px;\n"
 "color:#2a2a2a;\n"
 "padding-bottom:7px;")
-        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.tusername.setObjectName("tusername")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
-        self.label_5.setGeometry(QtCore.QRect(500, 150, 151, 31))
+        self.label_5.setGeometry(QtCore.QRect(500, 170, 151, 31))
         font = QtGui.QFont()
-        font.setFamily("Poppins")
         font.setPointSize(14)
         self.label_5.setFont(font)
         self.label_5.setObjectName("label_5")
-        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_3.setGeometry(QtCore.QRect(510, 470, 141, 41))
+        self.bback = QtWidgets.QPushButton(self.centralwidget)
+        self.bback.setGeometry(QtCore.QRect(500, 490, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
-        self.pushButton_3.setFont(font)
-        self.pushButton_3.setStyleSheet("QPushButton#pushButton_3{\n"
+        self.bback.setFont(font)
+        self.bback.setStyleSheet("QPushButton#bback{\n"
 "    font: 14pt \"Poppins\";\n"
 " color: #ffffff;\n"
 " font-size: 18px;\n"
@@ -88,45 +85,44 @@ class Ui_MainWindow(object):
 " border: 1px solid #e8e8e8;\n"
 "}\n"
 "\n"
-"QPushButton#pushButton_3:hover {\n"
-" border: 2px solid white;\n"
+"QPushButton#bback:hover {\n"
+" border: 1px solid white;\n"
 "color:#090909;\n"
 " background: #e8e8e8;\n"
 "}\n"
 "")
-        self.pushButton_3.setObjectName("pushButton_3")
+        self.bback.setObjectName("bback")
         self.label_8 = QtWidgets.QLabel(self.centralwidget)
-        self.label_8.setGeometry(QtCore.QRect(500, 360, 191, 31))
+        self.label_8.setGeometry(QtCore.QRect(500, 380, 191, 31))
         font = QtGui.QFont()
-        font.setFamily("Poppins")
         font.setPointSize(14)
         self.label_8.setFont(font)
         self.label_8.setObjectName("label_8")
-        self.lineEdit_3 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_3.setGeometry(QtCore.QRect(500, 290, 301, 41))
+        self.tpass = QtWidgets.QLineEdit(self.centralwidget)
+        self.tpass.setGeometry(QtCore.QRect(500, 310, 301, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
-        self.lineEdit_3.setFont(font)
-        self.lineEdit_3.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
+        self.tpass.setFont(font)
+        self.tpass.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
 "font: 12pt \"Poppins\";\n"
 "border-bottom:2px solid #2a2a2a;\n"
 "border-radius: 30px;\n"
 "color:#2a2a2a;\n"
 "padding-bottom:7px;")
-        self.lineEdit_3.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.lineEdit_3.setObjectName("lineEdit_3")
-        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(690, 470, 141, 41))
+        self.tpass.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.tpass.setObjectName("tpass")
+        self.bsubmit = QtWidgets.QPushButton(self.centralwidget)
+        self.bsubmit.setGeometry(QtCore.QRect(680, 490, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
-        self.pushButton_2.setFont(font)
-        self.pushButton_2.setStyleSheet("QPushButton#pushButton_2{\n"
+        self.bsubmit.setFont(font)
+        self.bsubmit.setStyleSheet("QPushButton#bsubmit{\n"
 "font: 14pt \"Poppins\";\n"
 " color: #090909;\n"
 " font-size: 18px;\n"
@@ -135,78 +131,77 @@ class Ui_MainWindow(object):
 " border: 1px solid #e8e8e8;\n"
 "}\n"
 "\n"
-"QPushButton#pushButton_2:hover {\n"
-" border: 2px solid white;\n"
+"QPushButton#bsubmit:hover {\n"
+" border: 1px solid white;\n"
 "}\n"
 "")
-        self.pushButton_2.setObjectName("pushButton_2")
+        self.bsubmit.setObjectName("bsubmit")
         self.label_7 = QtWidgets.QLabel(self.centralwidget)
-        self.label_7.setGeometry(QtCore.QRect(500, 250, 151, 31))
+        self.label_7.setGeometry(QtCore.QRect(500, 270, 151, 31))
         font = QtGui.QFont()
-        font.setFamily("Poppins")
         font.setPointSize(14)
         self.label_7.setFont(font)
         self.label_7.setObjectName("label_7")
-        self.lineEdit_4 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_4.setGeometry(QtCore.QRect(500, 400, 301, 41))
+        self.trepass = QtWidgets.QLineEdit(self.centralwidget)
+        self.trepass.setGeometry(QtCore.QRect(500, 420, 301, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
-        self.lineEdit_4.setFont(font)
-        self.lineEdit_4.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
+        self.trepass.setFont(font)
+        self.trepass.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
 "border-bottom:2px solid #2a2a2a;\n"
 "font: 12pt \"Poppins\";\n"
 "border-radius: 30px;\n"
 "color:#2a2a2a;\n"
 "padding-bottom:7px;")
-        self.lineEdit_4.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.lineEdit_4.setObjectName("lineEdit_4")
+        self.trepass.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.trepass.setObjectName("trepass")
         self.label.raise_()
         self.label_3.raise_()
         self.label_9.raise_()
         self.label_13.raise_()
-        self.lineEdit_2.raise_()
+        self.tusername.raise_()
         self.label_5.raise_()
-        self.pushButton_3.raise_()
+        self.bback.raise_()
         self.label_8.raise_()
-        self.lineEdit_3.raise_()
-        self.pushButton_2.raise_()
+        self.tpass.raise_()
+        self.bsubmit.raise_()
         self.label_7.raise_()
-        self.lineEdit_4.raise_()
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.trepass.raise_()
+        Register2.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Register2)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 915, 22))
         self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        Register2.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Register2)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        Register2.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(Register2)
+        QtCore.QMetaObject.connectSlotsByName(Register2)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, Register2):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_9.setText(_translate("MainWindow", "REGISTER"))
-        self.label_13.setText(_translate("MainWindow", "Section 2: Login Credentials"))
-        self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "  Create username"))
-        self.label_5.setText(_translate("MainWindow", "Username"))
-        self.pushButton_3.setText(_translate("MainWindow", "Back"))
-        self.label_8.setText(_translate("MainWindow", "Re-Enter Password"))
-        self.lineEdit_3.setPlaceholderText(_translate("MainWindow", "  Create password"))
-        self.pushButton_2.setText(_translate("MainWindow", "Submit"))
-        self.label_7.setText(_translate("MainWindow", "Password"))
-        self.lineEdit_4.setPlaceholderText(_translate("MainWindow", "  Re-Enter password"))
+        Register2.setWindowTitle(_translate("Register2", "MainWindow"))
+        self.label_9.setText(_translate("Register2", "REGISTER"))
+        self.label_13.setText(_translate("Register2", "Section 2: Login Credentials"))
+        self.tusername.setPlaceholderText(_translate("Register2", "  Create username"))
+        self.label_5.setText(_translate("Register2", "Username"))
+        self.bback.setText(_translate("Register2", "Back"))
+        self.label_8.setText(_translate("Register2", "Re-Enter Password"))
+        self.tpass.setPlaceholderText(_translate("Register2", "  Create password"))
+        self.bsubmit.setText(_translate("Register2", "Submit"))
+        self.label_7.setText(_translate("Register2", "Password"))
+        self.trepass.setPlaceholderText(_translate("Register2", "  Re-Enter password"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    Register2 = QtWidgets.QMainWindow()
+    ui = Ui_Register2()
+    ui.setupUi(Register2)
+    Register2.show()
     sys.exit(app.exec_())
