@@ -26,7 +26,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>images/login-bg.png</pixmap>
+    <pixmap>../images/login-bg.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -114,6 +114,7 @@ padding-left:5px;</string>
 }
 
 QPushButton#bregister:hover {
+font: 14pt &quot;Poppins&quot;;
  border: 2px solid white;
 color:#090909;
  background: #e8e8e8;
@@ -165,11 +166,15 @@ padding-left: 5px;</string>
    </property>
    <property name="font">
     <font>
+     <family>Poppins</family>
      <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton#blogin{
+font: 14pt &quot;Poppins&quot;;
  color: #090909;
  font-size: 18px;
  border-radius: 0.5em;
@@ -177,8 +182,10 @@ padding-left: 5px;</string>
  border: 1px solid #e8e8e8;
 }
 
+
 QPushButton#blogin:hover {
- border: 2px solid white;
+font: 14pt &quot;Poppins&quot;;
+ border: 1px solid white;
 }</string>
    </property>
    <property name="text">
@@ -198,7 +205,7 @@ QPushButton#blogin:hover {
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>images/PoCoH.png</pixmap>
+    <pixmap>../images/PoCoH.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
