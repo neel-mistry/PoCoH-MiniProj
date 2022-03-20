@@ -39,20 +39,14 @@ class Ui_homepage(object):
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_6)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.blogin = QtWidgets.QPushButton(self.frame_6)
-        self.blogin.setMinimumSize(QtCore.QSize(100, 30))
-        font = QtGui.QFont()
-        font.setFamily("Poppins")
-        font.setPointSize(-1)
-        font.setBold(False)
-        font.setItalic(False)
-        self.blogin.setFont(font)
         self.blogin.setStyleSheet("QPushButton#blogin{\n"
 "font: 14pt \"Poppins\";\n"
 " color: #090909;\n"
-" font-size: 18px;\n"
 " border-radius: 0.5em;\n"
 " background: #e8e8e8;\n"
 " border: 1px solid #e8e8e8;\n"
+" padding-left: 0.5em;\n"
+" padding-right: 0.5em;\n"
 "}\n"
 "\n"
 "\n"
@@ -63,24 +57,24 @@ class Ui_homepage(object):
         self.blogin.setObjectName("blogin")
         self.horizontalLayout_4.addWidget(self.blogin)
         self.bsignup = QtWidgets.QPushButton(self.frame_6)
-        self.bsignup.setMinimumSize(QtCore.QSize(100, 30))
         font = QtGui.QFont()
         font.setFamily("Poppins")
-        font.setPointSize(-1)
+        font.setPointSize(14)
         font.setBold(False)
         font.setItalic(False)
         self.bsignup.setFont(font)
         self.bsignup.setStyleSheet("QPushButton#bsignup{\n"
-"    font: 14pt \"Poppins\";\n"
+" font: 14pt \"Poppins\";\n"
 " color: #ffffff;\n"
-" font-size: 18px;\n"
 " border-radius: 0.5em;\n"
 " border: 1px solid #e8e8e8;\n"
+" padding-left: 0.5em;\n"
+" padding-right: 0.5em;\n"
 "}\n"
 "\n"
 "QPushButton#bsignup:hover {\n"
-"    font: 14pt \"Poppins\";\n"
-" border: 2px solid white;\n"
+"font: 14pt \"Poppins\";\n"
+" border: 1px solid white;\n"
 "color:#090909;\n"
 " background: #e8e8e8;\n"
 "}\n"
@@ -127,7 +121,7 @@ class Ui_homepage(object):
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
         self.label = QtWidgets.QLabel(self.frame_11)
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("images/PoCoH.png"))
+        self.label.setPixmap(QtGui.QPixmap("../images/PoCoH.png"))
         self.label.setScaledContents(False)
         self.label.setObjectName("label")
         self.horizontalLayout_7.addWidget(self.label)
@@ -187,7 +181,7 @@ class Ui_homepage(object):
         self.bhome.setMinimumSize(QtCore.QSize(0, 50))
         self.bhome.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("images/icons/c-home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../images/icons/c-home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bhome.setIcon(icon)
         self.bhome.setIconSize(QtCore.QSize(35, 35))
         self.bhome.setObjectName("bhome")
@@ -197,7 +191,7 @@ class Ui_homepage(object):
         self.bprecautions.setStyleSheet("")
         self.bprecautions.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("images/icons/c-precautions.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("../images/icons/c-precautions.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bprecautions.setIcon(icon1)
         self.bprecautions.setIconSize(QtCore.QSize(35, 35))
         self.bprecautions.setObjectName("bprecautions")
@@ -207,7 +201,7 @@ class Ui_homepage(object):
         self.bexercise.setStyleSheet("border: none;")
         self.bexercise.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("images/icons/c-exercise.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("../images/icons/c-exercise.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bexercise.setIcon(icon2)
         self.bexercise.setIconSize(QtCore.QSize(35, 35))
         self.bexercise.setObjectName("bexercise")
@@ -217,7 +211,7 @@ class Ui_homepage(object):
         self.bdiet.setStyleSheet("border: none;")
         self.bdiet.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("images/icons/c-diet.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("../images/icons/c-diet.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bdiet.setIcon(icon3)
         self.bdiet.setIconSize(QtCore.QSize(35, 35))
         self.bdiet.setObjectName("bdiet")
@@ -227,7 +221,7 @@ class Ui_homepage(object):
         self.bremedies.setStyleSheet("border: none;")
         self.bremedies.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("images/icons/c-home-remedies.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("../images/icons/c-home-remedies.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bremedies.setIcon(icon4)
         self.bremedies.setIconSize(QtCore.QSize(35, 35))
         self.bremedies.setObjectName("bremedies")
@@ -237,7 +231,7 @@ class Ui_homepage(object):
         self.bprofile.setStyleSheet("border: none;")
         self.bprofile.setText("")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("images/icons/profile-black.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("../images/icons/profile-black.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bprofile.setIcon(icon5)
         self.bprofile.setIconSize(QtCore.QSize(35, 35))
         self.bprofile.setObjectName("bprofile")
@@ -254,7 +248,7 @@ class Ui_homepage(object):
         _translate = QtCore.QCoreApplication.translate
         homepage.setWindowTitle(_translate("homepage", "MainWindow"))
         self.blogin.setText(_translate("homepage", "Login"))
-        self.bsignup.setText(_translate("homepage", "Sign-up"))
+        self.bsignup.setText(_translate("homepage", "Sign Up"))
         self.label_2.setText(_translate("homepage", "An apple a day keeps the doctor away!"))
 
 

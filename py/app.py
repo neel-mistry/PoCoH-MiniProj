@@ -63,6 +63,10 @@ def showDiet():
 def showHome():
     l_home.stackedWidget.setCurrentWidget(l_home.home)
 
+def logoutButtonAction():
+    l_home.hide()
+    login.show()
+
 
 home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)

@@ -71,7 +71,7 @@ class Ui_l_homepage(object):
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
         self.label = QtWidgets.QLabel(self.frame_11)
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("images/PoCoH.png"))
+        self.label.setPixmap(QtGui.QPixmap("../images/PoCoH.png"))
         self.label.setScaledContents(False)
         self.label.setObjectName("label")
         self.horizontalLayout_7.addWidget(self.label)
@@ -113,97 +113,6 @@ class Ui_l_homepage(object):
         self.label_13.setFont(font)
         self.label_13.setAlignment(QtCore.Qt.AlignCenter)
         self.label_13.setObjectName("label_13")
-        self.learnmore = QtWidgets.QPushButton(self.precautions)
-        self.learnmore.setGeometry(QtCore.QRect(400, 330, 75, 24))
-        self.learnmore.setStyleSheet("/* From cssbuttons.io */\n"
-"QPushButton#learnmore{\n"
-" position: relative;\n"
-" display: inline-block;\n"
-" cursor: pointer;\n"
-" outline: none;\n"
-" border: 0;\n"
-" vertical-align: middle;\n"
-" text-decoration: none;\n"
-" background: transparent;\n"
-" padding: 0;\n"
-" font-size: inherit;\n"
-" font-family: inherit;\n"
-"}\n"
-"\n"
-"QPushButton#learnmore.learn-more {\n"
-" width: 12rem;\n"
-" height: auto;\n"
-"}\n"
-"\n"
-"QPushButton#learnmore.learn-more .circle {\n"
-" transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);\n"
-" position: relative;\n"
-" display: block;\n"
-" margin: 0;\n"
-" width: 3rem;\n"
-" height: 3rem;\n"
-" background: #282936;\n"
-" border-radius: 1.625rem;\n"
-"}\n"
-"\n"
-"QPushButton#learnmore.learn-more .circle .icon {\n"
-" transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);\n"
-" position: absolute;\n"
-" top: 0;\n"
-" bottom: 0;\n"
-" margin: auto;\n"
-" background: #fff;\n"
-"}\n"
-"\n"
-"QPushButton#learnmore.learn-more .circle .icon.arrow {\n"
-" transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);\n"
-" left: 0.625rem;\n"
-" width: 1.125rem;\n"
-" height: 0.125rem;\n"
-" background: none;\n"
-"}\n"
-"\n"
-"QPushButton#learnmore.learn-more .circle .icon.arrow::before {\n"
-" position: absolute;\n"
-" content: \"\";\n"
-" top: -0.29rem;\n"
-" right: 0.0625rem;\n"
-" width: 0.625rem;\n"
-" height: 0.625rem;\n"
-" border-top: 0.125rem solid #fff;\n"
-" border-right: 0.125rem solid #fff;\n"
-" transform: rotate(45deg);\n"
-"}\n"
-"\n"
-"QPushButton#learnmore.learn-more .button-text {\n"
-" transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);\n"
-" position: absolute;\n"
-" top: 0;\n"
-" left: 0;\n"
-" right: 0;\n"
-" bottom: 0;\n"
-" padding: 0.75rem 0;\n"
-" margin: 0 0 0 1.85rem;\n"
-" color: #282936;\n"
-" font-weight: 700;\n"
-" line-height: 1.6;\n"
-" text-align: center;\n"
-" text-transform: uppercase;\n"
-"}\n"
-"\n"
-"QPushButton#learnmore:hover .circle {\n"
-" width: 100%;\n"
-"}\n"
-"\n"
-"QPushButton#learnmore:hover .circle .icon.arrow {\n"
-" background: #fff;\n"
-" transform: translate(1rem, 0);\n"
-"}\n"
-"\n"
-"QPushButton#learnmore:hover .button-text {\n"
-" color: #fff;\n"
-"}")
-        self.learnmore.setObjectName("learnmore")
         self.stackedWidget.addWidget(self.precautions)
         self.profile = QtWidgets.QWidget()
         self.profile.setObjectName("profile")
@@ -222,7 +131,7 @@ class Ui_l_homepage(object):
         self.label_3 = QtWidgets.QLabel(self.frame_13)
         self.label_3.setGeometry(QtCore.QRect(20, 20, 121, 121))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("images/icons/profile.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("../images/icons/profile.png"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.frame_13)
@@ -351,7 +260,7 @@ class Ui_l_homepage(object):
         self.bhome.setMinimumSize(QtCore.QSize(0, 50))
         self.bhome.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("images/icons/c-home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../images/icons/c-home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bhome.setIcon(icon)
         self.bhome.setIconSize(QtCore.QSize(35, 35))
         self.bhome.setObjectName("bhome")
@@ -361,7 +270,7 @@ class Ui_l_homepage(object):
         self.bprecautions.setStyleSheet("")
         self.bprecautions.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("images/icons/c-precautions.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("../images/icons/c-precautions.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bprecautions.setIcon(icon1)
         self.bprecautions.setIconSize(QtCore.QSize(35, 35))
         self.bprecautions.setObjectName("bprecautions")
@@ -371,7 +280,7 @@ class Ui_l_homepage(object):
         self.bexercise.setStyleSheet("border: none;")
         self.bexercise.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("images/icons/c-exercise.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("../images/icons/c-exercise.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bexercise.setIcon(icon2)
         self.bexercise.setIconSize(QtCore.QSize(35, 35))
         self.bexercise.setObjectName("bexercise")
@@ -381,7 +290,7 @@ class Ui_l_homepage(object):
         self.bdiet.setStyleSheet("border: none;")
         self.bdiet.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("images/icons/c-diet.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("../images/icons/c-diet.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bdiet.setIcon(icon3)
         self.bdiet.setIconSize(QtCore.QSize(35, 35))
         self.bdiet.setObjectName("bdiet")
@@ -391,7 +300,7 @@ class Ui_l_homepage(object):
         self.bremedies.setStyleSheet("border: none;")
         self.bremedies.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("images/icons/c-home-remedies.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("../images/icons/c-home-remedies.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bremedies.setIcon(icon4)
         self.bremedies.setIconSize(QtCore.QSize(35, 35))
         self.bremedies.setObjectName("bremedies")
@@ -401,7 +310,7 @@ class Ui_l_homepage(object):
         self.bprofile.setStyleSheet("border: none;")
         self.bprofile.setText("")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("images/icons/profile-black.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("../images/icons/profile-black.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bprofile.setIcon(icon5)
         self.bprofile.setIconSize(QtCore.QSize(35, 35))
         self.bprofile.setObjectName("bprofile")
@@ -411,7 +320,7 @@ class Ui_l_homepage(object):
         l_homepage.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(l_homepage)
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(l_homepage)
 
     def retranslateUi(self, l_homepage):
@@ -419,7 +328,6 @@ class Ui_l_homepage(object):
         l_homepage.setWindowTitle(_translate("l_homepage", "MainWindow"))
         self.label_2.setText(_translate("l_homepage", "An apple a day keeps the doctor away!"))
         self.label_13.setText(_translate("l_homepage", "PRECAUTIONS"))
-        self.learnmore.setText(_translate("l_homepage", "PushButton"))
         self.label_4.setText(_translate("l_homepage", "John Doe"))
         self.blogout.setText(_translate("l_homepage", "Log Out"))
         self.label_5.setText(_translate("l_homepage", "Username:"))

@@ -18,12 +18,13 @@ class Ui_Login(object):
         self.label = QtWidgets.QLabel(Login)
         self.label.setGeometry(QtCore.QRect(-2, 5, 951, 621))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("images/login-bg.png"))
+        self.label.setPixmap(QtGui.QPixmap("../images/login-bg.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.lineEdit_2 = QtWidgets.QLineEdit(Login)
         self.lineEdit_2.setGeometry(QtCore.QRect(510, 360, 381, 41))
         font = QtGui.QFont()
+        font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
@@ -48,6 +49,7 @@ class Ui_Login(object):
         self.bregister = QtWidgets.QPushButton(Login)
         self.bregister.setGeometry(QtCore.QRect(510, 440, 131, 41))
         font = QtGui.QFont()
+        font.setFamily("Poppins")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -61,6 +63,7 @@ class Ui_Login(object):
 "}\n"
 "\n"
 "QPushButton#bregister:hover {\n"
+"font: 14pt \"Poppins\";\n"
 " border: 2px solid white;\n"
 "color:#090909;\n"
 " background: #e8e8e8;\n"
@@ -70,6 +73,7 @@ class Ui_Login(object):
         self.lineEdit = QtWidgets.QLineEdit(Login)
         self.lineEdit.setGeometry(QtCore.QRect(510, 300, 381, 41))
         font = QtGui.QFont()
+        font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
@@ -85,9 +89,13 @@ class Ui_Login(object):
         self.blogin = QtWidgets.QPushButton(Login)
         self.blogin.setGeometry(QtCore.QRect(730, 440, 151, 41))
         font = QtGui.QFont()
+        font.setFamily("Poppins")
         font.setPointSize(-1)
+        font.setBold(False)
+        font.setItalic(False)
         self.blogin.setFont(font)
         self.blogin.setStyleSheet("QPushButton#blogin{\n"
+"font: 14pt \"Poppins\";\n"
 " color: #090909;\n"
 " font-size: 18px;\n"
 " border-radius: 0.5em;\n"
@@ -95,14 +103,16 @@ class Ui_Login(object):
 " border: 1px solid #e8e8e8;\n"
 "}\n"
 "\n"
+"\n"
 "QPushButton#blogin:hover {\n"
-" border: 2px solid white;\n"
+"font: 14pt \"Poppins\";\n"
+" border: 1px solid white;\n"
 "}")
         self.blogin.setObjectName("blogin")
         self.label_2 = QtWidgets.QLabel(Login)
         self.label_2.setGeometry(QtCore.QRect(510, 60, 251, 101))
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("images/PoCoH.png"))
+        self.label_2.setPixmap(QtGui.QPixmap("../images/PoCoH.png"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
 
