@@ -73,7 +73,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
+   <widget class="QLineEdit" name="tphone">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -100,7 +100,7 @@ padding-bottom:7px;
 padding-left:5px;</string>
     </property>
     <property name="placeholderText">
-     <string>Enter your name</string>
+     <string>Enter your phone number</string>
     </property>
    </widget>
    <widget class="QPushButton" name="bnext">
@@ -259,7 +259,7 @@ border: 1px solid white;
      <string>Phone Number</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
+   <widget class="QLineEdit" name="temail">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -286,10 +286,10 @@ padding-bottom:7px;
 padding-left:5px;</string>
     </property>
     <property name="placeholderText">
-     <string>Enter your name</string>
+     <string>Enter your email</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="tname">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -345,15 +345,15 @@ padding-left:5px;</string>
    <zorder>label</zorder>
    <zorder>label_10</zorder>
    <zorder>label_3</zorder>
-   <zorder>lineEdit_6</zorder>
+   <zorder>tphone</zorder>
    <zorder>bnext</zorder>
    <zorder>label_11</zorder>
    <zorder>dateEdit</zorder>
    <zorder>label_9</zorder>
    <zorder>label_6</zorder>
    <zorder>label_12</zorder>
-   <zorder>lineEdit_5</zorder>
-   <zorder>lineEdit</zorder>
+   <zorder>temail</zorder>
+   <zorder>tname</zorder>
    <zorder>label_13</zorder>
   </widget>
  </widget>

@@ -36,22 +36,22 @@ class Ui_Register1(object):
         self.label.setPixmap(QtGui.QPixmap("../images/login-bg.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
-        self.lineEdit_6 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_6.setGeometry(QtCore.QRect(500, 360, 281, 41))
+        self.tphone = QtWidgets.QLineEdit(self.centralwidget)
+        self.tphone.setGeometry(QtCore.QRect(500, 360, 281, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
-        self.lineEdit_6.setFont(font)
-        self.lineEdit_6.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
+        self.tphone.setFont(font)
+        self.tphone.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
 "font: 12pt \"Poppins\";\n"
 "border-bottom:2px solid #2a2a2a;\n"
 "border-radius: 30px;\n"
 "color:#2a2a2a;\n"
 "padding-bottom:7px;\n"
 "padding-left:5px;")
-        self.lineEdit_6.setObjectName("lineEdit_6")
+        self.tphone.setObjectName("tphone")
         self.bnext = QtWidgets.QPushButton(self.centralwidget)
         self.bnext.setGeometry(QtCore.QRect(500, 540, 151, 41))
         font = QtGui.QFont()
@@ -125,38 +125,38 @@ class Ui_Register1(object):
         self.label_12.setFont(font)
         self.label_12.setStyleSheet("font: 14pt \"Poppins\";")
         self.label_12.setObjectName("label_12")
-        self.lineEdit_5 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_5.setGeometry(QtCore.QRect(500, 260, 281, 41))
+        self.temail = QtWidgets.QLineEdit(self.centralwidget)
+        self.temail.setGeometry(QtCore.QRect(500, 260, 281, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
-        self.lineEdit_5.setFont(font)
-        self.lineEdit_5.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
+        self.temail.setFont(font)
+        self.temail.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
 "border-bottom:2px solid #2a2a2a;\n"
 "font: 12pt \"Poppins\";\n"
 "border-radius: 30px;\n"
 "color:#2a2a2a;\n"
 "padding-bottom:7px;\n"
 "padding-left:5px;")
-        self.lineEdit_5.setObjectName("lineEdit_5")
-        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit.setGeometry(QtCore.QRect(500, 160, 281, 41))
+        self.temail.setObjectName("temail")
+        self.tname = QtWidgets.QLineEdit(self.centralwidget)
+        self.tname.setGeometry(QtCore.QRect(500, 160, 281, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
-        self.lineEdit.setFont(font)
-        self.lineEdit.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
+        self.tname.setFont(font)
+        self.tname.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
 "font: 12pt \"Poppins\";\n"
 "border-bottom:2px solid #2a2a2a;\n"
 "border-radius: 30px;\n"
 "color:#2a2a2a;\n"
 "padding-bottom:7px;\n"
 "padding-left:5px;")
-        self.lineEdit.setObjectName("lineEdit")
+        self.tname.setObjectName("tname")
         self.label_13 = QtWidgets.QLabel(self.centralwidget)
         self.label_13.setGeometry(QtCore.QRect(500, 80, 401, 31))
         font = QtGui.QFont()
@@ -169,15 +169,15 @@ class Ui_Register1(object):
         self.label.raise_()
         self.label_10.raise_()
         self.label_3.raise_()
-        self.lineEdit_6.raise_()
+        self.tphone.raise_()
         self.bnext.raise_()
         self.label_11.raise_()
         self.dateEdit.raise_()
         self.label_9.raise_()
         self.label_6.raise_()
         self.label_12.raise_()
-        self.lineEdit_5.raise_()
-        self.lineEdit.raise_()
+        self.temail.raise_()
+        self.tname.raise_()
         self.label_13.raise_()
         Register1.setCentralWidget(self.centralwidget)
 
@@ -188,14 +188,14 @@ class Ui_Register1(object):
         _translate = QtCore.QCoreApplication.translate
         Register1.setWindowTitle(_translate("Register1", "MainWindow"))
         self.label_10.setText(_translate("Register1", "Date of Birth"))
-        self.lineEdit_6.setPlaceholderText(_translate("Register1", "Enter your name"))
+        self.tphone.setPlaceholderText(_translate("Register1", "Enter your phone number"))
         self.bnext.setText(_translate("Register1", "Next"))
         self.label_11.setText(_translate("Register1", "Email"))
         self.label_9.setText(_translate("Register1", "REGISTER"))
         self.label_6.setText(_translate("Register1", "Name"))
         self.label_12.setText(_translate("Register1", "Phone Number"))
-        self.lineEdit_5.setPlaceholderText(_translate("Register1", "Enter your name"))
-        self.lineEdit.setPlaceholderText(_translate("Register1", "Enter your name"))
+        self.temail.setPlaceholderText(_translate("Register1", "Enter your email"))
+        self.tname.setPlaceholderText(_translate("Register1", "Enter your name"))
         self.label_13.setText(_translate("Register1", "Section 1: Personal Information"))
 
 

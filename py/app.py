@@ -85,6 +85,7 @@ l_home.bremedies.clicked.connect(showRemedies)
 l_home.bexercise.clicked.connect(showExercises)
 l_home.bdiet.clicked.connect(showDiet)
 l_home.bhome.clicked.connect(showHome)
+l_home.blogout.clicked.connect(logoutButtonAction)
 
 home.show()
 
