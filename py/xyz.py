@@ -5,6 +5,7 @@ from register2 import Ui_Register2
 from homepage import Ui_homepage
 from l_homepage import Ui_l_homepage
 from register_new import Ui_register_new
+from precautions import Ui_Precautions
 
 class Login(QtWidgets.QMainWindow,Ui_Login):
     def __init__(self) -> None:
@@ -32,6 +33,11 @@ class L_Homepage(QtWidgets.QMainWindow,Ui_l_homepage):
         self.setupUi(self)
 
 class N_Register(QtWidgets.QMainWindow,Ui_register_new):
+    def __init__(self) -> None:
+        super().__init__()
+        self.setupUi(self)
+
+class Precautions(QtWidgets.QMainWindow,Ui_Precautions):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)
