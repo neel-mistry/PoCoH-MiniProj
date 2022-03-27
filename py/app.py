@@ -1,22 +1,24 @@
 import sys
 from tkinter import dialog
 from PyQt5.QtWidgets import QApplication, QMessageBox
-from xyz import Login, Register1, Register2, Homepage, L_Homepage 
+from xyz import Login, Register1, Register2, Homepage, L_Homepage, N_Register 
 
 app = QApplication(sys.argv)
 login = Login()
-register1 = Register1()
-register2 = Register2()
+# register1 = Register1()
+# register2 = Register2()
 home = Homepage()
 l_home = L_Homepage()
+register =  N_Register()
+
 
 def registerButtonAction():
     login.hide()
-    register1.show()
+    register.show()
 
 def signupButtonAction():
     home.hide()
-    register1.show()
+    register.show()
 
 def loginButtonAction():
     login.hide()
@@ -26,17 +28,17 @@ def loginButton1Action():
     home.hide()
     login.show()
 
-def nextButtonAction():
-    register1.hide()
-    register2.show()
+# def nextButtonAction():
+#     register1.hide()
+#     register2.show()
 
-def backButtonAction():
-    register2.hide()
-    register1.show()
+# def backButtonAction():
+#     register2.hide()
+#     register1.show()
 
-def backButtonAction():
-    register2.hide()
-    register1.show()
+# def backButtonAction():
+#     register2.hide()
+#     register1.show()
 
 def warning_dialog():
     dialog = QMessageBox()
@@ -72,8 +74,8 @@ home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)
 login.bregister.clicked.connect(registerButtonAction)
 login.blogin.clicked.connect(loginButtonAction)
-register1.bnext.clicked.connect(nextButtonAction)
-register2.bback.clicked.connect(backButtonAction)
+# register1.bnext.clicked.connect(nextButtonAction)
+# register2.bback.clicked.connect(backButtonAction)
 home.bprecautions.clicked.connect(warning_dialog)
 home.bexercise.clicked.connect(warning_dialog)
 home.bdiet.clicked.connect(warning_dialog)
