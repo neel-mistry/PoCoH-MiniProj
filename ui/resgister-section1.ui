@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>915</width>
-    <height>641</height>
+    <height>638</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -145,7 +145,7 @@ border: 1px solid white;
      <rect>
       <x>500</x>
       <y>230</y>
-      <width>91</width>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
@@ -216,7 +216,7 @@ border: 1px solid white;
      <rect>
       <x>500</x>
       <y>130</y>
-      <width>91</width>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
@@ -240,7 +240,7 @@ border: 1px solid white;
      <rect>
       <x>500</x>
       <y>330</y>
-      <width>151</width>
+      <width>281</width>
       <height>31</height>
      </rect>
     </property>
@@ -324,19 +324,22 @@ padding-left:5px;</string>
      <rect>
       <x>500</x>
       <y>80</y>
-      <width>401</width>
+      <width>451</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Poppins SemiBold</family>
       <pointsize>18</pointsize>
+      <italic>false</italic>
       <bold>true</bold>
       <kerning>true</kerning>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 600 18pt &quot;Poppins SemiBold&quot;;</string>
     </property>
     <property name="text">
      <string>Section 1: Personal Information</string>

@@ -66,13 +66,16 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>24</pointsize>
+      <family>Poppins</family>
+      <pointsize>23</pointsize>
+      <italic>false</italic>
       <bold>true</bold>
       <kerning>true</kerning>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 23pt &quot;Poppins&quot;;</string>
     </property>
     <property name="text">
      <string>REGISTER</string>
@@ -89,13 +92,16 @@
     </property>
     <property name="font">
      <font>
+      <family>Poppins SemiBold</family>
       <pointsize>18</pointsize>
+      <italic>false</italic>
       <bold>true</bold>
       <kerning>true</kerning>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 600 18pt &quot;Poppins SemiBold&quot;;</string>
     </property>
     <property name="text">
      <string>Section 2: Login Credentials</string>
