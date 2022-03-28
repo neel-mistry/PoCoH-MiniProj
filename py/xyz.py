@@ -6,6 +6,7 @@ from homepage import Ui_homepage
 from l_homepage import Ui_l_homepage
 from register_new import Ui_register_new
 from precautions import Ui_Precautions
+from PyQt5 import QtCore
 
 class Login(QtWidgets.QMainWindow,Ui_Login):
     def __init__(self) -> None:
@@ -40,4 +41,7 @@ class N_Register(QtWidgets.QMainWindow,Ui_register_new):
 class Precautions(QtWidgets.QMainWindow,Ui_Precautions):
     def __init__(self) -> None:
         super().__init__()
+        self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
+        self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
+        
         self.setupUi(self)

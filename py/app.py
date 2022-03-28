@@ -1,8 +1,10 @@
+import imp
 import sys
 import random
 from tkinter import dialog
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from xyz import Login, Register1, Register2, Homepage, L_Homepage, N_Register, Precautions 
+from quotes import Quotes
 
 app = QApplication(sys.argv)
 login = Login()
@@ -12,12 +14,7 @@ home = Homepage()
 l_home = L_Homepage()
 register =  N_Register()
 precautions = Precautions()
-
-quotes = ['Nearly all the ingredients in COVID-19 vaccines are also ingredients in many foods – fats, sugars, and salts.',
-'Getting a COVID-19 vaccination is a safer and more dependable way to build immunity to COVID-19 than getting sick with COVID-19.']
-
-selected = random.choice(quotes)
-
+quotes = Quotes()
 
 def registerButtonAction():
     login.hide()
@@ -101,7 +98,7 @@ l_home.bdiet.clicked.connect(showDiet)
 l_home.bhome.clicked.connect(showHome)
 l_home.blogout.clicked.connect(logoutButtonAction)
 precautions.bok.clicked.connect(okayButtonAction)
-l_home.label_2.setText(selected)
+l_home.label_2.setText(quotes.selected)
 
 home.show()
 
