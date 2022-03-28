@@ -17,6 +17,27 @@ class Register1(QtWidgets.QMainWindow,Ui_Register1):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)
+    def reg(self):
+        n = self.tname.text()
+        em = self.temail.text()
+        ph = self.tphone.text()
+        dob = self.dateEdit.text()
+        un = self.tusername.text()
+        pw = self.tpass.text()
+        re = self.trepass.text()
+
+        db = DatabaseConnection()
+        cursor = db.cursor()
+        cursor.execute("select * from userlist where username= '"+un+"' and password = '"+ pw +"' ")
+        result = cursor.fetchone()
+
+        if result:
+            QMessageBox.information(self, "Login form", "User already exists!")
+        else:
+            cursor.execute("insert into register values('"+ n +"','"+ em +"','"+ ph +"','"+ dob +"','"+ un +"','"+ pw +"','"+ re +"')")
+
+            db.commit()
+            QMessageBox.information(self, "Login form", "Registered Successfully")
 
 class Register2(QtWidgets.QMainWindow,Ui_Register2):
     def __init__(self) -> None:
@@ -44,4 +65,5 @@ class Precautions(QtWidgets.QMainWindow,Ui_Precautions):
         self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
         
+        self.setupUi(self)
         self.setupUi(self)
