@@ -47,28 +47,15 @@
             <layout class="QHBoxLayout" name="horizontalLayout_4">
              <item>
               <widget class="QPushButton" name="blogin">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>30</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Poppins</family>
-                 <pointsize>-1</pointsize>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton#blogin{
 font: 14pt &quot;Poppins&quot;;
  color: #090909;
- font-size: 18px;
  border-radius: 0.5em;
  background: #e8e8e8;
  border: 1px solid #e8e8e8;
+ padding-left: 0.5em;
+ padding-right: 0.5em;
 }
 
 
@@ -84,39 +71,34 @@ font: 14pt &quot;Poppins&quot;;
              </item>
              <item>
               <widget class="QPushButton" name="bsignup">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>30</height>
-                </size>
-               </property>
                <property name="font">
                 <font>
                  <family>Poppins</family>
-                 <pointsize>-1</pointsize>
+                 <pointsize>14</pointsize>
                  <italic>false</italic>
                  <bold>false</bold>
                 </font>
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton#bsignup{
-	font: 14pt &quot;Poppins&quot;;
+ font: 14pt &quot;Poppins&quot;;
  color: #ffffff;
- font-size: 18px;
  border-radius: 0.5em;
  border: 1px solid #e8e8e8;
+ padding-left: 0.5em;
+ padding-right: 0.5em;
 }
 
 QPushButton#bsignup:hover {
-	font: 14pt &quot;Poppins&quot;;
- border: 2px solid white;
+font: 14pt &quot;Poppins&quot;;
+ border: 1px solid white;
 color:#090909;
  background: #e8e8e8;
 }
 </string>
                </property>
                <property name="text">
-                <string>Sign-up</string>
+                <string>Sign Up</string>
                </property>
               </widget>
              </item>

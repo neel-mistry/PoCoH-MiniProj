@@ -18,25 +18,26 @@ class Ui_Login(object):
         self.label = QtWidgets.QLabel(Login)
         self.label.setGeometry(QtCore.QRect(-2, 5, 951, 621))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("images/login-bg.png"))
+        self.label.setPixmap(QtGui.QPixmap("../images/login-bg.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
-        self.lineEdit_2 = QtWidgets.QLineEdit(Login)
-        self.lineEdit_2.setGeometry(QtCore.QRect(510, 360, 381, 41))
+        self.tpass = QtWidgets.QLineEdit(Login)
+        self.tpass.setGeometry(QtCore.QRect(510, 360, 381, 41))
         font = QtGui.QFont()
+        font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
-        self.lineEdit_2.setFont(font)
-        self.lineEdit_2.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
+        self.tpass.setFont(font)
+        self.tpass.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
 "font: 12pt \"Poppins\";\n"
 "border-bottom:2px solid #2a2a2a;\n"
 "border-radius: 30px;\n"
 "color:#2a2a2a;\n"
 "padding-bottom:7px;\n"
 "padding-left:5px;")
-        self.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.tpass.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.tpass.setObjectName("tpass")
         self.label_3 = QtWidgets.QLabel(Login)
         self.label_3.setGeometry(QtCore.QRect(510, 220, 121, 65))
         font = QtGui.QFont()
@@ -48,6 +49,7 @@ class Ui_Login(object):
         self.bregister = QtWidgets.QPushButton(Login)
         self.bregister.setGeometry(QtCore.QRect(510, 440, 131, 41))
         font = QtGui.QFont()
+        font.setFamily("Poppins")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -61,33 +63,39 @@ class Ui_Login(object):
 "}\n"
 "\n"
 "QPushButton#bregister:hover {\n"
+"font: 14pt \"Poppins\";\n"
 " border: 2px solid white;\n"
 "color:#090909;\n"
 " background: #e8e8e8;\n"
 "}\n"
 "")
         self.bregister.setObjectName("bregister")
-        self.lineEdit = QtWidgets.QLineEdit(Login)
-        self.lineEdit.setGeometry(QtCore.QRect(510, 300, 381, 41))
+        self.tusername = QtWidgets.QLineEdit(Login)
+        self.tusername.setGeometry(QtCore.QRect(510, 300, 381, 41))
         font = QtGui.QFont()
+        font.setFamily("Poppins")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
-        self.lineEdit.setFont(font)
-        self.lineEdit.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
+        self.tusername.setFont(font)
+        self.tusername.setStyleSheet("background-color:rgba(0, 0, 0, 0);\n"
 "font: 12pt \"Poppins\";\n"
 "border-bottom:2px solid #2a2a2a;\n"
 "border-radius: 30px;\n"
 "color:#2a2a2a;\n"
 "padding-bottom:7px;\n"
 "padding-left: 5px;")
-        self.lineEdit.setObjectName("lineEdit")
+        self.tusername.setObjectName("tusername")
         self.blogin = QtWidgets.QPushButton(Login)
         self.blogin.setGeometry(QtCore.QRect(730, 440, 151, 41))
         font = QtGui.QFont()
+        font.setFamily("Poppins")
         font.setPointSize(-1)
+        font.setBold(False)
+        font.setItalic(False)
         self.blogin.setFont(font)
         self.blogin.setStyleSheet("QPushButton#blogin{\n"
+"font: 14pt \"Poppins\";\n"
 " color: #090909;\n"
 " font-size: 18px;\n"
 " border-radius: 0.5em;\n"
@@ -95,14 +103,16 @@ class Ui_Login(object):
 " border: 1px solid #e8e8e8;\n"
 "}\n"
 "\n"
+"\n"
 "QPushButton#blogin:hover {\n"
-" border: 2px solid white;\n"
+"font: 14pt \"Poppins\";\n"
+" border: 1px solid white;\n"
 "}")
         self.blogin.setObjectName("blogin")
         self.label_2 = QtWidgets.QLabel(Login)
         self.label_2.setGeometry(QtCore.QRect(510, 60, 251, 101))
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("images/PoCoH.png"))
+        self.label_2.setPixmap(QtGui.QPixmap("../images/PoCoH.png"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
 
@@ -112,10 +122,10 @@ class Ui_Login(object):
     def retranslateUi(self, Login):
         _translate = QtCore.QCoreApplication.translate
         Login.setWindowTitle(_translate("Login", "Dialog"))
-        self.lineEdit_2.setPlaceholderText(_translate("Login", "Enter Password"))
+        self.tpass.setPlaceholderText(_translate("Login", "Enter Password"))
         self.label_3.setText(_translate("Login", "Login"))
         self.bregister.setText(_translate("Login", "Register"))
-        self.lineEdit.setPlaceholderText(_translate("Login", "Enter Username"))
+        self.tusername.setPlaceholderText(_translate("Login", "Enter Username"))
         self.blogin.setText(_translate("Login", "Login"))
 
 

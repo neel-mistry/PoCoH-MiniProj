@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>915</width>
-    <height>641</height>
+    <height>638</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -73,7 +73,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
+   <widget class="QLineEdit" name="tphone">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -100,7 +100,7 @@ padding-bottom:7px;
 padding-left:5px;</string>
     </property>
     <property name="placeholderText">
-     <string>Enter your name</string>
+     <string>Enter your phone number</string>
     </property>
    </widget>
    <widget class="QPushButton" name="bnext">
@@ -145,7 +145,7 @@ border: 1px solid white;
      <rect>
       <x>500</x>
       <y>230</y>
-      <width>91</width>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
@@ -216,7 +216,7 @@ border: 1px solid white;
      <rect>
       <x>500</x>
       <y>130</y>
-      <width>91</width>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
@@ -240,7 +240,7 @@ border: 1px solid white;
      <rect>
       <x>500</x>
       <y>330</y>
-      <width>151</width>
+      <width>281</width>
       <height>31</height>
      </rect>
     </property>
@@ -259,7 +259,7 @@ border: 1px solid white;
      <string>Phone Number</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
+   <widget class="QLineEdit" name="temail">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -286,10 +286,10 @@ padding-bottom:7px;
 padding-left:5px;</string>
     </property>
     <property name="placeholderText">
-     <string>Enter your name</string>
+     <string>Enter your email</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="tname">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -324,19 +324,22 @@ padding-left:5px;</string>
      <rect>
       <x>500</x>
       <y>80</y>
-      <width>401</width>
+      <width>451</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Poppins SemiBold</family>
       <pointsize>18</pointsize>
+      <italic>false</italic>
       <bold>true</bold>
       <kerning>true</kerning>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 600 18pt &quot;Poppins SemiBold&quot;;</string>
     </property>
     <property name="text">
      <string>Section 1: Personal Information</string>
@@ -345,15 +348,15 @@ padding-left:5px;</string>
    <zorder>label</zorder>
    <zorder>label_10</zorder>
    <zorder>label_3</zorder>
-   <zorder>lineEdit_6</zorder>
+   <zorder>tphone</zorder>
    <zorder>bnext</zorder>
    <zorder>label_11</zorder>
    <zorder>dateEdit</zorder>
    <zorder>label_9</zorder>
    <zorder>label_6</zorder>
    <zorder>label_12</zorder>
-   <zorder>lineEdit_5</zorder>
-   <zorder>lineEdit</zorder>
+   <zorder>temail</zorder>
+   <zorder>tname</zorder>
    <zorder>label_13</zorder>
   </widget>
  </widget>
