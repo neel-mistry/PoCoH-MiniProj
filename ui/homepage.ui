@@ -280,32 +280,6 @@ border-radius: 1.5em;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="bprecautions">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../images/icons/c-precautions.png</normaloff>../images/icons/c-precautions.png</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>35</width>
-              <height>35</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QPushButton" name="bexercise">
             <property name="minimumSize">
              <size>
