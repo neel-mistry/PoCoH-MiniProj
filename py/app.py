@@ -60,6 +60,8 @@ def logoutButtonAction():
     l_home.hide()
     login.show()
 
+def submitButtonAction():
+    login.show()
 
 home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)
