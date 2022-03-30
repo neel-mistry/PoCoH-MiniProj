@@ -27,6 +27,52 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
+       <item alignment="Qt::AlignLeft|Qt::AlignTop">
+        <widget class="QFrame" name="frame_9">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="bback">
+            <property name="styleSheet">
+             <string notr="true">QPushButton#bback{
+padding-right: 0.65em;
+padding-left: 0.65em;
+	font: 16pt &quot;Poppins&quot;;
+ 	color: #090909;
+ 	border-radius: 0.5em;
+ 	background: #e8e8e8;
+ 	border: 1px solid #e8e8e8;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Back</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
         <widget class="QFrame" name="frame_7">
          <property name="frameShape">

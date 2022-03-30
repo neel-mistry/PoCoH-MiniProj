@@ -1,27 +1,33 @@
 from PyQt5 import QtWidgets
 from Login import Ui_Login
-from register1 import Ui_Register1
-from register2 import Ui_Register2
 from homepage import Ui_homepage
 from l_homepage import Ui_l_homepage
 from register_new import Ui_register_new
 from precautions import Ui_Precautions
 from db import DatabaseConnection
+from PyQt5 import QtCore
 
 class Login(QtWidgets.QMainWindow,Ui_Login):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)
 
-class Register1(QtWidgets.QMainWindow,Ui_Register1):
-    def __init__(self) -> None:
-        super().__init__()
-        self.setupUi(self)
+    def login(self):
+        dc = DatabaseConnection()
+        cursor = dc.cursor()
+        cursor.execute(f"SELECT * FROM register WHERE Username = '{self.Username.text()}' and Password = '{self.Pwd.text()}'")
+        result = cursor.fetchone #store data retrieved in result
+        if result:
+            QMessageBox.information(self,"You have logged in successfully")
+        else:
+            QMessageBox.information(self,"Invalid User")
 
-class Register2(QtWidgets.QMainWindow,Ui_Register2):
-    def __init__(self) -> None:
-        super().__init__()
-        self.setupUi(self)
+ 
+
+    def show_reg(self):
+        widget.setCurrentIndex()        
+            
+    
 
 class Homepage(QtWidgets.QMainWindow,Ui_homepage):
     def __init__(self) -> None:
@@ -64,4 +70,6 @@ class N_Register(QtWidgets.QMainWindow,Ui_register_new):
 class Precautions(QtWidgets.QMainWindow,Ui_Precautions):
     def __init__(self) -> None:
         super().__init__()
+        self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
+        self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setupUi(self)

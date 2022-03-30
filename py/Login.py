@@ -39,7 +39,7 @@ class Ui_Login(object):
         self.tpass.setEchoMode(QtWidgets.QLineEdit.Password)
         self.tpass.setObjectName("tpass")
         self.label_3 = QtWidgets.QLabel(Login)
-        self.label_3.setGeometry(QtCore.QRect(510, 220, 121, 65))
+        self.label_3.setGeometry(QtCore.QRect(510, 220, 331, 65))
         font = QtGui.QFont()
         font.setPointSize(28)
         font.setBold(True)

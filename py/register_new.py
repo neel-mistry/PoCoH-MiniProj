@@ -26,6 +26,28 @@ class Ui_register_new(object):
         self.frame.setObjectName("frame")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.frame)
         self.verticalLayout.setObjectName("verticalLayout")
+        self.frame_9 = QtWidgets.QFrame(self.frame)
+        self.frame_9.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_9.setObjectName("frame_9")
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.frame_9)
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_7.setSpacing(0)
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.bback = QtWidgets.QPushButton(self.frame_9)
+        self.bback.setStyleSheet("QPushButton#bback{\n"
+"padding-right: 0.65em;\n"
+"padding-left: 0.65em;\n"
+"    font: 16pt \"Poppins\";\n"
+"     color: #090909;\n"
+"     border-radius: 0.5em;\n"
+"     background: #e8e8e8;\n"
+"     border: 1px solid #e8e8e8;\n"
+"}\n"
+"")
+        self.bback.setObjectName("bback")
+        self.verticalLayout_7.addWidget(self.bback)
+        self.verticalLayout.addWidget(self.frame_9, 0, QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.frame_7 = QtWidgets.QFrame(self.frame)
         self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -330,6 +352,7 @@ class Ui_register_new(object):
     def retranslateUi(self, register_new):
         _translate = QtCore.QCoreApplication.translate
         register_new.setWindowTitle(_translate("register_new", "MainWindow"))
+        self.bback.setText(_translate("register_new", "Back"))
         self.label_9.setText(_translate("register_new", "REGISTER"))
         self.label_13.setText(_translate("register_new", "Section 1: Personal Information"))
         self.label_6.setText(_translate("register_new", "Name"))
