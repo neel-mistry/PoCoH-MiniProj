@@ -4,7 +4,6 @@ from homepage import Ui_homepage
 from l_homepage import Ui_l_homepage
 from register_new import Ui_register_new
 from precautions import Ui_Precautions
-from db import DatabaseConnection
 from PyQt5 import QtCore
 
 class Login(QtWidgets.QMainWindow,Ui_Login):
@@ -72,4 +71,6 @@ class Precautions(QtWidgets.QMainWindow,Ui_Precautions):
         super().__init__()
         self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
+        
+        self.setupUi(self)
         self.setupUi(self)

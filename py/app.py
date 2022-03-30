@@ -1,8 +1,9 @@
+import imp
 import sys
 import random
 from tkinter import dialog
 from PyQt5.QtWidgets import QApplication, QMessageBox
-from xyz import Login, Homepage, L_Homepage, N_Register, Precautions 
+from xyz import Login, Register1, Register2, Homepage, L_Homepage, N_Register, Precautions 
 from quotes import Quotes
 
 app = QApplication(sys.argv)
@@ -12,10 +13,6 @@ l_home = L_Homepage()
 register =  N_Register()
 precautions = Precautions()
 quotes = Quotes()
-
-def backButtonAction():
-    register.hide()
-    login.show()
 
 def registerButtonAction():
     login.hide()
@@ -85,9 +82,6 @@ l_home.bhome.clicked.connect(showHome)
 l_home.blogout.clicked.connect(logoutButtonAction)
 precautions.bok.clicked.connect(okayButtonAction)
 l_home.label_2.setText(quotes.selected)
-home.label_2.setText(quotes.selected)
-register.bsubmit.clicked.connect(submitButtonAction)
-register.bback.clicked.connect(backButtonAction)
 
 home.show()
 
