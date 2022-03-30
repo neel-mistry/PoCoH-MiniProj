@@ -7,6 +7,8 @@ from l_homepage import Ui_l_homepage
 from register_new import Ui_register_new
 from precautions import Ui_Precautions
 from PyQt5 import QtCore
+from db import DatabaseConnection
+from PyQt5.QtWidgets import QMessageBox
 
 class Login(QtWidgets.QMainWindow,Ui_Login):
     def __init__(self) -> None:

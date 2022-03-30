@@ -1,15 +1,10 @@
-import imp
 import sys
-import random
-from tkinter import dialog
 from PyQt5.QtWidgets import QApplication, QMessageBox
-from xyz import Login, Register1, Register2, Homepage, L_Homepage, N_Register, Precautions 
+from xyz import Login, Homepage, L_Homepage, N_Register, Precautions 
 from quotes import Quotes
 
 app = QApplication(sys.argv)
 login = Login()
-# register1 = Register1()
-# register2 = Register2()
 home = Homepage()
 l_home = L_Homepage()
 register =  N_Register()
@@ -35,19 +30,6 @@ def loginButtonAction():
 def loginButton1Action():
     home.hide()
     login.show()
-
-
-# def nextButtonAction():
-#     register1.hide()
-#     register2.show()
-
-# def backButtonAction():
-#     register2.hide()
-#     register1.show()
-
-# def backButtonAction():
-#     register2.hide()
-#     register1.show()
 
 def warning_dialog():
     dialog = QMessageBox()
@@ -83,15 +65,11 @@ home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)
 login.bregister.clicked.connect(registerButtonAction)
 login.blogin.clicked.connect(loginButtonAction)
-# register1.bnext.clicked.connect(nextButtonAction)
-# register2.bback.clicked.connect(backButtonAction)
-# home.bprecautions.clicked.connect(warning_dialog)
 home.bexercise.clicked.connect(warning_dialog)
 home.bdiet.clicked.connect(warning_dialog)
 home.bremedies.clicked.connect(warning_dialog)
 home.bprofile.clicked.connect(warning_dialog)
 l_home.bprofile.clicked.connect(showProfile)
-# l_home.bprecautions.clicked.connect(showPrecautions)
 l_home.bremedies.clicked.connect(showRemedies)
 l_home.bexercise.clicked.connect(showExercises)
 l_home.bdiet.clicked.connect(showDiet)
@@ -99,6 +77,7 @@ l_home.bhome.clicked.connect(showHome)
 l_home.blogout.clicked.connect(logoutButtonAction)
 precautions.bok.clicked.connect(okayButtonAction)
 l_home.label_2.setText(quotes.selected)
+home.label_2.setText(quotes.selected)
 
 home.show()
 

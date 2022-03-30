@@ -12,4 +12,3 @@ class DatabaseConnection(object):
         # print("connected")
         # print(type(conn))
         return conn
-
