@@ -21,12 +21,7 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
         if result:
             QMessageBox.information(self,"You have logged in successfully")
         else:
-            QMessageBox.information(self,"Invalid User")
-
- 
-
-    def show_reg(self):
-        widget.setCurrentIndex()        
+            QMessageBox.information(self,"Invalid User")   
             
     
 

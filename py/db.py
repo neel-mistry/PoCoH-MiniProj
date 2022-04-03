@@ -7,7 +7,7 @@ class DatabaseConnection(object):
             host='127.0.0.1',
             database='pocoh',
             user='root',
-            password='Parth@25'
+            password=''
         )
         # print("connected")
         # print(type(conn))

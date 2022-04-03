@@ -1,7 +1,9 @@
-import sys
+import sys, time
+from PyQt5 import QtGui as qtg
 from PyQt5.QtWidgets import QApplication, QMessageBox
-from xyz import Login, Homepage, L_Homepage, N_Register, Precautions 
+from xyz import *
 from quotes import Quotes
+from PyQt5.Qt import QApplication, QUrl, QDesktopServices
 
 app = QApplication(sys.argv)
 login = Login()
@@ -63,6 +65,17 @@ def logoutButtonAction():
 def submitButtonAction():
     login.show()
 
+def url1ButtonAction():
+    url = QUrl("https://www.youtube.com/watch?v=zUFS_SAkovc")
+    QDesktopServices.openUrl(url)
+
+l_home.url1.clicked.connect(url1ButtonAction)
+
+home.setWindowTitle("PoCoH: Please login or register to continue")
+login.setWindowTitle("PoCoH: Login")
+register.setWindowTitle("PoCoH: Register")
+l_home.setWindowTitle("Welcome to PoCoH")
+
 home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)
 login.bregister.clicked.connect(registerButtonAction)
@@ -77,9 +90,17 @@ l_home.bexercise.clicked.connect(showExercises)
 l_home.bdiet.clicked.connect(showDiet)
 l_home.bhome.clicked.connect(showHome)
 l_home.blogout.clicked.connect(logoutButtonAction)
+l_home.blogout_2.clicked.connect(logoutButtonAction)
 precautions.bok.clicked.connect(okayButtonAction)
 l_home.label_2.setText(quotes.selected)
 home.label_2.setText(quotes.selected)
+
+# for i in range(2):
+#     img = "E:\1. College\SE\Sem 4\proj materials"
+#     iter = str(i)
+#     con = img + iter
+#     l_home.label_21.setPixmap(qtg.QPixmap(img))
+#     time.sleep(10)
 
 home.show()
 
