@@ -83,7 +83,32 @@ def url1ButtonAction():
     url = QUrl("https://www.youtube.com/watch?v=zUFS_SAkovc")
     QDesktopServices.openUrl(url)
 
+def url2ButtonAction():
+    url = QUrl("https://youtu.be/6QXqnNDI-uo")
+    QDesktopServices.openUrl(url)
+
+def url3ButtonAction():
+    url = QUrl("https://youtu.be/omZATEKkl-I")
+    QDesktopServices.openUrl(url)
+
+def url4ButtonAction():
+    url = QUrl("https://youtu.be/DYVXSBTtY9c")
+    QDesktopServices.openUrl(url)
+
+def url5ButtonAction():
+    url = QUrl("https://youtu.be/JhHn5PI82oU")
+    QDesktopServices.openUrl(url)
+
+def url6ButtonAction():
+    url = QUrl("https://youtu.be/-jd;ok")
+    QDesktopServices.openUrl(url)                
+
 l_home.url1.clicked.connect(url1ButtonAction)
+l_home.url2.clicked.connect(url2ButtonAction)
+l_home.url3.clicked.connect(url3ButtonAction)
+l_home.url4.clicked.connect(url4ButtonAction)
+l_home.url5.clicked.connect(url5ButtonAction)
+l_home.url6.clicked.connect(url6ButtonAction)
 
 home.setWindowTitle("PoCoH: Please login or register to continue")
 login.setWindowTitle("PoCoH: Login")

@@ -499,7 +499,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>0</y>
+                   <y>-450</y>
                    <width>1020</width>
                    <height>1440</height>
                   </rect>
@@ -616,7 +616,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../../proj materials/1.jpg</pixmap>
+                              <pixmap>pocoh5.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -733,7 +733,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../../proj materials/1.jpg</pixmap>
+                              <pixmap>pocoh6.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -959,7 +959,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../../proj materials/1.jpg</pixmap>
+                              <pixmap>pocoh2.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -1085,7 +1085,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../../proj materials/1.jpg</pixmap>
+                              <pixmap>pocoh3.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -1196,7 +1196,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../../proj materials/1.jpg</pixmap>
+                              <pixmap>pocoh4.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
