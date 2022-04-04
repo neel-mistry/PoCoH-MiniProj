@@ -305,7 +305,7 @@ class Ui_l_homepage(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1020, 1472))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1020, 1440))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
@@ -461,7 +461,7 @@ class Ui_l_homepage(object):
         self.label_15 = QtWidgets.QLabel(self.frame_23)
         self.label_15.setMaximumSize(QtCore.QSize(1000, 7000))
         self.label_15.setText("")
-        self.label_15.setPixmap(QtGui.QPixmap("../../proj materials/1.jpg"))
+        self.label_15.setPixmap(QtGui.QPixmap("../images/1.jpg"))
         self.label_15.setScaledContents(True)
         self.label_15.setObjectName("label_15")
         self.verticalLayout_10.addWidget(self.label_15)
@@ -739,7 +739,7 @@ class Ui_l_homepage(object):
         l_homepage.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(l_homepage)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(3)
         QtCore.QMetaObject.connectSlotsByName(l_homepage)
 
     def retranslateUi(self, l_homepage):

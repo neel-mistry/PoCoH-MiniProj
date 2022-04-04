@@ -65,6 +65,10 @@ def logoutButtonAction():
 def submitButtonAction():
     login.show()
 
+def backButtonAction():
+    register.hide()
+    login.show()
+
 def url1ButtonAction():
     url = QUrl("https://www.youtube.com/watch?v=zUFS_SAkovc")
     QDesktopServices.openUrl(url)
@@ -92,6 +96,7 @@ l_home.bhome.clicked.connect(showHome)
 l_home.blogout.clicked.connect(logoutButtonAction)
 l_home.blogout_2.clicked.connect(logoutButtonAction)
 precautions.bok.clicked.connect(okayButtonAction)
+register.bback.clicked.connect(backButtonAction)
 l_home.label_2.setText(quotes.selected)
 home.label_2.setText(quotes.selected)
 
