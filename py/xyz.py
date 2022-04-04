@@ -12,7 +12,7 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)
-
+ 
     def login(self):
         dc = DatabaseConnection()
         cursor = dc.cursor()
@@ -21,8 +21,7 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
         if a:
             QMessageBox.information(self,"You have logged in successfully")
         else:
-            QMessageBox.information(self,"Invalid User")   
-            
+            QMessageBox.information(self,"Invalid User")             
     
 
 class Homepage(QtWidgets.QMainWindow,Ui_homepage):
