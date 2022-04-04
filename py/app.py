@@ -1,6 +1,7 @@
 import sys, time
 from PyQt5 import QtGui as qtg
 from PyQt5.QtWidgets import QApplication, QMessageBox
+import xyz
 from xyz import *
 from quotes import Quotes
 from PyQt5.Qt import QApplication, QUrl, QDesktopServices
@@ -25,6 +26,15 @@ def signupButtonAction():
     register.show()
 
 def loginButtonAction():
+    # if xyz.Login.login == 1:
+    #     l_home.show()
+    #     login.hide()
+    # else: 
+    #     dialog = QMessageBox()
+    #     dialog.setText('Please login to continue')
+    #     dialog.setWindowTitle('Attention')
+    #     dialog.setIcon(QMessageBox.Warning)
+    #     dialog.exec_()
     login.hide()
     l_home.show()
     precautions.show()

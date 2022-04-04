@@ -1271,36 +1271,397 @@ font: 500 10pt &quot;Poppins&quot;;</string>
              </layout>
             </widget>
             <widget class="QWidget" name="diet">
-             <widget class="QLabel" name="label_16">
-              <property name="geometry">
-               <rect>
-                <x>300</x>
-                <y>170</y>
-                <width>251</width>
-                <height>131</height>
-               </rect>
-              </property>
-              <property name="font">
-               <font>
-                <family>Poppins</family>
-                <pointsize>16</pointsize>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>DIET</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
+             <layout class="QVBoxLayout" name="verticalLayout_30">
+              <item>
+               <widget class="QScrollArea" name="scrollArea_2">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>-561</y>
+                   <width>1020</width>
+                   <height>1218</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_31">
+                  <item>
+                   <widget class="QFrame" name="frame_37">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1200</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_32">
+                     <item>
+                      <widget class="QFrame" name="frame_38">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 235);
+border-radius: 0.5em;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_3">
+                        <item>
+                         <widget class="QFrame" name="frame_41">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_33">
+                           <item>
+                            <widget class="QLabel" name="label_16">
+                             <property name="maximumSize">
+                              <size>
+                               <width>400</width>
+                               <height>300</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/2.jpg</pixmap>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                         <widget class="QFrame" name="frame_42">
+                          <property name="maximumSize">
+                           <size>
+                            <width>1000</width>
+                            <height>1000</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_35">
+                           <item>
+                            <widget class="QLabel" name="label_18">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>1000</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 700 14pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Covid - 19</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_38">
+                             <property name="styleSheet">
+                              <string notr="true">font: 300 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Prefer foods that contain healthy sources of unsaturated fats, such as fish and nuts. To limit saturated fats, trim excess fat from meat and poultry and choose skinless options. Reduce foods such as red and fatty meats, butter and full-fat dairy products, palm oil, coconut oil, solid shortening and lard</string>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item alignment="Qt::AlignRight|Qt::AlignBottom">
+                         <widget class="QFrame" name="frame_43">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_34">
+                           <item alignment="Qt::AlignBottom">
+                            <widget class="QPushButton" name="lmore1">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>View Diets</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_39">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 235);
+border-radius: 0.5em;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_4">
+                        <item>
+                         <widget class="QFrame" name="frame_44">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_37">
+                           <item>
+                            <widget class="QLabel" name="label_39">
+                             <property name="maximumSize">
+                              <size>
+                               <width>400</width>
+                               <height>300</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/disease/1.png</pixmap>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                         <widget class="QFrame" name="frame_45">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_38">
+                           <item>
+                            <widget class="QLabel" name="label_40">
+                             <property name="styleSheet">
+                              <string notr="true">font: 700 14pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Chicken Pox</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_41">
+                             <property name="styleSheet">
+                              <string notr="true">font: 300 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>There is a world-wide trend that shows the disease to occur during this transition phase. Person suffering from chicken pox needs to be well hydrated.</string>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item alignment="Qt::AlignRight|Qt::AlignBottom">
+                         <widget class="QFrame" name="frame_46">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_36">
+                           <item>
+                            <widget class="QPushButton" name="pushButton">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>View Diets</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_40">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 235);
+border-radius: 0.5em;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_8">
+                        <item>
+                         <widget class="QFrame" name="frame_47">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_41">
+                           <item>
+                            <widget class="QLabel" name="label_42">
+                             <property name="maximumSize">
+                              <size>
+                               <width>400</width>
+                               <height>300</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/disease/1.png</pixmap>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item alignment="Qt::AlignVCenter">
+                         <widget class="QFrame" name="frame_48">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_40">
+                           <item>
+                            <widget class="QLabel" name="label_43">
+                             <property name="styleSheet">
+                              <string notr="true">font: 700 14pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Dengue</string>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_44">
+                             <property name="styleSheet">
+                              <string notr="true">font: 300 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Food that is rich in protein and iron (e.g. meat, eggs and liver) are recommended to help you recover from dengue fever. These help prevent anemia and strengthen the immune system.</string>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item alignment="Qt::AlignRight|Qt::AlignBottom">
+                         <widget class="QFrame" name="frame_49">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_39">
+                           <item>
+                            <widget class="QPushButton" name="pushButton_2">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>View Diets</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
             </widget>
             <widget class="QWidget" name="homeremedies">
              <widget class="QLabel" name="label_14">
               <property name="geometry">
                <rect>
-                <x>290</x>
-                <y>170</y>
+                <x>380</x>
+                <y>270</y>
                 <width>271</width>
                 <height>131</height>
                </rect>

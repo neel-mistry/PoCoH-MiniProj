@@ -20,11 +20,10 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
         result = cursor.fetchone #store data retrieved in result
         if result:
             QMessageBox.information(self,"You have logged in successfully")
+            return 1
         else:
             QMessageBox.information(self,"Invalid User")   
             
-    
-
 class Homepage(QtWidgets.QMainWindow,Ui_homepage):
     def __init__(self) -> None:
         super().__init__()
