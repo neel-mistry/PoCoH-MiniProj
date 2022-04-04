@@ -14,9 +14,9 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
     def login(self):
         dc = DatabaseConnection()
         cursor = dc.cursor()
-        cursor.execute(f"SELECT * FROM register WHERE Username = '{self.Username.text()}' and Password = '{self.Pwd.text()}'")
-        result = cursor.fetchone #store data retrieved in result
-        if result:
+        cursor.execute("select * from register where Username= '"+un+"' and Pwd = '"+ pw +"' ")
+        a = cursor.fetchone #store data retrieved in result
+        if a:
             QMessageBox.information(self,"You have logged in successfully")
         else:
             QMessageBox.information(self,"Invalid User")

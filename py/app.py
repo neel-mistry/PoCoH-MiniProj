@@ -3,7 +3,7 @@ import sys
 import random
 from tkinter import dialog
 from PyQt5.QtWidgets import QApplication, QMessageBox
-from xyz import Login, Register1, Register2, Homepage, L_Homepage, N_Register, Precautions 
+from xyz import Login, Homepage, L_Homepage, N_Register, Precautions 
 from quotes import Quotes
 
 app = QApplication(sys.argv)
