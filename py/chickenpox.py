@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_chickenpox(object):
     def setupUi(self, chickenpox):
         chickenpox.setObjectName("chickenpox")
-        chickenpox.resize(1104, 804)
+        chickenpox.resize(1104, 781)
         self.centralwidget = QtWidgets.QWidget(chickenpox)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
@@ -42,16 +42,16 @@ class Ui_chickenpox(object):
         self.frame_8.setObjectName("frame_8")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.frame_8)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.pushButton_2 = QtWidgets.QPushButton(self.frame_8)
-        self.pushButton_2.setStyleSheet("border-radius: 0.5em;\n"
+        self.cbback = QtWidgets.QPushButton(self.frame_8)
+        self.cbback.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
 "padding-top: 0.30em;\n"
 "padding-bottom: 0.30em;\n"
 "padding-left: 0.85em;\n"
 "padding-right: 0.85em;\n"
 "font: 500 11pt \"Poppins\";")
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.verticalLayout_7.addWidget(self.pushButton_2)
+        self.cbback.setObjectName("cbback")
+        self.verticalLayout_7.addWidget(self.cbback)
         self.verticalLayout.addWidget(self.frame_8, 0, QtCore.Qt.AlignLeft)
         self.frame_6 = QtWidgets.QFrame(self.frame)
         self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -118,16 +118,16 @@ class Ui_chickenpox(object):
         self.frame_7.setObjectName("frame_7")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.frame_7)
         self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.pushButton = QtWidgets.QPushButton(self.frame_7)
-        self.pushButton.setStyleSheet("border-radius: 0.5em;\n"
+        self.cbokay = QtWidgets.QPushButton(self.frame_7)
+        self.cbokay.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
 "padding-top: 0.30em;\n"
 "padding-bottom: 0.30em;\n"
 "padding-left: 1.5em;\n"
 "padding-right: 1.5em;\n"
 "font: 500 12pt \"Poppins\";")
-        self.pushButton.setObjectName("pushButton")
-        self.verticalLayout_6.addWidget(self.pushButton)
+        self.cbokay.setObjectName("cbokay")
+        self.verticalLayout_6.addWidget(self.cbokay)
         self.verticalLayout.addWidget(self.frame_7, 0, QtCore.Qt.AlignHCenter)
         self.horizontalLayout.addWidget(self.frame)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
@@ -147,7 +147,7 @@ class Ui_chickenpox(object):
     def retranslateUi(self, chickenpox):
         _translate = QtCore.QCoreApplication.translate
         chickenpox.setWindowTitle(_translate("chickenpox", "MainWindow"))
-        self.pushButton_2.setText(_translate("chickenpox", "Back"))
+        self.cbback.setText(_translate("chickenpox", "Back"))
         self.label_2.setText(_translate("chickenpox", "Prefered Diets for Chicken pox"))
         self.label_3.setText(_translate("chickenpox", "● Take home-based diet      \n"
 "● Light digestible food like khichdi will be easy to digest as well as provide the required calories and proteins\n"
@@ -159,7 +159,7 @@ class Ui_chickenpox(object):
 "● Increased water intake to maintain body hydration\n"
 "● Fruits like banana, apple, watermelons. If there are no oral sores and ulcers then citrus fruits like grapes, oranges can also be taken\n"
 "● Fruits can also be taken mixed with milkshakes"))
-        self.pushButton.setText(_translate("chickenpox", "Okay"))
+        self.cbokay.setText(_translate("chickenpox", "Okay"))
 
 
 if __name__ == "__main__":

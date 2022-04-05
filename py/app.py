@@ -155,6 +155,9 @@ def viewdiet1ButtonAction():
 
 def viewdiet2ButtonAction():
     chickenpox.show()
+
+def cbackButtonAction():
+    chickenpox.hide()
 # ----------------- WORKOUT WINDOW CODES -----------------
 def url1ButtonAction():
     url = QUrl("https://www.youtube.com/watch?v=zUFS_SAkovc")
@@ -278,6 +281,8 @@ l_home.url4.clicked.connect(url4ButtonAction)
 l_home.url5.clicked.connect(url5ButtonAction)
 l_home.url6.clicked.connect(url6ButtonAction)
 l_home.viewdiets2.clicked.connect(viewdiet2ButtonAction)
+chickenpox.cbokay.clicked.connect(cbackButtonAction)
+chickenpox.cbback.clicked.connect(cbackButtonAction)
 l_home.label_2.setText(quotes.selected)
 precautions.bok.clicked.connect(okayButtonAction)
 register.bback.clicked.connect(backButtonAction)
