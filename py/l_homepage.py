@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_l_homepage(object):
     def setupUi(self, l_homepage):
         l_homepage.setObjectName("l_homepage")
-        l_homepage.resize(1115, 835)
+        l_homepage.resize(1115, 849)
         self.centralwidget = QtWidgets.QWidget(l_homepage)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
@@ -714,7 +714,7 @@ class Ui_l_homepage(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1020, 1218))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, -547, 1020, 1218))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_31.setObjectName("verticalLayout_31")
@@ -771,16 +771,16 @@ class Ui_l_homepage(object):
         self.frame_43.setObjectName("frame_43")
         self.verticalLayout_34 = QtWidgets.QVBoxLayout(self.frame_43)
         self.verticalLayout_34.setObjectName("verticalLayout_34")
-        self.lmore1 = QtWidgets.QPushButton(self.frame_43)
-        self.lmore1.setStyleSheet("border-radius: 0.5em;\n"
+        self.viewdiets1 = QtWidgets.QPushButton(self.frame_43)
+        self.viewdiets1.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
 "padding-top: 0.30em;\n"
 "padding-bottom: 0.30em;\n"
 "padding-left: 0.5em;\n"
 "padding-right: 0.5em;\n"
 "font: 500 10pt \"Poppins\";")
-        self.lmore1.setObjectName("lmore1")
-        self.verticalLayout_34.addWidget(self.lmore1, 0, QtCore.Qt.AlignBottom)
+        self.viewdiets1.setObjectName("viewdiets1")
+        self.verticalLayout_34.addWidget(self.viewdiets1, 0, QtCore.Qt.AlignBottom)
         self.horizontalLayout_3.addWidget(self.frame_43, 0, QtCore.Qt.AlignRight|QtCore.Qt.AlignBottom)
         self.verticalLayout_32.addWidget(self.frame_38)
         self.frame_39 = QtWidgets.QFrame(self.frame_37)
@@ -827,16 +827,16 @@ class Ui_l_homepage(object):
         self.frame_46.setObjectName("frame_46")
         self.verticalLayout_36 = QtWidgets.QVBoxLayout(self.frame_46)
         self.verticalLayout_36.setObjectName("verticalLayout_36")
-        self.pushButton = QtWidgets.QPushButton(self.frame_46)
-        self.pushButton.setStyleSheet("border-radius: 0.5em;\n"
+        self.viewdiets2 = QtWidgets.QPushButton(self.frame_46)
+        self.viewdiets2.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
 "padding-top: 0.30em;\n"
 "padding-bottom: 0.30em;\n"
 "padding-left: 0.5em;\n"
 "padding-right: 0.5em;\n"
 "font: 500 10pt \"Poppins\";")
-        self.pushButton.setObjectName("pushButton")
-        self.verticalLayout_36.addWidget(self.pushButton)
+        self.viewdiets2.setObjectName("viewdiets2")
+        self.verticalLayout_36.addWidget(self.viewdiets2)
         self.horizontalLayout_4.addWidget(self.frame_46, 0, QtCore.Qt.AlignRight|QtCore.Qt.AlignBottom)
         self.verticalLayout_32.addWidget(self.frame_39)
         self.frame_40 = QtWidgets.QFrame(self.frame_37)
@@ -884,16 +884,16 @@ class Ui_l_homepage(object):
         self.frame_49.setObjectName("frame_49")
         self.verticalLayout_39 = QtWidgets.QVBoxLayout(self.frame_49)
         self.verticalLayout_39.setObjectName("verticalLayout_39")
-        self.pushButton_2 = QtWidgets.QPushButton(self.frame_49)
-        self.pushButton_2.setStyleSheet("border-radius: 0.5em;\n"
+        self.viewdiets3 = QtWidgets.QPushButton(self.frame_49)
+        self.viewdiets3.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
 "padding-top: 0.30em;\n"
 "padding-bottom: 0.30em;\n"
 "padding-left: 0.5em;\n"
 "padding-right: 0.5em;\n"
 "font: 500 10pt \"Poppins\";")
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.verticalLayout_39.addWidget(self.pushButton_2)
+        self.viewdiets3.setObjectName("viewdiets3")
+        self.verticalLayout_39.addWidget(self.viewdiets3)
         self.horizontalLayout_8.addWidget(self.frame_49, 0, QtCore.Qt.AlignRight|QtCore.Qt.AlignBottom)
         self.verticalLayout_32.addWidget(self.frame_40)
         self.verticalLayout_31.addWidget(self.frame_37)
@@ -976,7 +976,7 @@ class Ui_l_homepage(object):
         l_homepage.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(l_homepage)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(4)
         QtCore.QMetaObject.connectSlotsByName(l_homepage)
 
     def retranslateUi(self, l_homepage):
@@ -1017,13 +1017,13 @@ class Ui_l_homepage(object):
         self.url4.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_18.setText(_translate("l_homepage", "Covid - 19"))
         self.label_38.setText(_translate("l_homepage", "Prefer foods that contain healthy sources of unsaturated fats, such as fish and nuts. To limit saturated fats, trim excess fat from meat and poultry and choose skinless options. Reduce foods such as red and fatty meats, butter and full-fat dairy products, palm oil, coconut oil, solid shortening and lard"))
-        self.lmore1.setText(_translate("l_homepage", "View Diets"))
+        self.viewdiets1.setText(_translate("l_homepage", "View Diets"))
         self.label_40.setText(_translate("l_homepage", "Chicken Pox"))
         self.label_41.setText(_translate("l_homepage", "There is a world-wide trend that shows the disease to occur during this transition phase. Person suffering from chicken pox needs to be well hydrated."))
-        self.pushButton.setText(_translate("l_homepage", "View Diets"))
+        self.viewdiets2.setText(_translate("l_homepage", "View Diets"))
         self.label_43.setText(_translate("l_homepage", "Dengue"))
         self.label_44.setText(_translate("l_homepage", "Food that is rich in protein and iron (e.g. meat, eggs and liver) are recommended to help you recover from dengue fever. These help prevent anemia and strengthen the immune system."))
-        self.pushButton_2.setText(_translate("l_homepage", "View Diets"))
+        self.viewdiets3.setText(_translate("l_homepage", "View Diets"))
         self.label_14.setText(_translate("l_homepage", "REMEDIES"))
 
 

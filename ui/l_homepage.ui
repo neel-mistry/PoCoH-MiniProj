@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1115</width>
-    <height>835</height>
+    <height>849</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -53,7 +53,7 @@
              <bool>true</bool>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>4</number>
             </property>
             <widget class="QWidget" name="home">
              <layout class="QGridLayout" name="gridLayout_2">
@@ -1338,7 +1338,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>0</y>
+                   <y>-547</y>
                    <width>1020</width>
                    <height>1218</height>
                   </rect>
@@ -1460,7 +1460,7 @@ border-radius: 0.5em;</string>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_34">
                            <item alignment="Qt::AlignBottom">
-                            <widget class="QPushButton" name="lmore1">
+                            <widget class="QPushButton" name="viewdiets1">
                              <property name="styleSheet">
                               <string notr="true">border-radius: 0.5em;
 background-color: rgb(255, 174, 13);
@@ -1570,7 +1570,7 @@ border-radius: 0.5em;</string>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_36">
                            <item>
-                            <widget class="QPushButton" name="pushButton">
+                            <widget class="QPushButton" name="viewdiets2">
                              <property name="styleSheet">
                               <string notr="true">border-radius: 0.5em;
 background-color: rgb(255, 174, 13);
@@ -1683,7 +1683,7 @@ border-radius: 0.5em;</string>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_39">
                            <item>
-                            <widget class="QPushButton" name="pushButton_2">
+                            <widget class="QPushButton" name="viewdiets3">
                              <property name="styleSheet">
                               <string notr="true">border-radius: 0.5em;
 background-color: rgb(255, 174, 13);
