@@ -14,9 +14,12 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
         self.setupUi(self)
  
     def login(self):
+        usern = self.tusername.text()
+        passw = self.tpass.text()
+
         dc = DatabaseConnection()
         cursor = dc.cursor()
-        cursor.execute("select * from register where Username= '"+un+"' and Pwd = '"+ pw +"' ")
+        cursor.execute("select * from register where Username= '%s' and Pwd = '%s'",(usern,passw))
         a = cursor.fetchone #store data retrieved in result
         if a:
             QMessageBox.information(self,"You have logged in successfully")
@@ -24,8 +27,6 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
         else:
             QMessageBox.information(self,"Invalid User")   
             
-            QMessageBox.information(self,"Invalid User")             
-    
 
 class Homepage(QtWidgets.QMainWindow,Ui_homepage):
     def __init__(self) -> None:

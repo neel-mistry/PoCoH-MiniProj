@@ -305,7 +305,7 @@ class Ui_l_homepage(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, -450, 1020, 1440))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1020, 1472))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
@@ -653,20 +653,257 @@ class Ui_l_homepage(object):
         self.stackedWidget.addWidget(self.exercises)
         self.diet = QtWidgets.QWidget()
         self.diet.setObjectName("diet")
-        self.label_16 = QtWidgets.QLabel(self.diet)
-        self.label_16.setGeometry(QtCore.QRect(300, 170, 251, 131))
-        font = QtGui.QFont()
-        font.setFamily("Poppins")
-        font.setPointSize(16)
-        font.setBold(True)
-        self.label_16.setFont(font)
-        self.label_16.setAlignment(QtCore.Qt.AlignCenter)
+        self.verticalLayout_30 = QtWidgets.QVBoxLayout(self.diet)
+        self.verticalLayout_30.setObjectName("verticalLayout_30")
+        self.scrollArea_2 = QtWidgets.QScrollArea(self.diet)
+        self.scrollArea_2.setStyleSheet("/*  HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {    \n"
+"    background-color: rgb(80, 80, 122);\n"
+"    min-height: 30px;\n"
+"    border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{    \n"
+"    background-color: rgb(255, 255, 255);\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {    \n"
+"    background-color: rgb(67, 67, 67);\n"
+"}\n"
+"\n"
+"/* BTN TOP - SCROLLBAR */\n"
+"QScrollBar::sub-line:vertical {\n"
+"    border: none;\n"
+"    background-color: rgb(59, 59, 90);\n"
+"    height: 15px;\n"
+"    border-top-left-radius: 7px;\n"
+"    border-top-right-radius: 7px;\n"
+"    subcontrol-position: top;\n"
+"    subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::sub-line:vertical:hover {    \n"
+"    \n"
+"    background-color: rgb(25, 25, 255);\n"
+"}\n"
+"QScrollBar::sub-line:vertical:pressed {    \n"
+"    background-color: rgb(185, 0, 92);\n"
+"}\n"
+"\n"
+"/* BTN BOTTOM - SCROLLBAR */\n"
+"QScrollBar::add-line:vertical {\n"
+"    border: none;\n"
+"    background-color: rgb(59, 59, 90);\n"
+"    height: 15px;\n"
+"    border-bottom-left-radius: 7px;\n"
+"    border-bottom-right-radius: 7px;\n"
+"    subcontrol-position: bottom;\n"
+"    subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::add-line:vertical:hover {    \n"
+"    background-color: rgb(255, 255, 255);\n"
+"}\n"
+"QScrollBar::add-line:vertical:pressed {    \n"
+"    background-color: rgb(185, 0, 92);\n"
+"}\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"    background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"    background: none;\n"
+"}")
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollArea_2.setObjectName("scrollArea_2")
+        self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1020, 1218))
+        self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
+        self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
+        self.verticalLayout_31.setObjectName("verticalLayout_31")
+        self.frame_37 = QtWidgets.QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_37.setMinimumSize(QtCore.QSize(0, 1200))
+        self.frame_37.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_37.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_37.setObjectName("frame_37")
+        self.verticalLayout_32 = QtWidgets.QVBoxLayout(self.frame_37)
+        self.verticalLayout_32.setObjectName("verticalLayout_32")
+        self.frame_38 = QtWidgets.QFrame(self.frame_37)
+        self.frame_38.setStyleSheet("background-color: rgb(255, 255, 235);\n"
+"border-radius: 0.5em;")
+        self.frame_38.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_38.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_38.setObjectName("frame_38")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.frame_38)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.frame_41 = QtWidgets.QFrame(self.frame_38)
+        self.frame_41.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_41.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_41.setObjectName("frame_41")
+        self.verticalLayout_33 = QtWidgets.QVBoxLayout(self.frame_41)
+        self.verticalLayout_33.setObjectName("verticalLayout_33")
+        self.label_16 = QtWidgets.QLabel(self.frame_41)
+        self.label_16.setMaximumSize(QtCore.QSize(400, 300))
+        self.label_16.setText("")
+        self.label_16.setPixmap(QtGui.QPixmap("../images/2.jpg"))
+        self.label_16.setScaledContents(True)
         self.label_16.setObjectName("label_16")
+        self.verticalLayout_33.addWidget(self.label_16)
+        self.horizontalLayout_3.addWidget(self.frame_41)
+        self.frame_42 = QtWidgets.QFrame(self.frame_38)
+        self.frame_42.setMaximumSize(QtCore.QSize(1000, 1000))
+        self.frame_42.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_42.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_42.setObjectName("frame_42")
+        self.verticalLayout_35 = QtWidgets.QVBoxLayout(self.frame_42)
+        self.verticalLayout_35.setObjectName("verticalLayout_35")
+        self.label_18 = QtWidgets.QLabel(self.frame_42)
+        self.label_18.setMaximumSize(QtCore.QSize(16777215, 1000))
+        self.label_18.setStyleSheet("font: 700 14pt \"Poppins\";")
+        self.label_18.setObjectName("label_18")
+        self.verticalLayout_35.addWidget(self.label_18)
+        self.label_38 = QtWidgets.QLabel(self.frame_42)
+        self.label_38.setStyleSheet("font: 300 12pt \"Poppins\";")
+        self.label_38.setWordWrap(True)
+        self.label_38.setObjectName("label_38")
+        self.verticalLayout_35.addWidget(self.label_38)
+        self.horizontalLayout_3.addWidget(self.frame_42, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.frame_43 = QtWidgets.QFrame(self.frame_38)
+        self.frame_43.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_43.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_43.setObjectName("frame_43")
+        self.verticalLayout_34 = QtWidgets.QVBoxLayout(self.frame_43)
+        self.verticalLayout_34.setObjectName("verticalLayout_34")
+        self.lmore1 = QtWidgets.QPushButton(self.frame_43)
+        self.lmore1.setStyleSheet("border-radius: 0.5em;\n"
+"background-color: rgb(255, 174, 13);\n"
+"padding-top: 0.30em;\n"
+"padding-bottom: 0.30em;\n"
+"padding-left: 0.5em;\n"
+"padding-right: 0.5em;\n"
+"font: 500 10pt \"Poppins\";")
+        self.lmore1.setObjectName("lmore1")
+        self.verticalLayout_34.addWidget(self.lmore1, 0, QtCore.Qt.AlignBottom)
+        self.horizontalLayout_3.addWidget(self.frame_43, 0, QtCore.Qt.AlignRight|QtCore.Qt.AlignBottom)
+        self.verticalLayout_32.addWidget(self.frame_38)
+        self.frame_39 = QtWidgets.QFrame(self.frame_37)
+        self.frame_39.setStyleSheet("background-color: rgb(255, 255, 235);\n"
+"border-radius: 0.5em;")
+        self.frame_39.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_39.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_39.setObjectName("frame_39")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_39)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.frame_44 = QtWidgets.QFrame(self.frame_39)
+        self.frame_44.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_44.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_44.setObjectName("frame_44")
+        self.verticalLayout_37 = QtWidgets.QVBoxLayout(self.frame_44)
+        self.verticalLayout_37.setObjectName("verticalLayout_37")
+        self.label_39 = QtWidgets.QLabel(self.frame_44)
+        self.label_39.setMaximumSize(QtCore.QSize(400, 300))
+        self.label_39.setText("")
+        self.label_39.setPixmap(QtGui.QPixmap("../images/disease/1.png"))
+        self.label_39.setScaledContents(True)
+        self.label_39.setObjectName("label_39")
+        self.verticalLayout_37.addWidget(self.label_39)
+        self.horizontalLayout_4.addWidget(self.frame_44)
+        self.frame_45 = QtWidgets.QFrame(self.frame_39)
+        self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_45.setObjectName("frame_45")
+        self.verticalLayout_38 = QtWidgets.QVBoxLayout(self.frame_45)
+        self.verticalLayout_38.setObjectName("verticalLayout_38")
+        self.label_40 = QtWidgets.QLabel(self.frame_45)
+        self.label_40.setStyleSheet("font: 700 14pt \"Poppins\";")
+        self.label_40.setObjectName("label_40")
+        self.verticalLayout_38.addWidget(self.label_40)
+        self.label_41 = QtWidgets.QLabel(self.frame_45)
+        self.label_41.setStyleSheet("font: 300 12pt \"Poppins\";")
+        self.label_41.setWordWrap(True)
+        self.label_41.setObjectName("label_41")
+        self.verticalLayout_38.addWidget(self.label_41)
+        self.horizontalLayout_4.addWidget(self.frame_45, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.frame_46 = QtWidgets.QFrame(self.frame_39)
+        self.frame_46.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_46.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_46.setObjectName("frame_46")
+        self.verticalLayout_36 = QtWidgets.QVBoxLayout(self.frame_46)
+        self.verticalLayout_36.setObjectName("verticalLayout_36")
+        self.pushButton = QtWidgets.QPushButton(self.frame_46)
+        self.pushButton.setStyleSheet("border-radius: 0.5em;\n"
+"background-color: rgb(255, 174, 13);\n"
+"padding-top: 0.30em;\n"
+"padding-bottom: 0.30em;\n"
+"padding-left: 0.5em;\n"
+"padding-right: 0.5em;\n"
+"font: 500 10pt \"Poppins\";")
+        self.pushButton.setObjectName("pushButton")
+        self.verticalLayout_36.addWidget(self.pushButton)
+        self.horizontalLayout_4.addWidget(self.frame_46, 0, QtCore.Qt.AlignRight|QtCore.Qt.AlignBottom)
+        self.verticalLayout_32.addWidget(self.frame_39)
+        self.frame_40 = QtWidgets.QFrame(self.frame_37)
+        self.frame_40.setStyleSheet("background-color: rgb(255, 255, 235);\n"
+"border-radius: 0.5em;")
+        self.frame_40.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_40.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_40.setObjectName("frame_40")
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.frame_40)
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        self.frame_47 = QtWidgets.QFrame(self.frame_40)
+        self.frame_47.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_47.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_47.setObjectName("frame_47")
+        self.verticalLayout_41 = QtWidgets.QVBoxLayout(self.frame_47)
+        self.verticalLayout_41.setObjectName("verticalLayout_41")
+        self.label_42 = QtWidgets.QLabel(self.frame_47)
+        self.label_42.setMaximumSize(QtCore.QSize(400, 300))
+        self.label_42.setText("")
+        self.label_42.setPixmap(QtGui.QPixmap("../images/disease/1.png"))
+        self.label_42.setScaledContents(True)
+        self.label_42.setObjectName("label_42")
+        self.verticalLayout_41.addWidget(self.label_42)
+        self.horizontalLayout_8.addWidget(self.frame_47)
+        self.frame_48 = QtWidgets.QFrame(self.frame_40)
+        self.frame_48.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_48.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_48.setObjectName("frame_48")
+        self.verticalLayout_40 = QtWidgets.QVBoxLayout(self.frame_48)
+        self.verticalLayout_40.setObjectName("verticalLayout_40")
+        self.label_43 = QtWidgets.QLabel(self.frame_48)
+        self.label_43.setStyleSheet("font: 700 14pt \"Poppins\";")
+        self.label_43.setWordWrap(True)
+        self.label_43.setObjectName("label_43")
+        self.verticalLayout_40.addWidget(self.label_43)
+        self.label_44 = QtWidgets.QLabel(self.frame_48)
+        self.label_44.setStyleSheet("font: 300 12pt \"Poppins\";")
+        self.label_44.setWordWrap(True)
+        self.label_44.setObjectName("label_44")
+        self.verticalLayout_40.addWidget(self.label_44)
+        self.horizontalLayout_8.addWidget(self.frame_48, 0, QtCore.Qt.AlignVCenter)
+        self.frame_49 = QtWidgets.QFrame(self.frame_40)
+        self.frame_49.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_49.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_49.setObjectName("frame_49")
+        self.verticalLayout_39 = QtWidgets.QVBoxLayout(self.frame_49)
+        self.verticalLayout_39.setObjectName("verticalLayout_39")
+        self.pushButton_2 = QtWidgets.QPushButton(self.frame_49)
+        self.pushButton_2.setStyleSheet("border-radius: 0.5em;\n"
+"background-color: rgb(255, 174, 13);\n"
+"padding-top: 0.30em;\n"
+"padding-bottom: 0.30em;\n"
+"padding-left: 0.5em;\n"
+"padding-right: 0.5em;\n"
+"font: 500 10pt \"Poppins\";")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.verticalLayout_39.addWidget(self.pushButton_2)
+        self.horizontalLayout_8.addWidget(self.frame_49, 0, QtCore.Qt.AlignRight|QtCore.Qt.AlignBottom)
+        self.verticalLayout_32.addWidget(self.frame_40)
+        self.verticalLayout_31.addWidget(self.frame_37)
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+        self.verticalLayout_30.addWidget(self.scrollArea_2)
         self.stackedWidget.addWidget(self.diet)
         self.homeremedies = QtWidgets.QWidget()
         self.homeremedies.setObjectName("homeremedies")
         self.label_14 = QtWidgets.QLabel(self.homeremedies)
-        self.label_14.setGeometry(QtCore.QRect(290, 170, 271, 131))
+        self.label_14.setGeometry(QtCore.QRect(380, 270, 271, 131))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(16)
@@ -739,7 +976,7 @@ class Ui_l_homepage(object):
         l_homepage.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(l_homepage)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(l_homepage)
 
     def retranslateUi(self, l_homepage):
@@ -778,7 +1015,15 @@ class Ui_l_homepage(object):
         self.label_28.setText(_translate("l_homepage", "Post Acute Covid 19 Advice and Rehabilitation"))
         self.label_29.setText(_translate("l_homepage", "This video explains what Post Acute COVID-19 (Long Covid) is and how to help patients or yourself with recovery."))
         self.url4.setText(_translate("l_homepage", "Click here to view the video"))
-        self.label_16.setText(_translate("l_homepage", "DIET"))
+        self.label_18.setText(_translate("l_homepage", "Covid - 19"))
+        self.label_38.setText(_translate("l_homepage", "Prefer foods that contain healthy sources of unsaturated fats, such as fish and nuts. To limit saturated fats, trim excess fat from meat and poultry and choose skinless options. Reduce foods such as red and fatty meats, butter and full-fat dairy products, palm oil, coconut oil, solid shortening and lard"))
+        self.lmore1.setText(_translate("l_homepage", "View Diets"))
+        self.label_40.setText(_translate("l_homepage", "Chicken Pox"))
+        self.label_41.setText(_translate("l_homepage", "There is a world-wide trend that shows the disease to occur during this transition phase. Person suffering from chicken pox needs to be well hydrated."))
+        self.pushButton.setText(_translate("l_homepage", "View Diets"))
+        self.label_43.setText(_translate("l_homepage", "Dengue"))
+        self.label_44.setText(_translate("l_homepage", "Food that is rich in protein and iron (e.g. meat, eggs and liver) are recommended to help you recover from dengue fever. These help prevent anemia and strengthen the immune system."))
+        self.pushButton_2.setText(_translate("l_homepage", "View Diets"))
         self.label_14.setText(_translate("l_homepage", "REMEDIES"))
 
 

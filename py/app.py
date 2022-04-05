@@ -1,9 +1,12 @@
+from msilib.schema import SelfReg
 import sys, time
+from Login import Ui_Login
 from PyQt5 import QtGui as qtg
 from PyQt5.QtWidgets import QApplication, QMessageBox
 import xyz
 from xyz import *
 from quotes import Quotes
+from db import DatabaseConnection
 from PyQt5.Qt import QApplication, QUrl, QDesktopServices
 
 app = QApplication(sys.argv)
@@ -35,9 +38,24 @@ def loginButtonAction():
     #     dialog.setWindowTitle('Attention')
     #     dialog.setIcon(QMessageBox.Warning)
     #     dialog.exec_()
-    login.hide()
-    l_home.show()
-    precautions.show()
+    usern = login.tusername.text()
+    passw = login.tpass.text()
+    print(usern)
+    print(passw)
+    dc = DatabaseConnection()
+    cursor = dc.cursor()
+    cursor.execute("select * from register where Username= %s and Pwd = %s",(usern,passw))
+    a = cursor.fetchone #store data retrieved in result
+    if a:
+        login.hide()
+        l_home.show()
+        precautions.show()
+    else:
+        dialog = QMessageBox()
+        dialog.setText('Please login to continue')
+        dialog.setWindowTitle('Attention')
+        dialog.setIcon(QMessageBox.Warning)
+        dialog.exec_()
 
 def loginButton1Action():
     home.hide()
