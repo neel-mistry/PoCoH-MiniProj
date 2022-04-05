@@ -45,15 +45,16 @@ def loginButtonAction():
     dc = DatabaseConnection()
     cursor = dc.cursor()
     cursor.execute("select * from register where Username= %s and Pwd = %s",(usern,passw))
-    a = cursor.fetchone #store data retrieved in result
-    if a:
+    if cursor.fetchone():
+        #name = 
         login.hide()
         l_home.show()
         precautions.show()
+        
     else:
         dialog = QMessageBox()
-        dialog.setText('Please login to continue')
-        dialog.setWindowTitle('Attention')
+        dialog.setText('Invalid login id or pass')
+        dialog.setWindowTitle('Attention!')
         dialog.setIcon(QMessageBox.Warning)
         dialog.exec_()
 
