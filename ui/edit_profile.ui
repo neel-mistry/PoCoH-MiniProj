@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>edit_profile</class>
+ <widget class="QMainWindow" name="edit_profile">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1047</width>
-    <height>794</height>
+    <width>1106</width>
+    <height>936</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignTop">
         <widget class="QFrame" name="frame_2">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -35,16 +35,235 @@
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../images/PoCoH.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
-       <item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignTop">
         <widget class="QFrame" name="frame_3">
+         <property name="minimumSize">
+          <size>
+           <width>600</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">padding-bottom: 1em;</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item alignment="Qt::AlignBottom">
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">padding-top: 1em;
+font: 500 12pt &quot;Poppins&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="name">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgba(0, 0, 0, 0);
+font: 12pt &quot;Poppins&quot;;
+border-bottom:2px solid #2a2a2a;
+border-radius: 30px;
+color:#2a2a2a;
+padding-bottom:4px;
+padding-left: 5px;</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignBottom">
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">padding-top: 1em;
+font: 500 12pt &quot;Poppins&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="username">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgba(0, 0, 0, 0);
+font: 12pt &quot;Poppins&quot;;
+border-bottom:2px solid #2a2a2a;
+border-radius: 30px;
+color:#2a2a2a;
+padding-bottom:4px;
+padding-left: 5px;</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignBottom">
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">padding-top: 1em;
+font: 500 12pt &quot;Poppins&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Email</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="email">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgba(0, 0, 0, 0);
+font: 12pt &quot;Poppins&quot;;
+border-bottom:2px solid #2a2a2a;
+border-radius: 30px;
+color:#2a2a2a;
+padding-bottom:4px;
+padding-left: 5px;</string>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignBottom">
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">padding-top: 1em;
+font: 500 12pt &quot;Poppins&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Phone Number</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="phone">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgba(0, 0, 0, 0);
+font: 12pt &quot;Poppins&quot;;
+border-bottom:2px solid #2a2a2a;
+border-radius: 30px;
+color:#2a2a2a;
+padding-bottom:4px;
+padding-left: 5px;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true">padding-top: 1em;
+font: 500 12pt &quot;Poppins&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Password</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="password">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgba(0, 0, 0, 0);
+font: 12pt &quot;Poppins&quot;;
+border-bottom:2px solid #2a2a2a;
+border-radius: 30px;
+color:#2a2a2a;
+padding-bottom:4px;
+padding-left: 5px;</string>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkBox">
+            <property name="styleSheet">
+             <string notr="true">font: 300 11pt &quot;Poppins&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Show Password</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="bsave">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+padding-left: 1.7em;
+padding-right: 1.7em;
+font: 500 11pt &quot;Poppins&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Save</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bcancel">
+            <property name="styleSheet">
+             <string notr="true">QPushButton#bcancel{
+border-radius: 0.5em;
+border: 1px solid #e8e8e8;
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+padding-left: 1.7em;
+padding-right: 1.7em;
+font: 500 11pt &quot;Poppins&quot;;
+}
+
+QPushButton#bcancel:hover {
+color:#090909;
+background: #e8e8e8;
+}</string>
+            </property>
+            <property name="text">
+             <string>Cancel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>
@@ -57,7 +276,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1047</width>
+     <width>1106</width>
      <height>22</height>
     </rect>
    </property>

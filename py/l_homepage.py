@@ -174,9 +174,16 @@ class Ui_l_homepage(object):
         self.frame_56.setObjectName("frame_56")
         self.verticalLayout_46 = QtWidgets.QVBoxLayout(self.frame_56)
         self.verticalLayout_46.setObjectName("verticalLayout_46")
-        self.pushButton = QtWidgets.QPushButton(self.frame_56)
-        self.pushButton.setObjectName("pushButton")
-        self.verticalLayout_46.addWidget(self.pushButton)
+        self.beditprof = QtWidgets.QPushButton(self.frame_56)
+        self.beditprof.setStyleSheet("border-radius: 0.5em;\n"
+"background-color: rgb(255, 174, 13);\n"
+"padding-top: 0.30em;\n"
+"padding-bottom: 0.30em;\n"
+"padding-left: 0.5em;\n"
+"padding-right: 0.5em;\n"
+"font: 500 10pt \"Poppins\";")
+        self.beditprof.setObjectName("beditprof")
+        self.verticalLayout_46.addWidget(self.beditprof)
         self.verticalLayout_4.addWidget(self.frame_56, 0, QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.frame_14 = QtWidgets.QFrame(self.frame_5)
         self.frame_14.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -722,6 +729,7 @@ class Ui_l_homepage(object):
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
         self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1020, 1284))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 728, 1752))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_31.setObjectName("verticalLayout_31")
@@ -995,6 +1003,7 @@ class Ui_l_homepage(object):
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
         self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1020, 1476))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1020, 1444))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_42 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_42.setObjectName("verticalLayout_42")
@@ -1382,7 +1391,7 @@ class Ui_l_homepage(object):
         l_homepage.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(l_homepage)
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(l_homepage)
 
     def retranslateUi(self, l_homepage):
@@ -1393,7 +1402,7 @@ class Ui_l_homepage(object):
         self.label_2.setText(_translate("l_homepage", "An apple a day keeps the doctor away!"))
         self.label_13.setText(_translate("l_homepage", "PRECAUTIONS"))
         self.name.setText(_translate("l_homepage", "John Doe"))
-        self.pushButton.setText(_translate("l_homepage", "Edit Profile"))
+        self.beditprof.setText(_translate("l_homepage", "Edit Profile"))
         self.blogout.setText(_translate("l_homepage", "Log Out"))
         self.label_5.setText(_translate("l_homepage", "Username"))
         self.username.setText(_translate("l_homepage", "<username of person>"))
@@ -1441,6 +1450,12 @@ class Ui_l_homepage(object):
         self.remvid5.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_57.setText(_translate("l_homepage", "BEST HOME REMEDIES \n"
 "for COVID 19 Recovery"))
+        self.label_53.setText(_translate("l_homepage", "TextLabel"))
+        self.label_55.setText(_translate("l_homepage", "TextLabel"))
+        self.label_54.setText(_translate("l_homepage", "TextLabel"))
+        self.remvid5.setText(_translate("l_homepage", "Click here to view the video"))
+        self.label_56.setText(_translate("l_homepage", "TextLabel"))
+        self.label_57.setText(_translate("l_homepage", "TextLabel"))
         self.label_58.setText(_translate("l_homepage", "TextLabel"))
         self.remvid6.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_48.setText(_translate("l_homepage", "Coronavirus Pandemic: 4 Ayurvedic Drinks To Boost Immunity | NewsMo"))
@@ -1448,6 +1463,8 @@ class Ui_l_homepage(object):
         self.remvid3.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_51.setText(_translate("l_homepage", "Home remedies for \n"
 "Chicken Pox"))
+        self.label_50.setText(_translate("l_homepage", "TextLabel"))
+        self.label_51.setText(_translate("l_homepage", "TextLabel"))
         self.label_52.setText(_translate("l_homepage", "TextLabel"))
         self.remvid4.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_9.setText(_translate("l_homepage", "Without Medicines Natural Home Remedy for Dengue and Malaria"))

@@ -43,6 +43,7 @@
             </property>
             <property name="currentIndex">
              <number>4</number>
+             <number>5</number>
             </property>
             <widget class="QWidget" name="home">
              <layout class="QGridLayout" name="gridLayout_2">
@@ -296,7 +297,16 @@ border: 1px solid white;
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_46">
                     <item>
-                     <widget class="QPushButton" name="pushButton">
+                     <widget class="QPushButton" name="beditprof">
+                      <property name="styleSheet">
+                       <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                      </property>
                       <property name="text">
                        <string>Edit Profile</string>
                       </property>
