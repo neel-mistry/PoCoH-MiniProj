@@ -6,6 +6,7 @@ from register_new import Ui_register_new
 from precautions import Ui_Precautions
 from chickenpox import Ui_chickenpox
 from covid_diet import Ui_covid_diet
+from PyQt5 import QtCore, QtGui
 from dengue import Ui_dengue
 from PyQt5 import QtCore
 from db import DatabaseConnection
@@ -15,6 +16,7 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)
+        self.setWindowIcon(QtGui.QIcon('PoCoH.png'))
  
     def login(self):
         usern = self.tusername.text()
