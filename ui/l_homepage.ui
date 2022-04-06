@@ -499,9 +499,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-450</y>
+                   <y>-61</y>
                    <width>1020</width>
-                   <height>1440</height>
+                   <height>1472</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -641,7 +641,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>POST COVID REHAB EXERCISES FOR GENERAL WELLBEING</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -758,7 +758,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>Rehabilitation for COVID-19 Patients: Breathing Exercises </string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -987,7 +987,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>How to start a Workout Plan Post-Covid[Covid Recovery Tips]</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1000,7 +1000,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>This video explains what Post Acute COVID-19 (Long Covid) is and how to help patients or yourself with recovery.</string>
+                              <string>tips on how to start a workout plan after recovering from COVID. Regular exercise is good for your body and mind.</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1110,7 +1110,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>Post Covid Recovery: Get Back in Shape (4 Weeks Exercise Guide) </string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1221,7 +1221,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>Long COVID and using physical activity safely</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
