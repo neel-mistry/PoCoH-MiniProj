@@ -6,6 +6,7 @@ from register_new import Ui_register_new
 from precautions import Ui_Precautions
 from chickenpox import Ui_chickenpox
 from covid_diet import Ui_covid_diet
+from covid import Ui_covid
 from PyQt5 import QtCore, QtGui
 from dengue import Ui_dengue
 from PyQt5 import QtCore
@@ -50,14 +51,18 @@ class ChickenPox(QtWidgets.QMainWindow,Ui_chickenpox):
         self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setupUi(self)
 
-class Covid(QtWidgets.QMainWindow,Ui_covid_diet):
+class Covid(QtWidgets.QMainWindow,Ui_covid):
     def __init__(self) -> None:
         super().__init__()
+        self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
+        self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setupUi(self)
 
 class Dengue(QtWidgets.QMainWindow,Ui_dengue):
     def __init__(self) -> None:
         super().__init__()
+        self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
+        self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setupUi(self)
 
 class N_Register(QtWidgets.QMainWindow,Ui_register_new):

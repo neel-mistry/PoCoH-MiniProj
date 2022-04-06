@@ -319,7 +319,7 @@ class Ui_l_homepage(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, -34, 1020, 1440))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1020, 1472))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
@@ -728,7 +728,7 @@ class Ui_l_homepage(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, -613, 1020, 1284))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1020, 1284))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_31.setObjectName("verticalLayout_31")
@@ -1001,7 +1001,7 @@ class Ui_l_homepage(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1020, 1218))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 98, 1218))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_42 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_42.setObjectName("verticalLayout_42")
@@ -1101,7 +1101,7 @@ class Ui_l_homepage(object):
         l_homepage.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(l_homepage)
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(l_homepage)
 
     def retranslateUi(self, l_homepage):

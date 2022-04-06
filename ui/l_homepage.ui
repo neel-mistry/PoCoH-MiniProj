@@ -35,25 +35,14 @@
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout"/>
-        </widget>
-       </item>
-       <item>
-        <widget class="QFrame" name="frame_3">
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="enabled">
              <bool>true</bool>
             </property>
             <property name="currentIndex">
-             <number>2</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="home">
              <layout class="QGridLayout" name="gridLayout_2">
@@ -522,9 +511,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>0</y>
+                   <y>-327</y>
                    <width>1020</width>
-                   <height>1472</height>
+                   <height>1476</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -565,7 +554,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                      <item>
                       <widget class="QLabel" name="label_37">
                        <property name="styleSheet">
-                        <string notr="true">font: 700 16pt &quot;Poppins&quot;;</string>
+                        <string notr="true">font: 600 18pt &quot;Poppins&quot;;</string>
                        </property>
                        <property name="text">
                         <string>Exercises for better health </string>
@@ -639,7 +628,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>pocoh5.jpg</pixmap>
+                              <pixmap>../images/exercise/pocoh5.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -756,7 +745,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>pocoh6.jpg</pixmap>
+                              <pixmap>../images/exercise/pocoh6.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -867,7 +856,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../images/1.jpg</pixmap>
+                              <pixmap>../images/exercise/pocoh1.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -982,7 +971,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>pocoh2.jpg</pixmap>
+                              <pixmap>../images/exercise/pocoh2.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -1108,7 +1097,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>pocoh3.jpg</pixmap>
+                              <pixmap>../images/exercise/pocoh3.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -1219,7 +1208,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>pocoh4.jpg</pixmap>
+                              <pixmap>../images/exercise/pocoh4.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -1695,7 +1684,7 @@ border-radius: 0.5em;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../images/disease/1.png</pixmap>
+                              <pixmap>../images/disease/3.jpg</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -1851,12 +1840,56 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-547</y>
+                   <y>-145</y>
                    <width>1020</width>
-                   <height>1218</height>
+                   <height>1444</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_42">
+                  <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+                   <widget class="QFrame" name="frame_73">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_63">
+                     <item>
+                      <widget class="QLabel" name="label_59">
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="pixmap">
+                        <pixmap>../images/PoCoH.png</pixmap>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_72">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_64">
+                     <item>
+                      <widget class="QLabel" name="label_60">
+                       <property name="styleSheet">
+                        <string notr="true">font: 600 18pt &quot;Poppins&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>Home Remedies for various diseases</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
                   <item>
                    <widget class="QFrame" name="frame_50">
                     <property name="minimumSize">
@@ -1871,23 +1904,15 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_43">
-                     <item>
-                      <widget class="QFrame" name="frame_51">
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(255, 255, 235);
-border-radius: 0.5em;</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::StyledPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Raised</enum>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
+                    <layout class="QGridLayout" name="gridLayout_7">
+                     <item row="1" column="1">
                       <widget class="QFrame" name="frame_52">
+                       <property name="maximumSize">
+                        <size>
+                         <width>280</width>
+                         <height>400</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background-color: rgb(255, 255, 235);
 border-radius: 0.5em;</string>
@@ -1898,10 +1923,92 @@ border-radius: 0.5em;</string>
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_51">
+                        <item>
+                         <widget class="QFrame" name="frame_62">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_55">
+                           <item>
+                            <widget class="QLabel" name="label_14">
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/remedies/2.jpg</pixmap>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_63">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_53">
+                           <item>
+                            <widget class="QLabel" name="label_45">
+                             <property name="styleSheet">
+                              <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Home care tips for Sidubu | Home Care Chickenpox</string>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_46">
+                             <property name="styleSheet">
+                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="remvid2">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Click here to view the video</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
                       </widget>
                      </item>
-                     <item>
+                     <item row="3" column="0">
                       <widget class="QFrame" name="frame_53">
+                       <property name="maximumSize">
+                        <size>
+                         <width>280</width>
+                         <height>400</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background-color: rgb(255, 255, 235);
 border-radius: 0.5em;</string>
@@ -1912,6 +2019,454 @@ border-radius: 0.5em;</string>
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_48">
+                        <item>
+                         <widget class="QFrame" name="frame_68">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_65">
+                           <item>
+                            <widget class="QLabel" name="label_53">
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_69">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_62">
+                           <item>
+                            <widget class="QLabel" name="label_55">
+                             <property name="styleSheet">
+                              <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_54">
+                             <property name="styleSheet">
+                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="remvid5">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Click here to view the video</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QFrame" name="frame_57">
+                       <property name="maximumSize">
+                        <size>
+                         <width>280</width>
+                         <height>400</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 235);
+border-radius: 0.5em;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_47">
+                        <item>
+                         <widget class="QFrame" name="frame_70">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_60">
+                           <item>
+                            <widget class="QLabel" name="label_56">
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_71">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_61">
+                           <item>
+                            <widget class="QLabel" name="label_57">
+                             <property name="styleSheet">
+                              <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_58">
+                             <property name="styleSheet">
+                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="remvid6">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Click here to view the video</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QFrame" name="frame_58">
+                       <property name="maximumSize">
+                        <size>
+                         <width>280</width>
+                         <height>400</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 235);
+border-radius: 0.5em;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_50">
+                        <item>
+                         <widget class="QFrame" name="frame_64">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_57">
+                           <item>
+                            <widget class="QLabel" name="label_47">
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/remedies/3.jpg</pixmap>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_65">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_58">
+                           <item>
+                            <widget class="QLabel" name="label_48">
+                             <property name="styleSheet">
+                              <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Coronavirus Pandemic: 4 Ayurvedic Drinks To Boost Immunity | NewsMo</string>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_49">
+                             <property name="styleSheet">
+                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="remvid3">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Click here to view the video</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QFrame" name="frame_59">
+                       <property name="maximumSize">
+                        <size>
+                         <width>280</width>
+                         <height>400</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 235);
+border-radius: 0.5em;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_49">
+                        <item>
+                         <widget class="QFrame" name="frame_66">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_56">
+                           <item>
+                            <widget class="QLabel" name="label_50">
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_67">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_59">
+                           <item>
+                            <widget class="QLabel" name="label_51">
+                             <property name="styleSheet">
+                              <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_52">
+                             <property name="styleSheet">
+                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="remvid4">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Click here to view the video</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QFrame" name="frame_51">
+                       <property name="maximumSize">
+                        <size>
+                         <width>280</width>
+                         <height>400</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 235);
+border-radius: 0.5em;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_43">
+                        <item>
+                         <widget class="QFrame" name="frame_60">
+                          <property name="maximumSize">
+                           <size>
+                            <width>700</width>
+                            <height>360</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_54">
+                           <item>
+                            <widget class="QLabel" name="label_7">
+                             <property name="maximumSize">
+                              <size>
+                               <width>1000</width>
+                               <height>7000</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/remedies/1.jpg</pixmap>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_61">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_52">
+                           <item>
+                            <widget class="QLabel" name="label_9">
+                             <property name="styleSheet">
+                              <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Without Medicines Natural Home Remedy for Dengue and Malaria</string>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>false</bool>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_11">
+                             <property name="styleSheet">
+                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="remvid1">
+                             <property name="styleSheet">
+                              <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Click here to view the video</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
                       </widget>
                      </item>
                     </layout>
@@ -1926,6 +2481,17 @@ border-radius: 0.5em;</string>
            </widget>
           </item>
          </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2"/>
         </widget>
        </item>
        <item>

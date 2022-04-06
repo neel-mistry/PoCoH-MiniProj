@@ -2,6 +2,7 @@ import sys
 import re
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QMessageBox
+from numpy import cov
 from xyz import *
 from quotes import Quotes
 from db import DatabaseConnection
@@ -15,7 +16,7 @@ register =  N_Register()
 precautions = Precautions()
 quotes = Quotes()
 chickenpox = ChickenPox()
-covid_diet = Covid()
+covid = Covid()
 dengue = Dengue()
 
 # ----------------- NAMING WINDOWS ----------------- 
@@ -154,17 +155,20 @@ def warning_dialog():
 
 # ----------------- DIET WINDOW CODES -----------------
 def viewdiet1ButtonAction():
-    covid_diet.show()
+    covid.show()
     
-
 def viewdiet2ButtonAction():
     chickenpox.show()
 
+def viewdiet3ButtonAction():
+    dengue.show() 
+
 def cbackButtonAction():
     chickenpox.hide()
+    dengue.hide()
+    covid.hide()
 
-def viewdiet3ButtonAction():
-    dengue.show()    
+   
 # ----------------- WORKOUT WINDOW CODES -----------------
 def url1ButtonAction():
     url = QUrl("https://www.youtube.com/watch?v=zUFS_SAkovc")
@@ -327,7 +331,12 @@ l_home.url6.clicked.connect(url6ButtonAction)
 l_home.viewdiets2.clicked.connect(viewdiet2ButtonAction)
 chickenpox.cbokay.clicked.connect(cbackButtonAction)
 chickenpox.cbback.clicked.connect(cbackButtonAction)
+dengue.cbokay.clicked.connect(cbackButtonAction)
+dengue.cbback.clicked.connect(cbackButtonAction)
+covid.cbokay.clicked.connect(cbackButtonAction)
+covid.cbback.clicked.connect(cbackButtonAction)
 l_home.viewdiets1.clicked.connect(viewdiet1ButtonAction)
+l_home.viewdiets3.clicked.connect(viewdiet3ButtonAction)
 l_home.label_2.setText(quotes.selected)
 precautions.bok.clicked.connect(okayButtonAction)
 register.bback.clicked.connect(backButtonAction)

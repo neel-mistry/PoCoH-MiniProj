@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'dengue2.ui'
+# Form implementation generated from reading ui file 'covid2.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.6
 #
@@ -11,11 +11,11 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_dengue(object):
-    def setupUi(self, dengue):
-        dengue.setObjectName("dengue")
-        dengue.resize(1123, 842)
-        self.centralwidget = QtWidgets.QWidget(dengue)
+class Ui_covid(object):
+    def setupUi(self, covid):
+        covid.setObjectName("covid")
+        covid.resize(1123, 842)
+        self.centralwidget = QtWidgets.QWidget(covid)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
@@ -82,7 +82,7 @@ class Ui_dengue(object):
         self.label = QtWidgets.QLabel(self.frame_4)
         self.label.setMaximumSize(QtCore.QSize(200, 16777215))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("../images/disease/3.jpg"))
+        self.label.setPixmap(QtGui.QPixmap("../images/Diets/disease covid.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.verticalLayout_3.addWidget(self.label, 0, QtCore.Qt.AlignTop)
@@ -151,36 +151,37 @@ class Ui_dengue(object):
         self.horizontalLayout.addWidget(self.frame)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.gridLayout.addWidget(self.scrollArea, 1, 0, 1, 1)
-        dengue.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(dengue)
+        covid.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(covid)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1123, 22))
         self.menubar.setObjectName("menubar")
-        dengue.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(dengue)
+        covid.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(covid)
         self.statusbar.setObjectName("statusbar")
-        dengue.setStatusBar(self.statusbar)
+        covid.setStatusBar(self.statusbar)
 
-        self.retranslateUi(dengue)
-        QtCore.QMetaObject.connectSlotsByName(dengue)
+        self.retranslateUi(covid)
+        QtCore.QMetaObject.connectSlotsByName(covid)
 
-    def retranslateUi(self, dengue):
+    def retranslateUi(self, covid):
         _translate = QtCore.QCoreApplication.translate
-        dengue.setWindowTitle(_translate("dengue", "MainWindow"))
-        self.cbback.setText(_translate("dengue", "Back"))
-        self.label_2.setText(_translate("dengue", "Diet for Dengue Patients"))
-        self.label_9.setText(_translate("dengue", "● Food you can consume:"))
-        self.label_8.setText(_translate("dengue", "The foods that are rich in protein and iron are highly recommended for people with dengue. These nutrients are important to prevent anemia and increase the platelet production. Lean meats such as chicken, lean red meat and fish liver, Milk and dairy products eggs, beans, chickpeas, lentils, peas, water, coconut water, natural fruit juices."))
-        self.label_5.setText(_translate("dengue", "● Food you should avoid"))
-        self.label_6.setText(_translate("dengue", "Foods that contain salicylates should be avoided when infected with dengue fever. These types of food act similarly to aspirin: they can make blood thinner and slow clotting. These foods are:\n"
-"Plum, cherry, blackberry, apple, melon, nectarine, peach, grape, tangerine, lemon, strawberry, raisin, gooseberry, almond, walnuts, potato, cucumber, tomato, apricot, pepper, garlic, onion, ginger. In addition to avoiding these foods, some medications are also contraindicated in cases of dengue, such as aspirin. "))
-        self.cbokay.setText(_translate("dengue", "Okay"))
+        covid.setWindowTitle(_translate("covid", "MainWindow"))
+        self.cbback.setText(_translate("covid", "Back"))
+        self.label_2.setText(_translate("covid", "Diet for Dengue Patients"))
+        self.label_9.setText(_translate("covid", "● Vegetarian"))
+        self.label_8.setText(_translate("covid", "Try to include a portion of protein-rich food in every meal. Vegetarians can include 2-3 servings/day of pulses,\n"
+"dal, soya, milk & milk products, nuts, and seeds.\n"
+"Also, besan, sattu, khichdi, peanut, paneer, curd, and mushrooms are good options."))
+        self.label_5.setText(_translate("covid", "● Non-Vegetarian"))
+        self.label_6.setText(_translate("covid", "<html><head/><body><p>Non-vegetarians can include all of these along with lean meat like eggs, chicken, and fish in their diet. Reduce intake of excessive fat and opt for cooking methods that require less or no fat, such as steaming, grilling, or sautéing instead of frying foods. Choose foods that contain healthy sources of unsaturated fats, like fish and nuts. Vitamins, minerals, and antioxidants present in colorful fruits, and vegetables facilitate a speedy recovery. Try to include at least 5-6 servings of fruits and vegetables daily meal plan. You can add fruits to your milkshakes or smoothies and consume seasonal vegetables in forms such as cooked, sautéed.</p></body></html>"))
+        self.cbokay.setText(_translate("covid", "Okay"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    dengue = QtWidgets.QMainWindow()
-    ui = Ui_dengue()
-    ui.setupUi(dengue)
-    dengue.show()
+    covid = QtWidgets.QMainWindow()
+    ui = Ui_covid()
+    ui.setupUi(covid)
+    covid.show()
     sys.exit(app.exec_())
