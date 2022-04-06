@@ -42,7 +42,7 @@
              <bool>true</bool>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>5</number>
             </property>
             <widget class="QWidget" name="home">
              <layout class="QGridLayout" name="gridLayout_2">
@@ -1360,8 +1360,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>728</width>
-                   <height>1752</height>
+                   <width>1020</width>
+                   <height>1284</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_31">

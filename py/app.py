@@ -24,6 +24,7 @@ home.setWindowTitle("PoCoH: Please login or register to continue")
 login.setWindowTitle("PoCoH: Login")
 register.setWindowTitle("PoCoH: Register")
 l_home.setWindowTitle("Welcome to PoCoH")
+editprofile.setWindowTitle("PoCoH: Edit Profile")
 
 # ----------------- VALIDATIONS -----------------
 def email(email):
@@ -213,6 +214,36 @@ def url6ButtonAction():
     url = QUrl("https://youtu.be/-jd;ok")
     QDesktopServices.openUrl(url) 
 # ----------------- REMEDIES WINDOW CODES -----------------
+def remvid1ButtonAction():
+    url = QUrl("https://youtu.be/xQy_mtV5YnA")
+    QDesktopServices.openUrl(url)
+
+def remvid2ButtonAction():
+    url = QUrl("https://youtu.be/CyU3QYepm8g")
+    QDesktopServices.openUrl(url)
+
+def remvid3ButtonAction():
+    url = QUrl("https://youtu.be/L-o08wcV2cI")
+    QDesktopServices.openUrl(url)
+
+def remvid4ButtonAction():
+    url = QUrl("https://youtu.be/DYVXSBTtY9c")
+    QDesktopServices.openUrl(url)
+
+def remvid5ButtonAction():
+    url = QUrl("https://youtu.be/JhHn5PI82oU")
+    QDesktopServices.openUrl(url)
+
+def remvid6ButtonAction():
+    url = QUrl("https://youtu.be/-jd;ok")
+    QDesktopServices.openUrl(url) 
+
+l_home.remvid1.clicked.connect(remvid1ButtonAction)
+l_home.remvid2.clicked.connect(remvid2ButtonAction)
+l_home.remvid3.clicked.connect(remvid3ButtonAction)
+l_home.remvid4.clicked.connect(remvid4ButtonAction)
+l_home.remvid5.clicked.connect(remvid5ButtonAction)
+l_home.remvid6.clicked.connect(remvid6ButtonAction)
 
 
 
