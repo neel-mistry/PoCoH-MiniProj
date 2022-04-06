@@ -44,6 +44,8 @@ class L_Homepage(QtWidgets.QMainWindow,Ui_l_homepage):
 class ChickenPox(QtWidgets.QMainWindow,Ui_chickenpox):
     def __init__(self) -> None:
         super().__init__()
+        self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
+        self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setupUi(self)
 
 class Covid(QtWidgets.QMainWindow,Ui_covid_diet):

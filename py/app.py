@@ -1,6 +1,5 @@
 import sys
 import re
-#import validations
 from Login import Ui_Login
 from PyQt5 import QtGui as qtg
 from PyQt5.QtWidgets import QApplication, QMessageBox
@@ -32,7 +31,6 @@ l_home.setWindowTitle("Welcome to PoCoH")
 def email(email):
         regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
         if(re.fullmatch(regex, email)):
-            print("Valid Email")
             return 1
         else:
             return 2
@@ -44,14 +42,14 @@ def phone(phone):
     else:
         return 2
 
-def password(password):
+def password(password_check):
     reg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{6,20}$"
       
     # compiling regex
     pat = re.compile(reg)
       
     # searching regex                 
-    mat = re.search(pat, password)
+    mat = re.search(pat, password_check)
       
     # validating conditions
     if mat:
@@ -92,6 +90,8 @@ def showHome():
 
 def logoutButtonAction():
     l_home.hide()
+    login.tusername.setText("")
+    login.tpass.setText("")
     login.show()
 
 
@@ -126,9 +126,14 @@ def loginButtonAction():
         passw = login.tpass.text()
         dc = DatabaseConnection()
         cursor = dc.cursor()
-        cursor.execute("select * from register where Username= %s and Pwd = %s",(usern,passw))
-        if cursor.fetchone():
-            #name = 
+        cursor.execute(f"select * from register where Username='{usern}' and Pwd ='{passw}';")
+        result = cursor.fetchone()
+        if result:
+            l_home.name.setText(result[0])
+            l_home.email.setText(result[1])
+            l_home.mobile.setText(str(result[2]))
+            l_home.dob.setText(result[3])
+            l_home.username.setText(result[4]) 
             login.hide()
             l_home.show()
             precautions.show()
@@ -158,6 +163,8 @@ def viewdiet1ButtonAction():
 def viewdiet2ButtonAction():
     chickenpox.show()
 
+def cbackButtonAction():
+    chickenpox.hide()
 
 def viewdiet3ButtonAction():
     dengue.show()    
@@ -207,6 +214,7 @@ def submitButtonAction():
         msg.setText("Enter name!")
         msg.setWindowTitle("Error")
         msg.exec_()
+        # flag_s = False
     elif register.temail.text() == "":
         print("email empty")
         msg = QMessageBox()
@@ -214,12 +222,15 @@ def submitButtonAction():
         msg.setText("Enter Email!")
         msg.setWindowTitle("Error")
         msg.exec_()
+        #flag_s = False
+
     elif email(register.temail.text()) == 2:
         dialog = QMessageBox()
         dialog.setText('Invalid email!!')
         dialog.setWindowTitle('Attention!')
         dialog.setIcon(QMessageBox.Warning)
         dialog.exec_()
+        #flag_s = False
     
     elif phone(register.tphone.text()) == 2:
         dialog = QMessageBox()
@@ -227,14 +238,28 @@ def submitButtonAction():
         dialog.setWindowTitle('Attention!')
         dialog.setIcon(QMessageBox.Warning)
         dialog.exec_()
+        #flag_s = False
     
-    elif phone(register.tpass.text()) == 2:
+    elif register.tpass.text() != register.trepass.text():
         dialog = QMessageBox()
-        dialog.setText('Password criteria not met')
-        dialog.setInformativeText('shdfls')
+        dialog.setText("Passwords don't match")
+        #dialog.setInformativeText('shdfls')
         dialog.setWindowTitle('Attention!')
         dialog.setIcon(QMessageBox.Warning)
         dialog.exec_()
+    
+    elif password(register.tpass.text()) == 2:
+        dialog = QMessageBox()
+        dialog.setText('Password criteria not met!')
+        dialog.setInformativeText("1. Should have at least one number.\n"
+        "2. Should have at least one uppercase and one lowercase character.\n" 
+        "3. Should have at least one special symbol.\n" 
+        "4. Should be between 6 to 20 characters long.")
+        dialog.setWindowTitle('Attention!')
+        dialog.setIcon(QMessageBox.Warning)
+        dialog.exec_()
+        #flag_s = False
+        
     else:
         flag_s = 1
 
@@ -250,7 +275,7 @@ def submitButtonAction():
         else:
             cursor.execute("insert into register values('"+ n +"','"+ em +"','"+ ph +"','"+ dob +"','"+ un +"','"+ pw +"','"+ re +"')")
             db.commit()
-            # QtWidgets.QMessageBox.information("Login form", "Registered Successfully")
+            #QtWidgets.QMessageBox.information("Login form", "Registered Successfully")
             login.show()
             register.hide()
 
@@ -259,8 +284,27 @@ def backButtonAction():
     login.show()
 
 
-# ----------------- FUNCTION CALLING -----------------              
+# ----------------- SHOW PASSWORD -----------------     
 
+def checkBoxChangedAction():
+        if (login.checkBox.isChecked()):
+            login.tpass.setEchoMode(login.tpass.EchoMode.Normal)
+        else:
+            login.tpass.setEchoMode(login.tpass.EchoMode.Password)
+
+def checkBoxChangedAction2():
+        if (register.checkBox.isChecked()):
+            register.tpass.setEchoMode(register.tpass.EchoMode.Normal)
+            register.trepass.setEchoMode(register.trepass.EchoMode.Normal)
+        else:
+            register.tpass.setEchoMode(register.tpass.EchoMode.Password)
+            register.trepass.setEchoMode(register.trepass.EchoMode.Password)
+
+
+# ----------------- FUNCTION CALLING -----------------     
+         
+login.checkBox.stateChanged.connect(checkBoxChangedAction)
+register.checkBox.stateChanged.connect(checkBoxChangedAction2)
 home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)
 login.bregister.clicked.connect(registerButtonAction)
@@ -284,6 +328,8 @@ l_home.url4.clicked.connect(url4ButtonAction)
 l_home.url5.clicked.connect(url5ButtonAction)
 l_home.url6.clicked.connect(url6ButtonAction)
 l_home.viewdiets2.clicked.connect(viewdiet2ButtonAction)
+chickenpox.cbokay.clicked.connect(cbackButtonAction)
+chickenpox.cbback.clicked.connect(cbackButtonAction)
 l_home.viewdiets1.clicked.connect(viewdiet1ButtonAction)
 l_home.label_2.setText(quotes.selected)
 precautions.bok.clicked.connect(okayButtonAction)

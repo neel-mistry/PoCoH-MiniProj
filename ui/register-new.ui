@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>960</width>
-    <height>818</height>
+    <height>858</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -165,7 +165,7 @@ font: 600 18pt &quot;Poppins SemiBold&quot;;</string>
                </property>
               </widget>
              </item>
-             <item>
+             <item alignment="Qt::AlignBottom">
               <widget class="QLabel" name="label_6">
                <property name="font">
                 <font>
@@ -177,10 +177,12 @@ font: 600 18pt &quot;Poppins SemiBold&quot;;</string>
                </property>
                <property name="styleSheet">
                 <string notr="true">padding-top: 0.65em;
-font: 14pt &quot;Poppins&quot;;</string>
+padding-bottom: 0.2em;
+font: 14pt &quot;Poppins&quot;;
+</string>
                </property>
                <property name="text">
-                <string>Name</string>
+                <string>Name:</string>
                </property>
               </widget>
              </item>
@@ -219,11 +221,12 @@ padding-left:5px;</string>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">padding-top: 0.65em;
+                <string notr="true">padding-bottom: 0.2em;
+padding-top: 0.65em;
 font: 14pt &quot;Poppins&quot;;</string>
                </property>
                <property name="text">
-                <string>Email</string>
+                <string>Email:</string>
                </property>
               </widget>
              </item>
@@ -266,7 +269,7 @@ padding-left:5px;</string>
 font: 14pt &quot;Poppins&quot;;</string>
                </property>
                <property name="text">
-                <string>Phone Number</string>
+                <string>Phone Number:</string>
                </property>
               </widget>
              </item>
@@ -310,7 +313,7 @@ padding-bottom: 0.2em;
 font: 14pt &quot;Poppins&quot;;</string>
                </property>
                <property name="text">
-                <string>Date of Birth</string>
+                <string>Date of Birth:</string>
                </property>
               </widget>
              </item>
@@ -392,15 +395,18 @@ font: 600 18pt &quot;Poppins SemiBold&quot;;</string>
                </property>
               </widget>
              </item>
-             <item>
+             <item alignment="Qt::AlignBottom">
               <widget class="QLabel" name="label_5">
                <property name="font">
                 <font>
                  <pointsize>14</pointsize>
                 </font>
                </property>
+               <property name="styleSheet">
+                <string notr="true">padding-bottom: 0.2em;</string>
+               </property>
                <property name="text">
-                <string>Username</string>
+                <string>Username:</string>
                </property>
               </widget>
              </item>
@@ -427,15 +433,18 @@ padding-bottom:7px;</string>
                </property>
               </widget>
              </item>
-             <item>
+             <item alignment="Qt::AlignBottom">
               <widget class="QLabel" name="label_7">
                <property name="font">
                 <font>
                  <pointsize>14</pointsize>
                 </font>
                </property>
+               <property name="styleSheet">
+                <string notr="true">padding-bottom: 0.2em;</string>
+               </property>
                <property name="text">
-                <string>Password</string>
+                <string>Password:</string>
                </property>
               </widget>
              </item>
@@ -448,6 +457,9 @@ padding-bottom:7px;</string>
                  <italic>false</italic>
                  <bold>false</bold>
                 </font>
+               </property>
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#e4ffcb;&quot;&gt;1. Should have at least one number.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#e4ffcb;&quot;&gt;2. Should have at least one uppercase and one lowercase character.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#e4ffcb;&quot;&gt;3. Should have at least one special symbol.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#e4ffcb;&quot;&gt;4. Should be between 6 to 20 characters long.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="styleSheet">
                 <string notr="true">background-color:rgba(0, 0, 0, 0);
@@ -465,15 +477,18 @@ padding-bottom:7px;</string>
                </property>
               </widget>
              </item>
-             <item>
+             <item alignment="Qt::AlignBottom">
               <widget class="QLabel" name="label_8">
                <property name="font">
                 <font>
                  <pointsize>14</pointsize>
                 </font>
                </property>
+               <property name="styleSheet">
+                <string notr="true">padding-bottom: 0.2em;</string>
+               </property>
                <property name="text">
-                <string>Re-Enter Password</string>
+                <string>Re-Enter Password:</string>
                </property>
               </widget>
              </item>
@@ -486,6 +501,9 @@ padding-bottom:7px;</string>
                  <italic>false</italic>
                  <bold>false</bold>
                 </font>
+               </property>
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#e4ffcb;&quot;&gt;Re-Enter the password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="styleSheet">
                 <string notr="true">background-color:rgba(0, 0, 0, 0);
@@ -500,6 +518,16 @@ padding-bottom:7px;</string>
                </property>
                <property name="placeholderText">
                 <string>  Re-Enter password</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox">
+               <property name="styleSheet">
+                <string notr="true">font: 300 11pt &quot;Poppins&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Show Password</string>
                </property>
               </widget>
              </item>

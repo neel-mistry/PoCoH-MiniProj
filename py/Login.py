@@ -22,7 +22,7 @@ class Ui_Login(object):
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.tpass = QtWidgets.QLineEdit(Login)
-        self.tpass.setGeometry(QtCore.QRect(510, 360, 381, 41))
+        self.tpass.setGeometry(QtCore.QRect(510, 360, 391, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(12)
@@ -47,7 +47,7 @@ class Ui_Login(object):
         self.label_3.setStyleSheet("color: white;")
         self.label_3.setObjectName("label_3")
         self.bregister = QtWidgets.QPushButton(Login)
-        self.bregister.setGeometry(QtCore.QRect(510, 440, 131, 41))
+        self.bregister.setGeometry(QtCore.QRect(510, 470, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(-1)
@@ -71,7 +71,7 @@ class Ui_Login(object):
 "")
         self.bregister.setObjectName("bregister")
         self.tusername = QtWidgets.QLineEdit(Login)
-        self.tusername.setGeometry(QtCore.QRect(510, 300, 381, 41))
+        self.tusername.setGeometry(QtCore.QRect(510, 300, 391, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(12)
@@ -87,7 +87,7 @@ class Ui_Login(object):
 "padding-left: 5px;")
         self.tusername.setObjectName("tusername")
         self.blogin = QtWidgets.QPushButton(Login)
-        self.blogin.setGeometry(QtCore.QRect(730, 440, 151, 41))
+        self.blogin.setGeometry(QtCore.QRect(730, 470, 151, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(-1)
@@ -115,11 +115,14 @@ class Ui_Login(object):
         self.label_2.setPixmap(QtGui.QPixmap("../images/PoCoH.png"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
+        self.checkBox = QtWidgets.QCheckBox(Login)
+        self.checkBox.setGeometry(QtCore.QRect(510, 420, 221, 20))
+        self.checkBox.setStyleSheet("font: 300 11pt \"Poppins\";")
+        self.checkBox.setChecked(False)
+        self.checkBox.setObjectName("checkBox")
 
         self.retranslateUi(Login)
         QtCore.QMetaObject.connectSlotsByName(Login)
-
-       
 
     def retranslateUi(self, Login):
         _translate = QtCore.QCoreApplication.translate
@@ -129,6 +132,7 @@ class Ui_Login(object):
         self.bregister.setText(_translate("Login", "Register"))
         self.tusername.setPlaceholderText(_translate("Login", "Enter Username"))
         self.blogin.setText(_translate("Login", "Login"))
+        self.checkBox.setText(_translate("Login", "Show Password"))
 
 
 if __name__ == "__main__":

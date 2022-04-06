@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1104</width>
-    <height>804</height>
+    <height>781</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -59,7 +59,7 @@
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
-               <widget class="QPushButton" name="pushButton_2">
+               <widget class="QPushButton" name="cbback">
                 <property name="styleSheet">
                  <string notr="true">border-radius: 0.5em;
 background-color: rgb(255, 174, 13);
@@ -220,7 +220,7 @@ font: 500 11pt &quot;Poppins&quot;;</string>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_6">
               <item>
-               <widget class="QPushButton" name="pushButton">
+               <widget class="QPushButton" name="cbokay">
                 <property name="styleSheet">
                  <string notr="true">border-radius: 0.5em;
 background-color: rgb(255, 174, 13);

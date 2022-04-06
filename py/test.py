@@ -1,9 +1,35 @@
-import time
-from xyz import *
+import sys
+from PyQt5.QtWidgets import (QWidget, QLabel, QHBoxLayout,QCheckBox, QApplication)
+from PyQt5 import QtCore
 
-l_home = L_Homepage()
+class basicWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        
+        layout = QHBoxLayout()
+        self.setLayout(layout)
+        
+        self.checkBoxA = QCheckBox("Select This.")
+        self.labelA = QLabel("Not slected.")
+        
+        self.checkBoxA.stateChanged.connect(self.checkBoxChangedAction)
+        
+        layout.addWidget(self.checkBoxA)
+        layout.addWidget(self.labelA)
+        
+        self.setGeometry(200, 200, 300, 200)            
+                
+        self.setWindowTitle('CheckBox Example')
+    
+    def checkBoxChangedAction(self, state):
+        if (QtCore.Qt.Checked == state):
+            self.labelA.setText("Selected.")
+        else:
+            self.labelA.setText("Not Selected.")
+        
 
-for i in range(2):
-    img = "E:\1. College\SE\Sem 4\proj materials" + i
-    l_home.label_21.setPixmap(qtg.QPixmap(img))
-    time.sleep(2.4)
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    windowExample = basicWindow()
+    windowExample.show()
+    sys.exit(app.exec_())
