@@ -1,7 +1,6 @@
 import sys
 import re
-from Login import Ui_Login
-from PyQt5 import QtGui as qtg
+from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from xyz import *
 from quotes import Quotes
@@ -23,8 +22,6 @@ home.setWindowTitle("PoCoH: Please login or register to continue")
 login.setWindowTitle("PoCoH: Login")
 register.setWindowTitle("PoCoH: Register")
 l_home.setWindowTitle("Welcome to PoCoH")
-
-
 
 # ----------------- VALIDATIONS -----------------
 def email(email):

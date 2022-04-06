@@ -53,7 +53,7 @@
              <bool>true</bool>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>2</number>
             </property>
             <widget class="QWidget" name="home">
              <layout class="QGridLayout" name="gridLayout_2">
@@ -297,6 +297,25 @@ border: 1px solid white;
                    </widget>
                   </widget>
                  </item>
+                 <item alignment="Qt::AlignLeft|Qt::AlignTop">
+                  <widget class="QFrame" name="frame_56">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_46">
+                    <item>
+                     <widget class="QPushButton" name="pushButton">
+                      <property name="text">
+                       <string>Edit Profile</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
                  <item alignment="Qt::AlignBottom">
                   <widget class="QFrame" name="frame_14">
                    <property name="frameShape">
@@ -503,11 +522,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-<<<<<<< HEAD
-                   <y>-61</y>
-=======
                    <y>0</y>
->>>>>>> 138edd3564ca8b1b82fb1cb69c1699a00a0b0fd3
                    <width>1020</width>
                    <height>1472</height>
                   </rect>
@@ -649,7 +664,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>POST COVID REHAB EXERCISES FOR GENERAL WELLBEING</string>
+                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -766,7 +781,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Rehabilitation for COVID-19 Patients: Breathing Exercises </string>
+                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -995,7 +1010,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>How to start a Workout Plan Post-Covid[Covid Recovery Tips]</string>
+                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1008,7 +1023,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>tips on how to start a workout plan after recovering from COVID. Regular exercise is good for your body and mind.</string>
+                              <string>This video explains what Post Acute COVID-19 (Long Covid) is and how to help patients or yourself with recovery.</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1118,7 +1133,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Covid Recovery: Get Back in Shape (4 Weeks Exercise Guide) </string>
+                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1229,7 +1244,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Long COVID and using physical activity safely</string>
+                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1772,6 +1787,63 @@ font: 500 10pt &quot;Poppins&quot;;</string>
              <layout class="QGridLayout" name="gridLayout_6">
               <item row="0" column="0">
                <widget class="QScrollArea" name="scrollArea_3">
+                <property name="styleSheet">
+                 <string notr="true">/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(80, 80, 122);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: rgb(255, 255, 255);
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(67, 67, 67);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	
+	background-color: rgb(25, 25, 255);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 255, 255);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}</string>
+                </property>
                 <property name="widgetResizable">
                  <bool>true</bool>
                 </property>
@@ -1779,7 +1851,7 @@ font: 500 10pt &quot;Poppins&quot;;</string>
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>0</y>
+                   <y>-547</y>
                    <width>1020</width>
                    <height>1218</height>
                   </rect>
