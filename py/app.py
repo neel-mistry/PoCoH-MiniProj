@@ -2,7 +2,6 @@ import sys
 import re
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QMessageBox
-from numpy import cov
 from xyz import *
 from quotes import Quotes
 from db import DatabaseConnection
@@ -18,6 +17,7 @@ quotes = Quotes()
 chickenpox = ChickenPox()
 covid = Covid()
 dengue = Dengue()
+editprofile = EditProfile()
 
 # ----------------- NAMING WINDOWS ----------------- 
 home.setWindowTitle("PoCoH: Please login or register to continue")
@@ -92,6 +92,20 @@ def logoutButtonAction():
     login.tpass.setText("")
     login.show()
 
+def editprof():
+    editprofile.show()
+
+def canceButtonAction():
+    editprofile.hide()
+
+# def saveButtonAction():
+#     usern = editprofile.username.text()
+#     phno = editprofile.phone.text()
+#     passwd = editprofile.password.text()
+#     emailid = editprofile.email.text()
+#     dc = DatabaseConnection()
+#     cursor = dc.cursor()
+#     cursor.execute(f"update register set email = '{emailid}', mobile = '{phno}', Pwd = '{passwd}' from register where Username='{usern}';")
 
 # ----------------- LOGIN WINDOW CODES -----------------
 def registerButtonAction():
@@ -132,6 +146,11 @@ def loginButtonAction():
             l_home.mobile.setText(str(result[2]))
             l_home.dob.setText(result[3])
             l_home.username.setText(result[4]) 
+            editprofile.name.setText(result[0])
+            editprofile.email.setText(result[1])
+            editprofile.phone.setText(str(result[2]))
+            editprofile.username.setText(result[4]) 
+            editprofile.password.setText(result[5]) 
             login.hide()
             l_home.show()
             precautions.show()
@@ -272,7 +291,11 @@ def submitButtonAction():
         result = cursor.fetchone()
 
         if result:
-            print("invallid")    
+            dialog = QMessageBox()
+            dialog.setText("Username already exists")
+            dialog.setWindowTitle('Attention!')
+            dialog.setIcon(QMessageBox.Warning)
+            dialog.exec_()    
         else:
             cursor.execute("insert into register values('"+ n +"','"+ em +"','"+ ph +"','"+ dob +"','"+ un +"','"+ pw +"','"+ re +"')")
             db.commit()
@@ -281,6 +304,13 @@ def submitButtonAction():
             register.hide()
 
 def backButtonAction():
+    register.tname.setText("")
+    register.temail.setText("")
+    register.tphone.setText("")
+    #register.dateEdit.setText("")
+    register.tusername.setText("")
+    register.tpass.setText("")
+    register.trepass.setText("")
     register.hide()
     login.show()
 
@@ -301,11 +331,19 @@ def checkBoxChangedAction2():
             register.tpass.setEchoMode(register.tpass.EchoMode.Password)
             register.trepass.setEchoMode(register.trepass.EchoMode.Password)
 
+def checkBoxChangedAction3():
+        if (editprofile.checkBox.isChecked()):
+            editprofile.password.setEchoMode(login.tpass.EchoMode.Normal)
+        else:
+            editprofile.password.setEchoMode(login.tpass.EchoMode.Password)
+
 
 # ----------------- FUNCTION CALLING -----------------     
          
 login.checkBox.stateChanged.connect(checkBoxChangedAction)
 register.checkBox.stateChanged.connect(checkBoxChangedAction2)
+editprofile.checkBox.stateChanged.connect(checkBoxChangedAction3)
+#editprofile.bsave.clicked.connect(saveButtonAction)
 home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)
 login.bregister.clicked.connect(registerButtonAction)
@@ -329,6 +367,8 @@ l_home.url4.clicked.connect(url4ButtonAction)
 l_home.url5.clicked.connect(url5ButtonAction)
 l_home.url6.clicked.connect(url6ButtonAction)
 l_home.viewdiets2.clicked.connect(viewdiet2ButtonAction)
+l_home.beditprof.clicked.connect(editprof)
+editprofile.bcancel.clicked.connect(canceButtonAction)
 chickenpox.cbokay.clicked.connect(cbackButtonAction)
 chickenpox.cbback.clicked.connect(cbackButtonAction)
 dengue.cbokay.clicked.connect(cbackButtonAction)

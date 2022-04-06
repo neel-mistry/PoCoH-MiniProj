@@ -42,7 +42,7 @@
              <bool>true</bool>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="home">
              <layout class="QGridLayout" name="gridLayout_2">
@@ -296,7 +296,16 @@ border: 1px solid white;
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_46">
                     <item>
-                     <widget class="QPushButton" name="pushButton">
+                     <widget class="QPushButton" name="beditprof">
+                      <property name="styleSheet">
+                       <string notr="true">border-radius: 0.5em;
+background-color: rgb(255, 174, 13);
+padding-top: 0.30em;
+padding-bottom: 0.30em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+font: 500 10pt &quot;Poppins&quot;;</string>
+                      </property>
                       <property name="text">
                        <string>Edit Profile</string>
                       </property>
@@ -511,7 +520,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-327</y>
+                   <y>0</y>
                    <width>1020</width>
                    <height>1476</height>
                   </rect>
@@ -1351,8 +1360,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1020</width>
-                   <height>1284</height>
+                   <width>728</width>
+                   <height>1752</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_31">
@@ -1840,7 +1849,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-145</y>
+                   <y>0</y>
                    <width>1020</width>
                    <height>1444</height>
                   </rect>

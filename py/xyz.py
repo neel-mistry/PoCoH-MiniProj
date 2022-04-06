@@ -7,6 +7,7 @@ from precautions import Ui_Precautions
 from chickenpox import Ui_chickenpox
 from covid_diet import Ui_covid_diet
 from covid import Ui_covid
+from edit_profile import Ui_edit_profile
 from PyQt5 import QtCore, QtGui
 from dengue import Ui_dengue
 from PyQt5 import QtCore
@@ -35,6 +36,11 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
             
 
 class Homepage(QtWidgets.QMainWindow,Ui_homepage):
+    def __init__(self) -> None:
+        super().__init__()
+        self.setupUi(self)
+
+class EditProfile(QtWidgets.QMainWindow,Ui_edit_profile):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)
