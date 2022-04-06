@@ -42,7 +42,7 @@
              <bool>true</bool>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>4</number>
             </property>
             <widget class="QWidget" name="home">
              <layout class="QGridLayout" name="gridLayout_2">
@@ -511,7 +511,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-327</y>
+                   <y>0</y>
                    <width>1020</width>
                    <height>1476</height>
                   </rect>
@@ -653,7 +653,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>POST COVID REHAB EXERCISES FOR GENERAL WELLBEING</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -666,7 +666,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>This video explains what Post Acute COVID-19 (Long Covid) is and how to help patients or yourself with recovery.</string>
+                              <string>These exercises are helpful in maintaining general wellbeing.These exercises are recommended by WHO. </string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -770,7 +770,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>Rehabilitation for COVID-19 Patients: Breathing Exercises</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -783,7 +783,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>This video explains what Post Acute COVID-19 (Long Covid) is and how to help patients or yourself with recovery.</string>
+                              <string>Demonstration of different breathing exercises that can help in rehabilitation of COVID-19 patients</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -999,7 +999,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>How to Start a Workout Plan Post-COVID</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1012,7 +1012,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>This video explains what Post Acute COVID-19 (Long Covid) is and how to help patients or yourself with recovery.</string>
+                              <string>Tips on how to start a workout plan after recovering from COVID. But how much should you do when you're getting over COVID-19? </string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1122,7 +1122,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>Post Covid Recovery(4 Weeks Exercise Guide).</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1135,7 +1135,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>This video explains what Post Acute COVID-19 (Long Covid) is and how to help patients or yourself with recovery.</string>
+                              <string>Guideline on how you can get back into exercising after Covid-19, for those who have had mild to moderate symptoms.</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1233,7 +1233,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>Post Acute Covid 19 Advice and Rehabilitation</string>
+                              <string>Long COVID and using physical activity safely</string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1246,7 +1246,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>This video explains what Post Acute COVID-19 (Long Covid) is and how to help patients or yourself with recovery.</string>
+                              <string>Early studies of physical activity in people suffering with Long-COVID.  </string>
                              </property>
                              <property name="wordWrap">
                               <bool>true</bool>
@@ -1840,9 +1840,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-145</y>
+                   <y>0</y>
                    <width>1020</width>
-                   <height>1444</height>
+                   <height>1476</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_42">
@@ -2032,7 +2032,10 @@ border-radius: 0.5em;</string>
                            <item>
                             <widget class="QLabel" name="label_53">
                              <property name="text">
-                              <string>TextLabel</string>
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/remedies/5.jpeg</pixmap>
                              </property>
                             </widget>
                            </item>
@@ -2054,7 +2057,7 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>TextLabel</string>
+                              <string> Remedy for Dengue Fever</string>
                              </property>
                             </widget>
                            </item>
@@ -2119,7 +2122,10 @@ border-radius: 0.5em;</string>
                            <item>
                             <widget class="QLabel" name="label_56">
                              <property name="text">
-                              <string>TextLabel</string>
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/remedies/6.jpeg</pixmap>
                              </property>
                             </widget>
                            </item>
@@ -2141,7 +2147,8 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>TextLabel</string>
+                              <string>BEST HOME REMEDIES 
+for COVID 19 Recovery</string>
                              </property>
                             </widget>
                            </item>
@@ -2302,7 +2309,10 @@ border-radius: 0.5em;</string>
                            <item>
                             <widget class="QLabel" name="label_50">
                              <property name="text">
-                              <string>TextLabel</string>
+                              <string/>
+                             </property>
+                             <property name="pixmap">
+                              <pixmap>../images/remedies/4.jpeg</pixmap>
                              </property>
                             </widget>
                            </item>
@@ -2324,7 +2334,8 @@ border-radius: 0.5em;</string>
                               <string notr="true">font: 600 12pt &quot;Poppins&quot;;</string>
                              </property>
                              <property name="text">
-                              <string>TextLabel</string>
+                              <string>Home remedies for 
+Chicken Pox</string>
                              </property>
                             </widget>
                            </item>
