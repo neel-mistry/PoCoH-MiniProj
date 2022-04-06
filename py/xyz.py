@@ -5,6 +5,7 @@ from l_homepage import Ui_l_homepage
 from register_new import Ui_register_new
 from precautions import Ui_Precautions
 from chickenpox import Ui_chickenpox
+from covid_diet import Ui_covid_diet
 from PyQt5 import QtCore
 from db import DatabaseConnection
 from PyQt5.QtWidgets import QMessageBox
@@ -40,6 +41,11 @@ class L_Homepage(QtWidgets.QMainWindow,Ui_l_homepage):
         self.setupUi(self)
 
 class ChickenPox(QtWidgets.QMainWindow,Ui_chickenpox):
+    def __init__(self) -> None:
+        super().__init__()
+        self.setupUi(self)
+
+class Covid(QtWidgets.QMainWindow,Ui_covid_diet):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)

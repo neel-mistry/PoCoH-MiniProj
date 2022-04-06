@@ -17,6 +17,7 @@ register =  N_Register()
 precautions = Precautions()
 quotes = Quotes()
 chickenpox = ChickenPox()
+covid_diet = Covid()
 
 # ----------------- NAMING WINDOWS ----------------- 
 home.setWindowTitle("PoCoH: Please login or register to continue")
@@ -149,12 +150,16 @@ def warning_dialog():
 
 
 # ----------------- DIET WINDOW CODES -----------------
-def viewdiet1ButtonAction():
-    #code
-    pass
+def viewdiet1ButtonAction()
+    covid_diet.show()
+    
 
 def viewdiet2ButtonAction():
     chickenpox.show()
+
+
+# def viewdiet3ButtonAction():
+#     chickenpox.show()    
 # ----------------- WORKOUT WINDOW CODES -----------------
 def url1ButtonAction():
     url = QUrl("https://www.youtube.com/watch?v=zUFS_SAkovc")
@@ -278,6 +283,7 @@ l_home.url4.clicked.connect(url4ButtonAction)
 l_home.url5.clicked.connect(url5ButtonAction)
 l_home.url6.clicked.connect(url6ButtonAction)
 l_home.viewdiets2.clicked.connect(viewdiet2ButtonAction)
+l_home.viewdiets1.clicked.connect(viewdiet1ButtonAction)
 l_home.label_2.setText(quotes.selected)
 precautions.bok.clicked.connect(okayButtonAction)
 register.bback.clicked.connect(backButtonAction)
