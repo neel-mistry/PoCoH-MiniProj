@@ -30,7 +30,6 @@ l_home.setWindowTitle("Welcome to PoCoH")
 def email(email):
         regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
         if(re.fullmatch(regex, email)):
-            print("Valid Email")
             return 1
         else:
             return 2
@@ -42,14 +41,14 @@ def phone(phone):
     else:
         return 2
 
-def password(password):
+def password(password_check):
     reg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{6,20}$"
       
     # compiling regex
     pat = re.compile(reg)
       
     # searching regex                 
-    mat = re.search(pat, password)
+    mat = re.search(pat, password_check)
       
     # validating conditions
     if mat:
@@ -124,9 +123,14 @@ def loginButtonAction():
         passw = login.tpass.text()
         dc = DatabaseConnection()
         cursor = dc.cursor()
-        cursor.execute("select * from register where Username= %s and Pwd = %s",(usern,passw))
-        if cursor.fetchone():
-            #name = 
+        cursor.execute(f"select * from register where Username='{usern}' and Pwd ='{passw}';")
+        result = cursor.fetchone()
+        l_home.name.setText(result[0])
+        l_home.email.setText(result[1])
+        l_home.mobile.setText(str(result[2]))
+        l_home.dob.setText(result[3])
+        l_home.username.setText(result[4])
+        if result: 
             login.hide()
             l_home.show()
             precautions.show()
@@ -204,6 +208,7 @@ def submitButtonAction():
         msg.setText("Enter name!")
         msg.setWindowTitle("Error")
         msg.exec_()
+        # flag_s = False
     elif register.temail.text() == "":
         print("email empty")
         msg = QMessageBox()
@@ -211,12 +216,15 @@ def submitButtonAction():
         msg.setText("Enter Email!")
         msg.setWindowTitle("Error")
         msg.exec_()
+        #flag_s = False
+
     elif email(register.temail.text()) == 2:
         dialog = QMessageBox()
         dialog.setText('Invalid email!!')
         dialog.setWindowTitle('Attention!')
         dialog.setIcon(QMessageBox.Warning)
         dialog.exec_()
+        #flag_s = False
     
     elif phone(register.tphone.text()) == 2:
         dialog = QMessageBox()
@@ -224,14 +232,17 @@ def submitButtonAction():
         dialog.setWindowTitle('Attention!')
         dialog.setIcon(QMessageBox.Warning)
         dialog.exec_()
+        #flag_s = False
     
-    elif phone(register.tpass.text()) == 2:
+    elif password(register.tpass.text()) == 2:
         dialog = QMessageBox()
         dialog.setText('Password criteria not met')
         dialog.setInformativeText('shdfls')
         dialog.setWindowTitle('Attention!')
         dialog.setIcon(QMessageBox.Warning)
         dialog.exec_()
+        #flag_s = False
+        
     else:
         flag_s = 1
 

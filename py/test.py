@@ -1,9 +1,23 @@
-import time
-from xyz import *
 
-l_home = L_Homepage()
-
-for i in range(2):
-    img = "E:\1. College\SE\Sem 4\proj materials" + i
-    l_home.label_21.setPixmap(qtg.QPixmap(img))
-    time.sleep(2.4)
+# importing re library
+import re
+  
+def main():
+    passwd = 'Geek12@'
+    reg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{6,20}$"
+      
+    # compiling regex
+    pat = re.compile(reg)
+      
+    # searching regex                 
+    mat = re.search(pat, passwd)
+      
+    # validating conditions
+    if mat:
+        print("Password is valid.")
+    else:
+        print("Password invalid !!")
+  
+# Driver Code     
+if __name__ == '__main__':
+    main()
