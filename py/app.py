@@ -1,6 +1,5 @@
 import sys
 import re
-#import validations
 from Login import Ui_Login
 from PyQt5 import QtGui as qtg
 from PyQt5.QtWidgets import QApplication, QMessageBox
@@ -89,6 +88,8 @@ def showHome():
 
 def logoutButtonAction():
     l_home.hide()
+    login.tusername.setText("")
+    login.tpass.setText("")
     login.show()
 
 
@@ -125,12 +126,12 @@ def loginButtonAction():
         cursor = dc.cursor()
         cursor.execute(f"select * from register where Username='{usern}' and Pwd ='{passw}';")
         result = cursor.fetchone()
-        l_home.name.setText(result[0])
-        l_home.email.setText(result[1])
-        l_home.mobile.setText(str(result[2]))
-        l_home.dob.setText(result[3])
-        l_home.username.setText(result[4])
-        if result: 
+        if result:
+            l_home.name.setText(result[0])
+            l_home.email.setText(result[1])
+            l_home.mobile.setText(str(result[2]))
+            l_home.dob.setText(result[3])
+            l_home.username.setText(result[4]) 
             login.hide()
             l_home.show()
             precautions.show()
@@ -234,10 +235,21 @@ def submitButtonAction():
         dialog.exec_()
         #flag_s = False
     
+    elif register.tpass.text() != register.trepass.text():
+        dialog = QMessageBox()
+        dialog.setText("Passwords don't match")
+        #dialog.setInformativeText('shdfls')
+        dialog.setWindowTitle('Attention!')
+        dialog.setIcon(QMessageBox.Warning)
+        dialog.exec_()
+    
     elif password(register.tpass.text()) == 2:
         dialog = QMessageBox()
-        dialog.setText('Password criteria not met')
-        dialog.setInformativeText('shdfls')
+        dialog.setText('Password criteria not met!')
+        dialog.setInformativeText("1. Should have at least one number.\n"
+        "2. Should have at least one uppercase and one lowercase character.\n" 
+        "3. Should have at least one special symbol.\n" 
+        "4. Should be between 6 to 20 characters long.")
         dialog.setWindowTitle('Attention!')
         dialog.setIcon(QMessageBox.Warning)
         dialog.exec_()
@@ -258,7 +270,7 @@ def submitButtonAction():
         else:
             cursor.execute("insert into register values('"+ n +"','"+ em +"','"+ ph +"','"+ dob +"','"+ un +"','"+ pw +"','"+ re +"')")
             db.commit()
-            # QtWidgets.QMessageBox.information("Login form", "Registered Successfully")
+            #QtWidgets.QMessageBox.information("Login form", "Registered Successfully")
             login.show()
             register.hide()
 
@@ -267,8 +279,27 @@ def backButtonAction():
     login.show()
 
 
-# ----------------- FUNCTION CALLING -----------------              
+# ----------------- SHOW PASSWORD -----------------     
 
+def checkBoxChangedAction():
+        if (login.checkBox.isChecked()):
+            login.tpass.setEchoMode(login.tpass.EchoMode.Normal)
+        else:
+            login.tpass.setEchoMode(login.tpass.EchoMode.Password)
+
+def checkBoxChangedAction2():
+        if (register.checkBox.isChecked()):
+            register.tpass.setEchoMode(register.tpass.EchoMode.Normal)
+            register.trepass.setEchoMode(register.trepass.EchoMode.Normal)
+        else:
+            register.tpass.setEchoMode(register.tpass.EchoMode.Password)
+            register.trepass.setEchoMode(register.trepass.EchoMode.Password)
+
+
+# ----------------- FUNCTION CALLING -----------------     
+         
+login.checkBox.stateChanged.connect(checkBoxChangedAction)
+register.checkBox.stateChanged.connect(checkBoxChangedAction2)
 home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)
 login.bregister.clicked.connect(registerButtonAction)
