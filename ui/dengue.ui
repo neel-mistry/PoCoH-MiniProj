@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>covid_diet</class>
- <widget class="QMainWindow" name="covid_diet">
+ <class>dengue</class>
+ <widget class="QMainWindow" name="dengue">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -34,7 +34,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-89</y>
+       <y>0</y>
        <width>1063</width>
        <height>818</height>
       </rect>
@@ -141,7 +141,7 @@ font: 500 11pt &quot;Poppins&quot;;</string>
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap>../images/disease covid.jpg</pixmap>
+                  <pixmap>../images/dengue diet.png</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>

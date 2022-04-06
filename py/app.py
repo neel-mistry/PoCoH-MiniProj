@@ -18,6 +18,7 @@ precautions = Precautions()
 quotes = Quotes()
 chickenpox = ChickenPox()
 covid_diet = Covid()
+dengue = Dengue()
 
 # ----------------- NAMING WINDOWS ----------------- 
 home.setWindowTitle("PoCoH: Please login or register to continue")
@@ -150,7 +151,7 @@ def warning_dialog():
 
 
 # ----------------- DIET WINDOW CODES -----------------
-def viewdiet1ButtonAction()
+def viewdiet1ButtonAction():
     covid_diet.show()
     
 
@@ -158,8 +159,8 @@ def viewdiet2ButtonAction():
     chickenpox.show()
 
 
-# def viewdiet3ButtonAction():
-#     chickenpox.show()    
+def viewdiet3ButtonAction():
+    dengue.show()    
 # ----------------- WORKOUT WINDOW CODES -----------------
 def url1ButtonAction():
     url = QUrl("https://www.youtube.com/watch?v=zUFS_SAkovc")
