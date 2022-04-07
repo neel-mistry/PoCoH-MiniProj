@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>919</width>
-    <height>638</height>
+    <height>822</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -194,6 +194,37 @@ color:#090909;
                   </widget>
                  </item>
                  <item>
+                  <widget class="QFrame" name="frame_13">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <item alignment="Qt::AlignHCenter">
+                     <widget class="QLabel" name="label_4">
+                      <property name="maximumSize">
+                       <size>
+                        <width>290</width>
+                        <height>290</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap>../images/3-01.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QFrame" name="frame_9">
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
@@ -202,6 +233,17 @@ color:#090909;
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                    <item alignment="Qt::AlignHCenter">
+                     <widget class="QLabel" name="label_3">
+                      <property name="styleSheet">
+                       <string notr="true">font: 600 19pt &quot;Poppins&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Fact of the day:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
                     <item>
                      <widget class="QLabel" name="label_2">
                       <property name="font">
@@ -213,6 +255,10 @@ color:#090909;
                       </property>
                       <property name="autoFillBackground">
                        <bool>false</bool>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">padding-top: 0.5em;
+color: rgb(255, 255, 255);</string>
                       </property>
                       <property name="text">
                        <string>An apple a day keeps the doctor away!</string>
@@ -226,6 +272,17 @@ color:#090909;
                      </widget>
                     </item>
                    </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_5">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_3"/>
                   </widget>
                  </item>
                 </layout>

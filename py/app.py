@@ -20,12 +20,29 @@ covid = Covid()
 dengue = Dengue()
 editprofile = EditProfile()
 
+# abc = l_home.stackedWidget.currentIndex()
+# print(abc)
+
 # ----------------- NAMING WINDOWS ----------------- 
 home.setWindowTitle("PoCoH: Please login or register to continue")
 login.setWindowTitle("PoCoH: Login")
 register.setWindowTitle("PoCoH: Register")
-l_home.setWindowTitle("PoCoH")
 editprofile.setWindowTitle("PoCoH: Edit Profile")
+l_home.setWindowTitle("PoCoH")
+
+# def dynamicWindowName():
+#     if abc == 0:
+#         l_home.setWindowTitle("Welcome to PoCoH")
+#     elif abc == 1:
+#         l_home.setWindowTitle("index 1")
+#     elif abc == 2:
+#         l_home.setWindowTitle("index 2")
+#     elif abc == 3:
+#         l_home.setWindowTitle("index 3")
+#     elif abc == 4:
+#         l_home.setWindowTitle("index 4")
+#     else:
+#         l_home.setWindowTitle("index not defined")
 
 # ----------------- ERROR WINDOWS ----------------- 
 def errorwindow(msg):
@@ -45,7 +62,7 @@ def successWindow(msg):
 def criticalWindow(msg):
     dialog = QMessageBox()
     dialog.setText(msg)
-    dialog.setWindowTitle('Success')
+    dialog.setWindowTitle('Attention')
     dialog.setIcon(QMessageBox.Critical)
     dialog.exec_()
 
@@ -103,8 +120,8 @@ def okayButtonAction():
 def showProfile():
     l_home.stackedWidget.setCurrentWidget(l_home.profile)
 
-def showPrecautions():
-    l_home.stackedWidget.setCurrentWidget(l_home.precautions)
+# def showPrecautions():
+#     l_home.stackedWidget.setCurrentWidget(l_home.precautions)
 
 def showRemedies():
     l_home.stackedWidget.setCurrentWidget(l_home.homeremedies)
@@ -163,7 +180,6 @@ def loginButtonAction():
     #     dialog.exec_()
     if login.tusername.text() == "" or login.tpass.text() == "":
         errorwindow("Enter user id and password")
-    
     else:
         flag = 1
 
@@ -382,6 +398,11 @@ l_home.bremedies.clicked.connect(showRemedies)
 l_home.bexercise.clicked.connect(showExercises)
 l_home.bdiet.clicked.connect(showDiet)
 l_home.bhome.clicked.connect(showHome)
+# l_home.bprofile.clicked.connect(dynamicWindowName)
+# l_home.bremedies.clicked.connect(dynamicWindowName)
+# l_home.bexercise.clicked.connect(dynamicWindowName)
+# l_home.bdiet.clicked.connect(dynamicWindowName)
+# l_home.bhome.clicked.connect(dynamicWindowName)
 l_home.blogout.clicked.connect(logoutButtonAction)
 l_home.blogout_2.clicked.connect(logoutButtonAction)
 l_home.url1.clicked.connect(url1ButtonAction)
