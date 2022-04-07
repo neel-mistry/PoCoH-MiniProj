@@ -34,6 +34,7 @@ class Ui_l_homepage(object):
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.stackedWidget = QtWidgets.QStackedWidget(self.frame_2)
         self.stackedWidget.setEnabled(True)
+        self.stackedWidget.setStyleSheet("")
         self.stackedWidget.setObjectName("stackedWidget")
         self.home = QtWidgets.QWidget()
         self.home.setObjectName("home")
@@ -143,18 +144,81 @@ class Ui_l_homepage(object):
         self.profile.setObjectName("profile")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.profile)
         self.gridLayout_3.setObjectName("gridLayout_3")
+        self.frame_6 = QtWidgets.QFrame(self.profile)
+        self.frame_6.setStyleSheet("border: 1px solid #2a2a2a;")
+        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_6.setObjectName("frame_6")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.frame_6)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.label_5 = QtWidgets.QLabel(self.frame_6)
+        self.label_5.setStyleSheet("font: 700 14pt \"Poppins\";\n"
+"padding-bottom: 0.4em;\n"
+"border: none;\n"
+"color: #ffffff")
+        self.label_5.setObjectName("label_5")
+        self.verticalLayout_5.addWidget(self.label_5, 0, QtCore.Qt.AlignBottom)
+        self.username = QtWidgets.QLabel(self.frame_6)
+        self.username.setStyleSheet("color: #ffffff;\n"
+"font: 13pt \"Poppins\";\n"
+"border: none;")
+        self.username.setObjectName("username")
+        self.verticalLayout_5.addWidget(self.username, 0, QtCore.Qt.AlignTop)
+        self.label_8 = QtWidgets.QLabel(self.frame_6)
+        self.label_8.setStyleSheet("font: 700 14pt \"Poppins\";\n"
+"padding-bottom: 0.4em;\n"
+"border: none;\n"
+"color: #ffffff")
+        self.label_8.setObjectName("label_8")
+        self.verticalLayout_5.addWidget(self.label_8, 0, QtCore.Qt.AlignBottom)
+        self.email = QtWidgets.QLabel(self.frame_6)
+        self.email.setStyleSheet("color: #ffffff;\n"
+"font: 13pt \"Poppins\";\n"
+"border: none;")
+        self.email.setObjectName("email")
+        self.verticalLayout_5.addWidget(self.email, 0, QtCore.Qt.AlignTop)
+        self.label_10 = QtWidgets.QLabel(self.frame_6)
+        self.label_10.setStyleSheet("font: 700 14pt \"Poppins\";\n"
+"padding-bottom: 0.4em;\n"
+"border: none;\n"
+"color: #ffffff")
+        self.label_10.setObjectName("label_10")
+        self.verticalLayout_5.addWidget(self.label_10, 0, QtCore.Qt.AlignBottom)
+        self.mobile = QtWidgets.QLabel(self.frame_6)
+        self.mobile.setStyleSheet("color: #ffffff;\n"
+"font: 13pt \"Poppins\";\n"
+"border: none;")
+        self.mobile.setObjectName("mobile")
+        self.verticalLayout_5.addWidget(self.mobile, 0, QtCore.Qt.AlignTop)
+        self.label_12 = QtWidgets.QLabel(self.frame_6)
+        self.label_12.setStyleSheet("font: 700 14pt \"Poppins\";\n"
+"padding-bottom: 0.4em;\n"
+"border: none;\n"
+"color: #ffffff")
+        self.label_12.setObjectName("label_12")
+        self.verticalLayout_5.addWidget(self.label_12, 0, QtCore.Qt.AlignBottom)
+        self.dob = QtWidgets.QLabel(self.frame_6)
+        self.dob.setStyleSheet("color: #ffffff;\n"
+"font: 13pt \"Poppins\";\n"
+"border: none;")
+        self.dob.setObjectName("dob")
+        self.verticalLayout_5.addWidget(self.dob, 0, QtCore.Qt.AlignTop)
+        self.gridLayout_3.addWidget(self.frame_6, 0, 1, 1, 1)
         self.frame_5 = QtWidgets.QFrame(self.profile)
+        self.frame_5.setStyleSheet("border: 1px solid #2a2a2a")
         self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_5.setObjectName("frame_5")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.frame_5)
         self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.frame_13 = QtWidgets.QFrame(self.frame_5)
+        self.frame_13.setStyleSheet("border: none;")
         self.frame_13.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_13.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_13.setObjectName("frame_13")
         self.label_3 = QtWidgets.QLabel(self.frame_13)
         self.label_3.setGeometry(QtCore.QRect(20, 20, 121, 121))
+        self.label_3.setStyleSheet("border: none;")
         self.label_3.setText("")
         self.label_3.setPixmap(QtGui.QPixmap("../images/icons/profile.png"))
         self.label_3.setScaledContents(True)
@@ -162,13 +226,19 @@ class Ui_l_homepage(object):
         self.name = QtWidgets.QLabel(self.frame_13)
         self.name.setGeometry(QtCore.QRect(20, 160, 151, 51))
         font = QtGui.QFont()
-        font.setFamily("Poppins SemiBold")
-        font.setPointSize(14)
+        font.setFamily("Poppins")
+        font.setPointSize(18)
         font.setBold(True)
+        font.setItalic(False)
         self.name.setFont(font)
+        self.name.setStyleSheet("font: 700 18pt \"Poppins\";\n"
+"padding-bottom: 0.4em;\n"
+"border: none;\n"
+"color: #ffffff")
         self.name.setObjectName("name")
         self.verticalLayout_4.addWidget(self.frame_13)
         self.frame_56 = QtWidgets.QFrame(self.frame_5)
+        self.frame_56.setStyleSheet("border: none;")
         self.frame_56.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_56.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_56.setObjectName("frame_56")
@@ -181,11 +251,12 @@ class Ui_l_homepage(object):
 "padding-bottom: 0.30em;\n"
 "padding-left: 0.5em;\n"
 "padding-right: 0.5em;\n"
-"font: 500 10pt \"Poppins\";")
+"font: 500 12pt \"Poppins\";")
         self.beditprof.setObjectName("beditprof")
         self.verticalLayout_46.addWidget(self.beditprof)
         self.verticalLayout_4.addWidget(self.frame_56, 0, QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.frame_14 = QtWidgets.QFrame(self.frame_5)
+        self.frame_14.setStyleSheet("border: none;")
         self.frame_14.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_14.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_14.setObjectName("frame_14")
@@ -212,49 +283,6 @@ class Ui_l_homepage(object):
         self.verticalLayout_6.addWidget(self.blogout, 0, QtCore.Qt.AlignLeft)
         self.verticalLayout_4.addWidget(self.frame_14, 0, QtCore.Qt.AlignBottom)
         self.gridLayout_3.addWidget(self.frame_5, 0, 0, 1, 1)
-        self.frame_6 = QtWidgets.QFrame(self.profile)
-        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_6.setObjectName("frame_6")
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.frame_6)
-        self.verticalLayout_5.setObjectName("verticalLayout_5")
-        self.label_5 = QtWidgets.QLabel(self.frame_6)
-        self.label_5.setStyleSheet("font: 600 12pt \"Poppins\";\n"
-"padding-bottom: 0.4em;")
-        self.label_5.setObjectName("label_5")
-        self.verticalLayout_5.addWidget(self.label_5, 0, QtCore.Qt.AlignBottom)
-        self.username = QtWidgets.QLabel(self.frame_6)
-        self.username.setStyleSheet("font: 12pt \"Poppins\";")
-        self.username.setObjectName("username")
-        self.verticalLayout_5.addWidget(self.username, 0, QtCore.Qt.AlignTop)
-        self.label_8 = QtWidgets.QLabel(self.frame_6)
-        self.label_8.setStyleSheet("font: 600 12pt \"Poppins\";\n"
-"padding-bottom: 0.4em;")
-        self.label_8.setObjectName("label_8")
-        self.verticalLayout_5.addWidget(self.label_8, 0, QtCore.Qt.AlignBottom)
-        self.email = QtWidgets.QLabel(self.frame_6)
-        self.email.setStyleSheet("font: 12pt \"Poppins\";")
-        self.email.setObjectName("email")
-        self.verticalLayout_5.addWidget(self.email, 0, QtCore.Qt.AlignTop)
-        self.label_10 = QtWidgets.QLabel(self.frame_6)
-        self.label_10.setStyleSheet("font: 600 12pt \"Poppins\";\n"
-"padding-bottom: 0.4em;")
-        self.label_10.setObjectName("label_10")
-        self.verticalLayout_5.addWidget(self.label_10, 0, QtCore.Qt.AlignBottom)
-        self.mobile = QtWidgets.QLabel(self.frame_6)
-        self.mobile.setStyleSheet("font: 12pt \"Poppins\";")
-        self.mobile.setObjectName("mobile")
-        self.verticalLayout_5.addWidget(self.mobile, 0, QtCore.Qt.AlignTop)
-        self.label_12 = QtWidgets.QLabel(self.frame_6)
-        self.label_12.setStyleSheet("font: 600 12pt \"Poppins\";\n"
-"padding-bottom: 0.4em;")
-        self.label_12.setObjectName("label_12")
-        self.verticalLayout_5.addWidget(self.label_12, 0, QtCore.Qt.AlignBottom)
-        self.dob = QtWidgets.QLabel(self.frame_6)
-        self.dob.setStyleSheet("font: 12pt \"Poppins\";")
-        self.dob.setObjectName("dob")
-        self.verticalLayout_5.addWidget(self.dob, 0, QtCore.Qt.AlignTop)
-        self.gridLayout_3.addWidget(self.frame_6, 0, 1, 1, 1)
         self.stackedWidget.addWidget(self.profile)
         self.exercises = QtWidgets.QWidget()
         self.exercises.setObjectName("exercises")
@@ -319,7 +347,7 @@ class Ui_l_homepage(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1020, 1476))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1004, 1476))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
@@ -728,7 +756,7 @@ class Ui_l_homepage(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, -229, 1020, 1284))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1004, 1284))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_31.setObjectName("verticalLayout_31")
@@ -1001,7 +1029,7 @@ class Ui_l_homepage(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1020, 1476))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -805, 1004, 1476))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_42 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_42.setObjectName("verticalLayout_42")
@@ -1068,10 +1096,6 @@ class Ui_l_homepage(object):
         self.label_45.setWordWrap(True)
         self.label_45.setObjectName("label_45")
         self.verticalLayout_53.addWidget(self.label_45)
-        self.label_46 = QtWidgets.QLabel(self.frame_63)
-        self.label_46.setStyleSheet("font: 10pt \"Poppins\";")
-        self.label_46.setObjectName("label_46")
-        self.verticalLayout_53.addWidget(self.label_46)
         self.remvid2 = QtWidgets.QPushButton(self.frame_63)
         self.remvid2.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
@@ -1115,10 +1139,6 @@ class Ui_l_homepage(object):
         self.label_55.setWordWrap(True)
         self.label_55.setObjectName("label_55")
         self.verticalLayout_62.addWidget(self.label_55)
-        self.label_54 = QtWidgets.QLabel(self.frame_69)
-        self.label_54.setStyleSheet("font: 10pt \"Poppins\";")
-        self.label_54.setObjectName("label_54")
-        self.verticalLayout_62.addWidget(self.label_54)
         self.remvid5 = QtWidgets.QPushButton(self.frame_69)
         self.remvid5.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
@@ -1161,10 +1181,6 @@ class Ui_l_homepage(object):
         self.label_57.setStyleSheet("font: 600 12pt \"Poppins\";")
         self.label_57.setObjectName("label_57")
         self.verticalLayout_61.addWidget(self.label_57)
-        self.label_58 = QtWidgets.QLabel(self.frame_71)
-        self.label_58.setStyleSheet("font: 10pt \"Poppins\";")
-        self.label_58.setObjectName("label_58")
-        self.verticalLayout_61.addWidget(self.label_58)
         self.remvid6 = QtWidgets.QPushButton(self.frame_71)
         self.remvid6.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
@@ -1208,10 +1224,6 @@ class Ui_l_homepage(object):
         self.label_48.setWordWrap(True)
         self.label_48.setObjectName("label_48")
         self.verticalLayout_58.addWidget(self.label_48)
-        self.label_49 = QtWidgets.QLabel(self.frame_65)
-        self.label_49.setStyleSheet("font: 10pt \"Poppins\";")
-        self.label_49.setObjectName("label_49")
-        self.verticalLayout_58.addWidget(self.label_49)
         self.remvid3 = QtWidgets.QPushButton(self.frame_65)
         self.remvid3.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
@@ -1254,10 +1266,6 @@ class Ui_l_homepage(object):
         self.label_51.setStyleSheet("font: 600 12pt \"Poppins\";")
         self.label_51.setObjectName("label_51")
         self.verticalLayout_59.addWidget(self.label_51)
-        self.label_52 = QtWidgets.QLabel(self.frame_67)
-        self.label_52.setStyleSheet("font: 10pt \"Poppins\";")
-        self.label_52.setObjectName("label_52")
-        self.verticalLayout_59.addWidget(self.label_52)
         self.remvid4 = QtWidgets.QPushButton(self.frame_67)
         self.remvid4.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
@@ -1304,10 +1312,6 @@ class Ui_l_homepage(object):
         self.label_9.setWordWrap(True)
         self.label_9.setObjectName("label_9")
         self.verticalLayout_52.addWidget(self.label_9)
-        self.label_11 = QtWidgets.QLabel(self.frame_61)
-        self.label_11.setStyleSheet("font: 10pt \"Poppins\";")
-        self.label_11.setObjectName("label_11")
-        self.verticalLayout_52.addWidget(self.label_11)
         self.remvid1 = QtWidgets.QPushButton(self.frame_61)
         self.remvid1.setStyleSheet("border-radius: 0.5em;\n"
 "background-color: rgb(255, 174, 13);\n"
@@ -1323,6 +1327,11 @@ class Ui_l_homepage(object):
         self.gridLayout_6.addWidget(self.scrollArea_3, 0, 0, 1, 1)
         self.stackedWidget.addWidget(self.homeremedies)
         self.horizontalLayout.addWidget(self.stackedWidget)
+        self.frame_74 = QtWidgets.QFrame(self.frame_2)
+        self.frame_74.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_74.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_74.setObjectName("frame_74")
+        self.horizontalLayout.addWidget(self.frame_74)
         self.verticalLayout_2.addWidget(self.frame_2)
         self.frame_3 = QtWidgets.QFrame(self.frame)
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -1393,7 +1402,7 @@ class Ui_l_homepage(object):
         l_homepage.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(l_homepage)
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(l_homepage)
 
     def retranslateUi(self, l_homepage):
@@ -1403,9 +1412,6 @@ class Ui_l_homepage(object):
         self.label_17.setText(_translate("l_homepage", "FACT OF THE DAY:"))
         self.label_2.setText(_translate("l_homepage", "An apple a day keeps the doctor away!"))
         self.label_13.setText(_translate("l_homepage", "PRECAUTIONS"))
-        self.name.setText(_translate("l_homepage", "John Doe"))
-        self.beditprof.setText(_translate("l_homepage", "Edit Profile"))
-        self.blogout.setText(_translate("l_homepage", "Log Out"))
         self.label_5.setText(_translate("l_homepage", "Username"))
         self.username.setText(_translate("l_homepage", "<username of person>"))
         self.label_8.setText(_translate("l_homepage", "Email"))
@@ -1414,6 +1420,9 @@ class Ui_l_homepage(object):
         self.mobile.setText(_translate("l_homepage", "<Mobile of person>"))
         self.label_12.setText(_translate("l_homepage", "Date of Birth"))
         self.dob.setText(_translate("l_homepage", "<dob of person>"))
+        self.name.setText(_translate("l_homepage", "John Doe"))
+        self.beditprof.setText(_translate("l_homepage", "Edit Profile"))
+        self.blogout.setText(_translate("l_homepage", "Log Out"))
         self.label_37.setText(_translate("l_homepage", "Exercises for better health "))
         self.label_32.setText(_translate("l_homepage", "POST COVID REHAB EXERCISES FOR GENERAL WELLBEING"))
         self.label_31.setText(_translate("l_homepage", "These exercises are helpful in maintaining general wellbeing.These exercises are recommended by WHO. "))
@@ -1445,24 +1454,18 @@ class Ui_l_homepage(object):
         self.viewdiets3.setText(_translate("l_homepage", "View Diets"))
         self.label_60.setText(_translate("l_homepage", "Home Remedies for various diseases"))
         self.label_45.setText(_translate("l_homepage", "Home care tips for Sidubu | Home Care Chickenpox"))
-        self.label_46.setText(_translate("l_homepage", "TextLabel"))
         self.remvid2.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_55.setText(_translate("l_homepage", " Remedy for Dengue Fever"))
-        self.label_54.setText(_translate("l_homepage", "TextLabel"))
         self.remvid5.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_57.setText(_translate("l_homepage", "BEST HOME REMEDIES \n"
 "for COVID 19 Recovery"))
-        self.label_58.setText(_translate("l_homepage", "TextLabel"))
         self.remvid6.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_48.setText(_translate("l_homepage", "Coronavirus Pandemic: 4 Ayurvedic Drinks To Boost Immunity | NewsMo"))
-        self.label_49.setText(_translate("l_homepage", "TextLabel"))
         self.remvid3.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_51.setText(_translate("l_homepage", "Home remedies for \n"
 "Chicken Pox"))
-        self.label_52.setText(_translate("l_homepage", "TextLabel"))
         self.remvid4.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_9.setText(_translate("l_homepage", "Without Medicines Natural Home Remedy for Dengue and Malaria"))
-        self.label_11.setText(_translate("l_homepage", "TextLabel"))
         self.remvid1.setText(_translate("l_homepage", "Click here to view the video"))
 
 

@@ -24,7 +24,7 @@ editprofile = EditProfile()
 home.setWindowTitle("PoCoH: Please login or register to continue")
 login.setWindowTitle("PoCoH: Login")
 register.setWindowTitle("PoCoH: Register")
-l_home.setWindowTitle("Welcome to PoCoH")
+l_home.setWindowTitle("PoCoH")
 editprofile.setWindowTitle("PoCoH: Edit Profile")
 
 # ----------------- ERROR WINDOWS ----------------- 
@@ -252,15 +252,15 @@ def remvid3ButtonAction():
     QDesktopServices.openUrl(url)
 
 def remvid4ButtonAction():
-    url = QUrl("https://youtu.be/DYVXSBTtY9c")
+    url = QUrl("https://youtu.be/K-3rHuICmGM")
     QDesktopServices.openUrl(url)
 
 def remvid5ButtonAction():
-    url = QUrl("https://youtu.be/JhHn5PI82oU")
+    url = QUrl("https://youtu.be/UMPEQbNlQpE")
     QDesktopServices.openUrl(url)
 
 def remvid6ButtonAction():
-    url = QUrl("https://youtu.be/-jd;ok")
+    url = QUrl("https://youtu.be/BPYou1TgsoA")
     QDesktopServices.openUrl(url) 
 
 l_home.remvid1.clicked.connect(remvid1ButtonAction)

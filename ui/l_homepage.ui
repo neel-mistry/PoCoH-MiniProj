@@ -41,8 +41,11 @@
             <property name="enabled">
              <bool>true</bool>
             </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
             <property name="currentIndex">
-             <number>4</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="home">
              <layout class="QGridLayout" name="gridLayout_2">
@@ -228,8 +231,126 @@ border: 1px solid white;
             </widget>
             <widget class="QWidget" name="profile">
              <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="1">
+               <widget class="QFrame" name="frame_6">
+                <property name="styleSheet">
+                 <string notr="true">border: 1px solid #2a2a2a;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_5">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
+                   </property>
+                   <property name="text">
+                    <string>Username</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="username">
+                   <property name="styleSheet">
+                    <string notr="true">color: #ffffff;
+font: 13pt &quot;Poppins&quot;;
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;username of person&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_8">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
+                   </property>
+                   <property name="text">
+                    <string>Email</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="email">
+                   <property name="styleSheet">
+                    <string notr="true">color: #ffffff;
+font: 13pt &quot;Poppins&quot;;
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;Email of person&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_10">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
+                   </property>
+                   <property name="text">
+                    <string>Mobile Number</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="mobile">
+                   <property name="styleSheet">
+                    <string notr="true">color: #ffffff;
+font: 13pt &quot;Poppins&quot;;
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;Mobile of person&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_12">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
+                   </property>
+                   <property name="text">
+                    <string>Date of Birth</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="dob">
+                   <property name="styleSheet">
+                    <string notr="true">color: #ffffff;
+font: 13pt &quot;Poppins&quot;;
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;dob of person&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
               <item row="0" column="0">
                <widget class="QFrame" name="frame_5">
+                <property name="styleSheet">
+                 <string notr="true">border: 1px solid #2a2a2a</string>
+                </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
@@ -239,6 +360,9 @@ border: 1px solid white;
                 <layout class="QVBoxLayout" name="verticalLayout_4">
                  <item>
                   <widget class="QFrame" name="frame_13">
+                   <property name="styleSheet">
+                    <string notr="true">border: none;</string>
+                   </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
                    </property>
@@ -253,6 +377,9 @@ border: 1px solid white;
                       <width>121</width>
                       <height>121</height>
                      </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border: none;</string>
                     </property>
                     <property name="text">
                      <string/>
@@ -275,10 +402,17 @@ border: 1px solid white;
                     </property>
                     <property name="font">
                      <font>
-                      <family>Poppins SemiBold</family>
-                      <pointsize>14</pointsize>
+                      <family>Poppins</family>
+                      <pointsize>18</pointsize>
+                      <italic>false</italic>
                       <bold>true</bold>
                      </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 700 18pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
                     </property>
                     <property name="text">
                      <string>John Doe</string>
@@ -288,6 +422,9 @@ border: 1px solid white;
                  </item>
                  <item alignment="Qt::AlignLeft|Qt::AlignTop">
                   <widget class="QFrame" name="frame_56">
+                   <property name="styleSheet">
+                    <string notr="true">border: none;</string>
+                   </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
                    </property>
@@ -304,7 +441,7 @@ padding-top: 0.30em;
 padding-bottom: 0.30em;
 padding-left: 0.5em;
 padding-right: 0.5em;
-font: 500 10pt &quot;Poppins&quot;;</string>
+font: 500 12pt &quot;Poppins&quot;;</string>
                       </property>
                       <property name="text">
                        <string>Edit Profile</string>
@@ -316,6 +453,9 @@ font: 500 10pt &quot;Poppins&quot;;</string>
                  </item>
                  <item alignment="Qt::AlignBottom">
                   <widget class="QFrame" name="frame_14">
+                   <property name="styleSheet">
+                    <string notr="true">border: none;</string>
+                   </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
                    </property>
@@ -349,102 +489,6 @@ border: 1px solid white;
                      </widget>
                     </item>
                    </layout>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item row="0" column="1">
-               <widget class="QFrame" name="frame_6">
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_5">
-                 <item alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_5">
-                   <property name="styleSheet">
-                    <string notr="true">font: 600 12pt &quot;Poppins&quot;;
-padding-bottom: 0.4em;</string>
-                   </property>
-                   <property name="text">
-                    <string>Username</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QLabel" name="username">
-                   <property name="styleSheet">
-                    <string notr="true">font: 12pt &quot;Poppins&quot;;</string>
-                   </property>
-                   <property name="text">
-                    <string>&lt;username of person&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_8">
-                   <property name="styleSheet">
-                    <string notr="true">font: 600 12pt &quot;Poppins&quot;;
-padding-bottom: 0.4em;</string>
-                   </property>
-                   <property name="text">
-                    <string>Email</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QLabel" name="email">
-                   <property name="styleSheet">
-                    <string notr="true">font: 12pt &quot;Poppins&quot;;</string>
-                   </property>
-                   <property name="text">
-                    <string>&lt;Email of person&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_10">
-                   <property name="styleSheet">
-                    <string notr="true">font: 600 12pt &quot;Poppins&quot;;
-padding-bottom: 0.4em;</string>
-                   </property>
-                   <property name="text">
-                    <string>Mobile Number</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QLabel" name="mobile">
-                   <property name="styleSheet">
-                    <string notr="true">font: 12pt &quot;Poppins&quot;;</string>
-                   </property>
-                   <property name="text">
-                    <string>&lt;Mobile of person&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_12">
-                   <property name="styleSheet">
-                    <string notr="true">font: 600 12pt &quot;Poppins&quot;;
-padding-bottom: 0.4em;</string>
-                   </property>
-                   <property name="text">
-                    <string>Date of Birth</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QLabel" name="dob">
-                   <property name="styleSheet">
-                    <string notr="true">font: 12pt &quot;Poppins&quot;;</string>
-                   </property>
-                   <property name="text">
-                    <string>&lt;dob of person&gt;</string>
-                   </property>
                   </widget>
                  </item>
                 </layout>
@@ -521,7 +565,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1020</width>
+                   <width>1004</width>
                    <height>1476</height>
                   </rect>
                  </property>
@@ -1359,8 +1403,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>-229</y>
-                   <width>1020</width>
+                   <y>0</y>
+                   <width>1004</width>
                    <height>1284</height>
                   </rect>
                  </property>
@@ -1850,7 +1894,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1020</width>
+                   <width>1004</width>
                    <height>1476</height>
                   </rect>
                  </property>
@@ -1981,16 +2025,6 @@ border-radius: 0.5em;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLabel" name="label_46">
-                             <property name="styleSheet">
-                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
-                             </property>
-                             <property name="text">
-                              <string>TextLabel</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item>
                             <widget class="QPushButton" name="remvid2">
                              <property name="styleSheet">
                               <string notr="true">border-radius: 0.5em;
@@ -2077,16 +2111,6 @@ border-radius: 0.5em;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLabel" name="label_54">
-                             <property name="styleSheet">
-                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
-                             </property>
-                             <property name="text">
-                              <string>TextLabel</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item>
                             <widget class="QPushButton" name="remvid5">
                              <property name="styleSheet">
                               <string notr="true">border-radius: 0.5em;
@@ -2167,16 +2191,6 @@ border-radius: 0.5em;</string>
                              <property name="text">
                               <string>BEST HOME REMEDIES 
 for COVID 19 Recovery</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item>
-                            <widget class="QLabel" name="label_58">
-                             <property name="styleSheet">
-                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
-                             </property>
-                             <property name="text">
-                              <string>TextLabel</string>
                              </property>
                             </widget>
                            </item>
@@ -2267,16 +2281,6 @@ border-radius: 0.5em;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLabel" name="label_49">
-                             <property name="styleSheet">
-                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
-                             </property>
-                             <property name="text">
-                              <string>TextLabel</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item>
                             <widget class="QPushButton" name="remvid3">
                              <property name="styleSheet">
                               <string notr="true">border-radius: 0.5em;
@@ -2357,16 +2361,6 @@ border-radius: 0.5em;</string>
                              <property name="text">
                               <string>Home remedies for 
 Chicken Pox</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item>
-                            <widget class="QLabel" name="label_52">
-                             <property name="styleSheet">
-                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
-                             </property>
-                             <property name="text">
-                              <string>TextLabel</string>
                              </property>
                             </widget>
                            </item>
@@ -2472,16 +2466,6 @@ border-radius: 0.5em;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLabel" name="label_11">
-                             <property name="styleSheet">
-                              <string notr="true">font: 10pt &quot;Poppins&quot;;</string>
-                             </property>
-                             <property name="text">
-                              <string>TextLabel</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item>
                             <widget class="QPushButton" name="remvid1">
                              <property name="styleSheet">
                               <string notr="true">border-radius: 0.5em;
@@ -2510,6 +2494,16 @@ font: 500 10pt &quot;Poppins&quot;;</string>
               </item>
              </layout>
             </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_74">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
            </widget>
           </item>
          </layout>
