@@ -167,7 +167,7 @@ class Ui_covid(object):
         _translate = QtCore.QCoreApplication.translate
         covid.setWindowTitle(_translate("covid", "MainWindow"))
         self.cbback.setText(_translate("covid", "Back"))
-        self.label_2.setText(_translate("covid", "Diet for Dengue Patients"))
+        self.label_2.setText(_translate("covid", "Recovery Diets for Covid"))
         self.label_9.setText(_translate("covid", "● Vegetarian"))
         self.label_8.setText(_translate("covid", "Try to include a portion of protein-rich food in every meal. Vegetarians can include 2-3 servings/day of pulses,\n"
 "dal, soya, milk & milk products, nuts, and seeds.\n"

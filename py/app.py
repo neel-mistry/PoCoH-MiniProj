@@ -1,3 +1,4 @@
+from logging import critical
 import sys
 import re
 from PyQt5 import QtGui
@@ -23,8 +24,38 @@ editprofile = EditProfile()
 home.setWindowTitle("PoCoH: Please login or register to continue")
 login.setWindowTitle("PoCoH: Login")
 register.setWindowTitle("PoCoH: Register")
-l_home.setWindowTitle("Welcome to PoCoH")
+l_home.setWindowTitle("PoCoH")
 editprofile.setWindowTitle("PoCoH: Edit Profile")
+
+# ----------------- ERROR WINDOWS ----------------- 
+def errorwindow(msg):
+    dialog = QMessageBox()
+    dialog.setText(msg)
+    dialog.setWindowTitle('Attention')
+    dialog.setIcon(QMessageBox.Warning)
+    dialog.exec_()
+
+def successWindow(msg):
+    dialog = QMessageBox()
+    dialog.setText(msg)
+    dialog.setWindowTitle('Success')
+    dialog.setIcon(QMessageBox.Information)
+    dialog.exec_()
+
+def criticalWindow(msg):
+    dialog = QMessageBox()
+    dialog.setText(msg)
+    dialog.setWindowTitle('Success')
+    dialog.setIcon(QMessageBox.Critical)
+    dialog.exec_()
+
+def warning_dialog():
+    dialog = QMessageBox()
+    dialog.setText('Please login to continue')
+    dialog.setWindowTitle('Attention')
+    dialog.setIcon(QMessageBox.Warning)
+    dialog.exec_()
+
 
 # ----------------- VALIDATIONS -----------------
 def email(email):
@@ -88,7 +119,7 @@ def showHome():
     l_home.stackedWidget.setCurrentWidget(l_home.home)
 
 def logoutButtonAction():
-    l_home.hide()
+    l_home.close()
     login.tusername.setText("")
     login.tpass.setText("")
     login.show()
@@ -99,18 +130,24 @@ def editprof():
 def canceButtonAction():
     editprofile.hide()
 
-# def saveButtonAction():
-#     usern = editprofile.username.text()
-#     phno = editprofile.phone.text()
-#     passwd = editprofile.password.text()
-#     emailid = editprofile.email.text()
-#     dc = DatabaseConnection()
-#     cursor = dc.cursor()
-#     cursor.execute(f"update register set email = '{emailid}', mobile = '{phno}', Pwd = '{passwd}' from register where Username='{usern}';")
+def saveButtonAction():
+    usern = editprofile.username.text()
+    phno = editprofile.phone.text()
+    passwd = editprofile.password.text()
+    emailid = editprofile.email.text()
+    dc = DatabaseConnection()
+    cursor = dc.cursor()
+    try:
+        cursor.execute(f"update register set email = '{emailid}', mobile = '{phno}', Pwd = '{passwd}' where Username='{usern}';")
+        dc.commit()
+        successWindow('Information updated successfully!\nPlease logout and login again to view the changes')
+        editprofile.close()
+    except:
+        errorwindow('Error occured! Unable to save changes please try again!')
 
 # ----------------- LOGIN WINDOW CODES -----------------
 def registerButtonAction():
-    login.hide()
+    login.close()
     register.show()
 
 def loginButtonAction():
@@ -125,11 +162,7 @@ def loginButtonAction():
     #     dialog.setIcon(QMessageBox.Warning)
     #     dialog.exec_()
     if login.tusername.text() == "" or login.tpass.text() == "":
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Warning)
-        msg.setText("Enter userid and pass!")
-        msg.setWindowTitle("Error")
-        msg.exec_()
+        errorwindow("Enter user id and password")
     
     else:
         flag = 1
@@ -152,25 +185,16 @@ def loginButtonAction():
             editprofile.phone.setText(str(result[2]))
             editprofile.username.setText(result[4]) 
             editprofile.password.setText(result[5]) 
-            login.hide()
+            login.close()
             l_home.show()
             precautions.show()
             
         else:
-            dialog = QMessageBox()
-            dialog.setText('Invalid login id or pass')
-            dialog.setWindowTitle('Attention!')
-            dialog.setIcon(QMessageBox.Warning)
-            dialog.exec_()
+            criticalWindow("Invalid Login id or password! \nTry again!")
 
 
 
-def warning_dialog():
-    dialog = QMessageBox()
-    dialog.setText('Please login to continue')
-    dialog.setWindowTitle('Attention')
-    dialog.setIcon(QMessageBox.Warning)
-    dialog.exec_()
+
 
 
 # ----------------- DIET WINDOW CODES -----------------
@@ -213,6 +237,7 @@ def url5ButtonAction():
 def url6ButtonAction():
     url = QUrl("https://youtu.be/-jd;ok")
     QDesktopServices.openUrl(url) 
+
 # ----------------- REMEDIES WINDOW CODES -----------------
 def remvid1ButtonAction():
     url = QUrl("https://youtu.be/xQy_mtV5YnA")
@@ -227,15 +252,15 @@ def remvid3ButtonAction():
     QDesktopServices.openUrl(url)
 
 def remvid4ButtonAction():
-    url = QUrl("https://youtu.be/DYVXSBTtY9c")
+    url = QUrl("https://youtu.be/K-3rHuICmGM")
     QDesktopServices.openUrl(url)
 
 def remvid5ButtonAction():
-    url = QUrl("https://youtu.be/JhHn5PI82oU")
+    url = QUrl("https://youtu.be/UMPEQbNlQpE")
     QDesktopServices.openUrl(url)
 
 def remvid6ButtonAction():
-    url = QUrl("https://youtu.be/-jd;ok")
+    url = QUrl("https://youtu.be/BPYou1TgsoA")
     QDesktopServices.openUrl(url) 
 
 l_home.remvid1.clicked.connect(remvid1ButtonAction)
@@ -244,8 +269,6 @@ l_home.remvid3.clicked.connect(remvid3ButtonAction)
 l_home.remvid4.clicked.connect(remvid4ButtonAction)
 l_home.remvid5.clicked.connect(remvid5ButtonAction)
 l_home.remvid6.clicked.connect(remvid6ButtonAction)
-
-
 
 # ----------------- REGISTRATION WINDOW CODES -----------------
 
@@ -260,55 +283,29 @@ def submitButtonAction():
     re = register.trepass.text()
 
     if register.tname.text() == "":
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Warning)
-        msg.setText("Enter name!")
-        msg.setWindowTitle("Error")
-        msg.exec_()
+        errorwindow("Enter name!")
         # flag_s = False
+
     elif register.temail.text() == "":
-        print("email empty")
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Warning)
-        msg.setText("Enter Email!")
-        msg.setWindowTitle("Error")
-        msg.exec_()
+        errorwindow("Enter Email!")
         #flag_s = False
 
     elif email(register.temail.text()) == 2:
-        dialog = QMessageBox()
-        dialog.setText('Invalid email!!')
-        dialog.setWindowTitle('Attention!')
-        dialog.setIcon(QMessageBox.Warning)
-        dialog.exec_()
+        errorwindow('Invalid email!!')
         #flag_s = False
     
     elif phone(register.tphone.text()) == 2:
-        dialog = QMessageBox()
-        dialog.setText('Invalid phone!!')
-        dialog.setWindowTitle('Attention!')
-        dialog.setIcon(QMessageBox.Warning)
-        dialog.exec_()
+        errorwindow('Invalid phone!!')
         #flag_s = False
     
     elif register.tpass.text() != register.trepass.text():
-        dialog = QMessageBox()
-        dialog.setText("Passwords don't match")
-        #dialog.setInformativeText('shdfls')
-        dialog.setWindowTitle('Attention!')
-        dialog.setIcon(QMessageBox.Warning)
-        dialog.exec_()
+        errorwindow("Passwords don't match")
     
     elif password(register.tpass.text()) == 2:
-        dialog = QMessageBox()
-        dialog.setText('Password criteria not met!')
-        dialog.setInformativeText("1. Should have at least one number.\n"
+        errorwindow("1. Should have at least one number.\n"
         "2. Should have at least one uppercase and one lowercase character.\n" 
         "3. Should have at least one special symbol.\n" 
         "4. Should be between 6 to 20 characters long.")
-        dialog.setWindowTitle('Attention!')
-        dialog.setIcon(QMessageBox.Warning)
-        dialog.exec_()
         #flag_s = False
         
     else:
@@ -322,17 +319,13 @@ def submitButtonAction():
         result = cursor.fetchone()
 
         if result:
-            dialog = QMessageBox()
-            dialog.setText("Username already exists")
-            dialog.setWindowTitle('Attention!')
-            dialog.setIcon(QMessageBox.Warning)
-            dialog.exec_()    
+            errorwindow("Username already exists")   
         else:
             cursor.execute("insert into register values('"+ n +"','"+ em +"','"+ ph +"','"+ dob +"','"+ un +"','"+ pw +"','"+ re +"')")
             db.commit()
-            #QtWidgets.QMessageBox.information("Login form", "Registered Successfully")
+            successWindow("Registration successful!\nYou can now login with your username and password!")
             login.show()
-            register.hide()
+            register.close()
 
 def backButtonAction():
     register.tname.setText("")
@@ -374,7 +367,7 @@ def checkBoxChangedAction3():
 login.checkBox.stateChanged.connect(checkBoxChangedAction)
 register.checkBox.stateChanged.connect(checkBoxChangedAction2)
 editprofile.checkBox.stateChanged.connect(checkBoxChangedAction3)
-#editprofile.bsave.clicked.connect(saveButtonAction)
+editprofile.bsave.clicked.connect(saveButtonAction)
 home.bsignup.clicked.connect(signupButtonAction)
 home.blogin.clicked.connect(loginButton1Action)
 login.bregister.clicked.connect(registerButtonAction)

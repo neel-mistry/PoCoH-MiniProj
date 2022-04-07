@@ -18,7 +18,7 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)
-        self.setWindowIcon(QtGui.QIcon('PoCoH.png'))
+        self.setWindowIcon(QtGui.QIcon('PoCoH icon.jpg'))
  
     def login(self):
         usern = self.tusername.text()

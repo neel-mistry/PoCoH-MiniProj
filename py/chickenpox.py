@@ -80,6 +80,7 @@ class Ui_chickenpox(object):
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame_4)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.label = QtWidgets.QLabel(self.frame_4)
+        self.label.setMaximumSize(QtCore.QSize(200, 16777215))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("../images/disease/2.png"))
         self.label.setScaledContents(True)
