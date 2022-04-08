@@ -160,7 +160,7 @@ border: 1px solid white;
                        <enum>QFrame::Raised</enum>
                       </property>
                       <layout class="QVBoxLayout" name="verticalLayout_66">
-                       <item alignment="Qt::AlignRight">
+                       <item alignment="Qt::AlignHCenter">
                         <widget class="QLabel" name="label_46">
                          <property name="maximumSize">
                           <size>
@@ -601,7 +601,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1020</width>
+                   <width>604</width>
                    <height>1476</height>
                   </rect>
                  </property>
@@ -1440,8 +1440,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1020</width>
-                   <height>1284</height>
+                   <width>728</width>
+                   <height>1752</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_31">
@@ -1930,7 +1930,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1020</width>
+                   <width>604</width>
                    <height>1476</height>
                   </rect>
                  </property>
