@@ -1,4 +1,3 @@
-import imp
 import mysql.connector as mysql
 
 class DatabaseConnection(object):

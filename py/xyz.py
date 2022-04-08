@@ -18,21 +18,21 @@ class Login(QtWidgets.QMainWindow,Ui_Login):
     def __init__(self) -> None:
         super().__init__()
         self.setupUi(self)
-        self.setWindowIcon(QtGui.QIcon('PoCoH icon.jpg'))
+        # self.setWindowIcon(QtGui.QIcon('PoCoH icon.jpg'))
  
-    def login(self):
-        usern = self.tusername.text()
-        passw = self.tpass.text()
+    # def login(self):
+    #     usern = self.tusername.text()
+    #     passw = self.tpass.text()
 
-        dc = DatabaseConnection()
-        cursor = dc.cursor()
-        cursor.execute("select * from register where Username= '%s' and Pwd = '%s'",(usern,passw))
-        a = cursor.fetchone #store data retrieved in result
-        if a:
-            QMessageBox.information(self,"You have logged in successfully")
-            return 1
-        else:
-            QMessageBox.information(self,"Invalid User")   
+    #     dc = DatabaseConnection()
+    #     cursor = dc.cursor()
+    #     cursor.execute("select * from register where Username= '%s' and Pwd = '%s'",(usern,passw))
+    #     a = cursor.fetchone #store data retrieved in result
+    #     if a:
+    #         QMessageBox.information(self,"You have logged in successfully")
+    #         return 1
+    #     else:
+    #         QMessageBox.information(self,"Invalid User")   
             
 
 class Homepage(QtWidgets.QMainWindow,Ui_homepage):

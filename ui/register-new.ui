@@ -488,7 +488,7 @@ padding-bottom:7px;</string>
                 <string notr="true">padding-bottom: 0.2em;</string>
                </property>
                <property name="text">
-                <string>Re-Enter Password:</string>
+                <string>Confirm Password:</string>
                </property>
               </widget>
              </item>

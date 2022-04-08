@@ -150,15 +150,36 @@ border: 1px solid white;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <layout class="QHBoxLayout" name="horizontalLayout_9">
                     <item>
-                     <widget class="QLabel" name="label_17">
-                      <property name="styleSheet">
-                       <string notr="true">font: 600 19pt &quot;Poppins&quot;;</string>
+                     <widget class="QFrame" name="frame_75">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
                       </property>
-                      <property name="text">
-                       <string>FACT OF THE DAY:</string>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
                       </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_66">
+                       <item alignment="Qt::AlignRight">
+                        <widget class="QLabel" name="label_46">
+                         <property name="maximumSize">
+                          <size>
+                           <width>290</width>
+                           <height>290</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="pixmap">
+                          <pixmap>../images/3-01.png</pixmap>
+                         </property>
+                         <property name="scaledContents">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                     </item>
                    </layout>
@@ -173,7 +194,18 @@ border: 1px solid white;
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_3">
-                    <item>
+                    <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+                     <widget class="QLabel" name="label_17">
+                      <property name="styleSheet">
+                       <string notr="true">font: 600 22pt &quot;Poppins&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;FACT OF THE DAY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignTop">
                      <widget class="QLabel" name="label_2">
                       <property name="font">
                        <font>
@@ -184,6 +216,10 @@ border: 1px solid white;
                       </property>
                       <property name="autoFillBackground">
                        <bool>false</bool>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">padding-top: 0.5em;
+color: rgb(255, 255, 255);</string>
                       </property>
                       <property name="text">
                        <string>An apple a day keeps the doctor away!</string>
@@ -231,121 +267,6 @@ border: 1px solid white;
             </widget>
             <widget class="QWidget" name="profile">
              <layout class="QGridLayout" name="gridLayout_3">
-              <item row="0" column="1">
-               <widget class="QFrame" name="frame_6">
-                <property name="styleSheet">
-                 <string notr="true">border: 1px solid #2a2a2a;</string>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_5">
-                 <item alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_5">
-                   <property name="styleSheet">
-                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
-padding-bottom: 0.4em;
-border: none;
-color: #ffffff</string>
-                   </property>
-                   <property name="text">
-                    <string>Username</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QLabel" name="username">
-                   <property name="styleSheet">
-                    <string notr="true">color: #ffffff;
-font: 13pt &quot;Poppins&quot;;
-border: none;</string>
-                   </property>
-                   <property name="text">
-                    <string>&lt;username of person&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_8">
-                   <property name="styleSheet">
-                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
-padding-bottom: 0.4em;
-border: none;
-color: #ffffff</string>
-                   </property>
-                   <property name="text">
-                    <string>Email</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QLabel" name="email">
-                   <property name="styleSheet">
-                    <string notr="true">color: #ffffff;
-font: 13pt &quot;Poppins&quot;;
-border: none;</string>
-                   </property>
-                   <property name="text">
-                    <string>&lt;Email of person&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_10">
-                   <property name="styleSheet">
-                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
-padding-bottom: 0.4em;
-border: none;
-color: #ffffff</string>
-                   </property>
-                   <property name="text">
-                    <string>Mobile Number</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QLabel" name="mobile">
-                   <property name="styleSheet">
-                    <string notr="true">color: #ffffff;
-font: 13pt &quot;Poppins&quot;;
-border: none;</string>
-                   </property>
-                   <property name="text">
-                    <string>&lt;Mobile of person&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_12">
-                   <property name="styleSheet">
-                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
-padding-bottom: 0.4em;
-border: none;
-color: #ffffff</string>
-                   </property>
-                   <property name="text">
-                    <string>Date of Birth</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignTop">
-                  <widget class="QLabel" name="dob">
-                   <property name="styleSheet">
-                    <string notr="true">color: #ffffff;
-font: 13pt &quot;Poppins&quot;;
-border: none;</string>
-                   </property>
-                   <property name="text">
-                    <string>&lt;dob of person&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
               <item row="0" column="0">
                <widget class="QFrame" name="frame_5">
                 <property name="styleSheet">
@@ -396,7 +317,7 @@ border: none;</string>
                      <rect>
                       <x>20</x>
                       <y>160</y>
-                      <width>151</width>
+                      <width>391</width>
                       <height>51</height>
                      </rect>
                     </property>
@@ -494,6 +415,121 @@ border: 1px solid white;
                 </layout>
                </widget>
               </item>
+              <item row="0" column="1">
+               <widget class="QFrame" name="frame_6">
+                <property name="styleSheet">
+                 <string notr="true">border: 1px solid #2a2a2a;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_5">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
+                   </property>
+                   <property name="text">
+                    <string>Username</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft|Qt::AlignTop">
+                  <widget class="QLabel" name="username">
+                   <property name="styleSheet">
+                    <string notr="true">color: #ffffff;
+font: 13pt &quot;Poppins&quot;;
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;username of person&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_8">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
+                   </property>
+                   <property name="text">
+                    <string>Email</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="email">
+                   <property name="styleSheet">
+                    <string notr="true">color: #ffffff;
+font: 13pt &quot;Poppins&quot;;
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;Email of person&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_10">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
+                   </property>
+                   <property name="text">
+                    <string>Mobile Number</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="mobile">
+                   <property name="styleSheet">
+                    <string notr="true">color: #ffffff;
+font: 13pt &quot;Poppins&quot;;
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;Mobile of person&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_12">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 14pt &quot;Poppins&quot;;
+padding-bottom: 0.4em;
+border: none;
+color: #ffffff</string>
+                   </property>
+                   <property name="text">
+                    <string>Date of Birth</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="dob">
+                   <property name="styleSheet">
+                    <string notr="true">color: #ffffff;
+font: 13pt &quot;Poppins&quot;;
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;dob of person&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
              </layout>
             </widget>
             <widget class="QWidget" name="exercises">
@@ -565,7 +601,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1004</width>
+                   <width>1020</width>
                    <height>1476</height>
                   </rect>
                  </property>
@@ -1404,7 +1440,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1004</width>
+                   <width>1020</width>
                    <height>1284</height>
                   </rect>
                  </property>
@@ -1894,7 +1930,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1004</width>
+                   <width>1020</width>
                    <height>1476</height>
                   </rect>
                  </property>
@@ -2494,16 +2530,6 @@ font: 500 10pt &quot;Poppins&quot;;</string>
               </item>
              </layout>
             </widget>
-           </widget>
-          </item>
-          <item>
-           <widget class="QFrame" name="frame_74">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
            </widget>
           </item>
          </layout>
