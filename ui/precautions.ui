@@ -81,7 +81,8 @@
              <item>
               <widget class="QLabel" name="label">
                <property name="styleSheet">
-                <string notr="true">font: 700 22pt &quot;Poppins&quot;;</string>
+                <string notr="true">font: 700 22pt &quot;Poppins&quot;;
+color: #ffffff;</string>
                </property>
                <property name="text">
                 <string>Precautions for COVID - 19</string>
@@ -118,7 +119,8 @@
              <item alignment="Qt::AlignTop">
               <widget class="QLabel" name="label_2">
                <property name="styleSheet">
-                <string notr="true">font: 600 16pt &quot;Poppins&quot;;</string>
+                <string notr="true">color: #ffffff;
+font: 600 16pt &quot;Poppins&quot;;</string>
                </property>
                <property name="text">
                 <string>To prevent the spread of COVID-19:</string>
@@ -163,7 +165,8 @@
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">font: 500 12pt &quot;Poppins&quot;;</string>
+                <string notr="true">color: #ffffff;
+font: 500 12pt &quot;Poppins&quot;;</string>
                </property>
                <property name="text">
                 <string>1. Maintain a safe distance from others (at least 1 metre), even if they don’t appear to be sick.

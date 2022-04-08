@@ -44,7 +44,8 @@ class Ui_Precautions(object):
         self.horizontalLayout.setContentsMargins(-1, 20, -1, -1)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label = QtWidgets.QLabel(self.frame_2)
-        self.label.setStyleSheet("font: 700 22pt \"Poppins\";")
+        self.label.setStyleSheet("font: 700 22pt \"Poppins\";\n"
+"color: #ffffff;")
         self.label.setObjectName("label")
         self.horizontalLayout.addWidget(self.label)
         self.verticalLayout.addWidget(self.frame_2, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
@@ -57,7 +58,8 @@ class Ui_Precautions(object):
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.label_2 = QtWidgets.QLabel(self.frame_3)
-        self.label_2.setStyleSheet("font: 600 16pt \"Poppins\";")
+        self.label_2.setStyleSheet("color: #ffffff;\n"
+"font: 600 16pt \"Poppins\";")
         self.label_2.setObjectName("label_2")
         self.verticalLayout_2.addWidget(self.label_2, 0, QtCore.Qt.AlignTop)
         self.verticalLayout.addWidget(self.frame_3, 0, QtCore.Qt.AlignVCenter)
@@ -76,7 +78,8 @@ class Ui_Precautions(object):
         font.setBold(False)
         font.setItalic(False)
         self.label_3.setFont(font)
-        self.label_3.setStyleSheet("font: 500 12pt \"Poppins\";")
+        self.label_3.setStyleSheet("color: #ffffff;\n"
+"font: 500 12pt \"Poppins\";")
         self.label_3.setWordWrap(True)
         self.label_3.setObjectName("label_3")
         self.verticalLayout_3.addWidget(self.label_3)

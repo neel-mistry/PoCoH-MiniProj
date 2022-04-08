@@ -1479,6 +1479,11 @@ class Ui_l_homepage(object):
         self.remvid4.setText(_translate("l_homepage", "Click here to view the video"))
         self.label_9.setText(_translate("l_homepage", "Without Medicines Natural Home Remedy for Dengue and Malaria"))
         self.remvid1.setText(_translate("l_homepage", "Click here to view the video"))
+        self.bhome.setToolTip(_translate("l_homepage", "<html><head/><body><p>Home</p></body></html>"))
+        self.bexercise.setToolTip(_translate("l_homepage", "<html><head/><body><p>Exercises</p></body></html>"))
+        self.bdiet.setToolTip(_translate("l_homepage", "<html><head/><body><p>Diets</p></body></html>"))
+        self.bremedies.setToolTip(_translate("l_homepage", "<html><head/><body><p>Remedies</p></body></html>"))
+        self.bprofile.setToolTip(_translate("l_homepage", "<html><head/><body><p>Profile</p></body></html>"))
 
 
 if __name__ == "__main__":
