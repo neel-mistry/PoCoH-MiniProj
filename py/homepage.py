@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_homepage(object):
     def setupUi(self, homepage):
         homepage.setObjectName("homepage")
-        homepage.resize(919, 822)
+        homepage.resize(919, 879)
         self.centralwidget = QtWidgets.QWidget(homepage)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
@@ -269,6 +269,10 @@ class Ui_homepage(object):
         self.bsignup.setText(_translate("homepage", "Sign Up"))
         self.label_3.setText(_translate("homepage", "<html><head/><body><p><span style=\" text-decoration: underline;\">Fact of the day:</span></p></body></html>"))
         self.label_2.setText(_translate("homepage", "An apple a day keeps the doctor away!"))
+        self.bexercise.setToolTip(_translate("homepage", "<html><head/><body><p>Exercises</p></body></html>"))
+        self.bdiet.setToolTip(_translate("homepage", "<html><head/><body><p>Diets</p></body></html>"))
+        self.bremedies.setToolTip(_translate("homepage", "<html><head/><body><p>Remedies</p></body></html>"))
+        self.bprofile.setToolTip(_translate("homepage", "<html><head/><body><p>Profile</p></body></html>"))
 
 
 if __name__ == "__main__":

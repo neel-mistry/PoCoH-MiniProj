@@ -8,6 +8,4 @@ class DatabaseConnection(object):
             user='root',
             password=''
         )
-        # print("connected")
-        # print(type(conn))
         return conn
