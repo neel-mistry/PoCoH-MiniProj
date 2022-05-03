@@ -1,7 +1,5 @@
-from logging import critical
 import sys
 import re
-from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from xyz import *
 from quotes import Quotes
@@ -49,6 +47,7 @@ def errorwindow(msg):
     dialog = QMessageBox()
     dialog.setText(msg)
     dialog.setWindowTitle('Attention')
+    #dialog.setStyleSheet('background-color: rgb(88, 116, 255); color: white;')
     dialog.setIcon(QMessageBox.Warning)
     dialog.exec_()
 
@@ -148,19 +147,36 @@ def canceButtonAction():
     editprofile.hide()
 
 def saveButtonAction():
+    save_flag = 0
     usern = editprofile.username.text()
     phno = editprofile.phone.text()
     passwd = editprofile.password.text()
     emailid = editprofile.email.text()
     dc = DatabaseConnection()
     cursor = dc.cursor()
-    try:
-        cursor.execute(f"update register set email = '{emailid}', mobile = '{phno}', Pwd = '{passwd}' where Username='{usern}';")
-        dc.commit()
-        successWindow('Information updated successfully!\nPlease logout and login again to view the changes')
-        editprofile.close()
-    except:
-        errorwindow('Error occured! Unable to save changes please try again!')
+    if password(register.tpass.text()) == 2:
+        errorwindow("1. Should have at least one number.\n"
+        "2. Should have at least one uppercase and one lowercase character.\n" 
+        "3. Should have at least one special symbol.\n" 
+        "4. Should be between 6 to 20 characters long.")
+    
+    elif email(register.temail.text()) == 2:
+        errorwindow('Invalid email!!')
+    
+    elif phone(register.tphone.text()) == 2:
+        errorwindow('Invalid phone!!')
+    
+    else:
+        save_flag = 1
+    
+    if save_flag == 1:
+        try:
+            cursor.execute(f"update register set email = '{emailid}', mobile = '{phno}', Pwd = '{passwd}' where Username='{usern}';")
+            dc.commit()
+            successWindow('Information updated successfully!\nPlease logout and login again to view the changes')
+            editprofile.close()
+        except:
+            errorwindow('Error occured! Unable to save changes please try again!')
 
 # ----------------- LOGIN WINDOW CODES -----------------
 def registerButtonAction():
